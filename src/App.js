@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import LandingPage from "./pages/Landing/LandingPage"
+import { createTheme, colors, ThemeProvider } from '@mui/material';
+import BuyCarPage from './pages/BuyCar/BuyCarPage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainToolbar from './components/Ui/MainToolbar';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: colors.indigo[500],
+    },
+    secondary: {
+      main: colors.lightBlue[500]
+    }
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <MainToolbar />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="comprar" element={<BuyCarPage />} />
+        </Routes>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
