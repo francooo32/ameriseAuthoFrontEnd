@@ -1,3 +1,4 @@
+import LoadingSpinner from "../../Ui/LoadingSpinner";
 import CarItem from "../Item/CarItem";
 import styles from "./CarList.module.css"
 
@@ -10,9 +11,11 @@ const CARS = [
 
 function CarList() {
     return(
-        <div className={styles.car_list_container}>
-            {CARS.map(car => <CarItem key={car.id} car={car} />)}
-        </div>
+        <>
+            <div className={styles.car_list_container}>
+                {CARS.map(car => <CarItem key={car.id} car={car} />)}
+            </div>
+        </>
     );
 }
 

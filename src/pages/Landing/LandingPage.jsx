@@ -6,7 +6,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
 import { useNavigate } from "react-router-dom";
+import { Facebook, Instagram } from "@mui/icons-material";
 
 const DATA = [
     { title: "Te damos 3 meses de cobertura mecanica", description: "Y podes extenderla hasta 12 meses", image: "/images/tres.jpg" },
@@ -63,6 +65,32 @@ function LandingPage() {
                     )}
                 </Stack>  
             </Box>
+
+            <Stack direction="row" justifyContent="space-between" sx={{padding: 6}}>
+                <Stack direction="column" spacing={2} alignItems="start">
+                    <Typography variant="body2" color="text.main" textAlign="center">
+                        Dirección: Av. Pres. Perón 3001, Morón, Provincia de Buenos Aires
+                    </Typography>
+
+                    <Typography variant="body2" color="text.main" textAlign="center">
+                        Telefono: 011 4443-8143
+                    </Typography>
+
+                    <Typography variant="body2" color="text.main" textAlign="center">
+                        Horario: 09:00 a 18:00
+                    </Typography>
+                </Stack>
+
+                <Stack direction="row" alignItems="center">
+                    <IconButton aria-label="Facebook">
+                        <Facebook />
+                    </IconButton>
+
+                    <IconButton aria-label="Instagram">
+                        <Instagram />
+                    </IconButton>
+                </Stack>
+            </Stack>
         </>
     );
 }
