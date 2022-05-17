@@ -1,0 +1,23 @@
+.section_container {
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    padding: 64px;
+}
+
+.title {
+    display: block;
+    font-size: 64px;
+    color: white;
+}
+
+.subtitle {
+    display: block;
+    font-size: 18px;
+    color: white;
+}
+
+.image {
+    width: 569px;
+    height: auto;
+}
