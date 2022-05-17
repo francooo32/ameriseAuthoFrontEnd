@@ -10,11 +10,13 @@ import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { useNavigate } from 'react-router-dom';;
 
 function Car({car}) {
+    const navigate = useNavigate();
 
     function cardClickHandler() {
-        console.log("Tarjeta seleccionada");
+        navigate("/detalle");
     }
 
     function favoriteClickHandler(e) {
@@ -23,7 +25,7 @@ function Car({car}) {
     }
 
     return(
-        <Card sx={{ maxWidth: 345 }} onClick={cardClickHandler}>
+        <Card sx={styles.card} onClick={cardClickHandler}>
             <CardHeader
                 avatar={
                     <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -61,3 +63,12 @@ function Car({car}) {
 }
 
 export default Car;
+
+const styles = {
+    card: {
+        maxWidth: 345,
+        '&:hover': {
+            cursor: 'pointer'
+        }
+    }
+}

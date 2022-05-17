@@ -4,6 +4,7 @@ import { createTheme, colors, ThemeProvider } from '@mui/material';
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainToolbar from './components/Ui/MainToolbar';
+import CarDetail from './components/Car/Detail/CarDetail';
 
 const theme = createTheme({
   palette: {
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="comprar" element={<BuyCarPage />} />
+          <Route path="/detalle" element={<CarDetail />} />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>
