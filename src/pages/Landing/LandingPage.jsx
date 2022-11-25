@@ -24,7 +24,7 @@ function LandingPage() {
             <section className={styles.section_container}>
                 <Stack direction="column" spacing={2}>
                     <Typography variant="h4" component="div">
-                        Palmersons
+                        Palmerson
                     </Typography>
 
                     <Typography variant="body1">
@@ -82,13 +82,18 @@ function LandingPage() {
                 </Stack>
 
                 <Stack direction="row" alignItems="center">
+                    
+                <a href="https://www.facebook.com/palmersonautomotoresok" rel="noopener" target='_blank'> 
                     <IconButton aria-label="Facebook">
                         <Facebook />
                     </IconButton>
+                    </a>   
 
+                    <a href="https://www.instagram.com/palmerson.oficial/?hl=es" rel="noopener" target='_blank'> 
                     <IconButton aria-label="Instagram">
                         <Instagram />
                     </IconButton>
+                    </a>   
                 </Stack>
             </Stack>
         </>

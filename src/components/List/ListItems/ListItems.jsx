@@ -2,19 +2,21 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ListItems.css';
 
-function ListItem({item: { coverSrc, title, price, deliveryFee, serviceTime, rating }}) {
+function ListItem({item: { coverSrc, brand, model, price, km, rating }}) {
   const navigation = useNavigate();
 
   return (
     <div className='listItem-wrap' onClick={() => navigation("/detalle")}>
-    <img src={coverSrc} alt='' />
+    {/* <img src={coverSrc} alt='' /> */}
+    <img src='/images/newCars/bmw.jpg' alt='' />
     <header>
-      <h4>{title}</h4>
+      <h1>{brand}</h1>
+      <h4>{model}</h4>
       <span>🌟{rating}</span>
     </header>
     <footer>
       <p>
-        <b>{serviceTime}</b> <span> Delivery Fee ${deliveryFee}</span>
+        <span>{km}</span>
       </p>
       <p>
         <b>${price}</b>

@@ -5,7 +5,6 @@ import FilterPanel from "../../components/FilterPanel/FilterPanel";
 import List from "../../components/List/List";
 import React, { useEffect, useState } from 'react';
 import EmptyView from '../../components/common/EmptyView/EmptyView';
-import { dataList } from '../../constants/constants';
 import './BuyCar.css';
 
 const BuyCarPage = () => {
@@ -13,13 +12,43 @@ const BuyCarPage = () => {
     const [selectedRating, setSelectedRating] = useState(null);
     const [selectedPrice, setSelectedPrice] = useState([1000, 5000]);
   
-    const [cuisines, setCuisines] = useState([
+    const [vehicles, setVehicles] = useState([
       { id: 1, checked: false, label: 'Bmw' },
       { id: 2, checked: false, label: 'Chevrolet' },
       { id: 3, checked: false, label: 'Ferrari' },
     ]);
   
-    const [list, setList] = useState(dataList);
+    // const [list, setList] = useState(dataList);
+
+    const [list, setVehicleList] = useState([]);
+    useEffect(() => {
+        async function fetchVehicleList() {
+          debugger
+          try{
+            const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
+            const response = await fetch(requestUrl);
+            const responseJSON = await response.json();
+            console.log(responseJSON);
+            setVehicleList(responseJSON);
+          } catch {
+            console.log('The url no trajo nada')
+          }
+        }
+        fetchVehicleList();
+      }, []);
+
+      // useEffect(() => {
+      //   debugger
+      //   axios.get('https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle')
+      //     .then(res => {console.log(res)
+      //       debugger
+      //       setVehicleList(res.data)
+      //       })
+      //       .catch(err => {
+      //         console.log(err)
+      //       })
+      // }, []);
+
     const [resultsFound, setResultsFound] = useState(true);
     const [searchInput, setSearchInput] = useState('');
   
@@ -30,55 +59,65 @@ const BuyCarPage = () => {
       !value ? null : setSelectedRating(value);
   
     const handleChangeChecked = (id) => {
-      const cuisinesStateList = cuisines;
-      const changeCheckedCuisines = cuisinesStateList.map((item) =>
+      const vehiclesStateList = vehicles;
+      const changeCheckedVehicles = vehiclesStateList.map((item) =>
         item.id === id ? { ...item, checked: !item.checked } : item
       );
-      setCuisines(changeCheckedCuisines);
+      setVehicles(changeCheckedVehicles);
     };
   
     const handleChangePrice = (event, value) => {
       setSelectedPrice(value);
     };
-  
-    const applyFilters = () => {
-      let updatedList = dataList;
-  
+    
+    // Initial vehicle load
+    // const applyFilters = () => {
+    //   let updatedList = dataList;
+
+      // Initial vehicle load
+      const applyFilters = () => {
+      debugger
+      let updatedList = list;
       // Rating Filter
-      if (selectedRating) {
-        updatedList = updatedList.filter(
-          (item) => parseInt(item.rating) === parseInt(selectedRating)
-        );
-      }
+
+      // if (selectedRating) {
+      //   updatedList = updatedList.filter(
+      //     (item) => parseInt(item.rating) === parseInt(selectedRating)
+      //   );
+      // }
   
       // Category Filter
-      if (selectedCategory) {
-        updatedList = updatedList.filter(
-          (item) => item.category === selectedCategory
-        );
-      }
+
+      // if (selectedCategory) {
+      //   updatedList = updatedList.filter(
+      //     (item) => item.category === selectedCategory
+      //   );
+      // }
   
-      // Cuisine Filter
-      const cuisinesChecked = cuisines
+      // Vehicle Filter
+
+      const vehicleChecked = vehicles
         .filter((item) => item.checked)
         .map((item) => item.label.toLowerCase());
   
-      if (cuisinesChecked.length) {
+      if (vehicleChecked.length) {
         updatedList = updatedList.filter((item) =>
-          cuisinesChecked.includes(item.cuisine)
+        vehicleChecked.includes(item.vehicle)
         );
       }
   
       // Search Filter
-      if (searchInput) {
-        updatedList = updatedList.filter(
-          (item) =>
-            item.title.toLowerCase().search(searchInput.toLowerCase().trim()) !==
-            -1
-        );
-      }
+
+      // if (searchInput) {
+      //   updatedList = updatedList.filter(
+      //     (item) =>
+      //       item.brand.toLowerCase().search(searchInput.toLowerCase().trim()) !==
+      //       -1
+      //   );
+      // }
   
       // Price Filter
+      
       const minPrice = selectedPrice[0];
       const maxPrice = selectedPrice[1];
   
@@ -86,14 +125,16 @@ const BuyCarPage = () => {
         (item) => item.price >= minPrice && item.price <= maxPrice
       );
   
-      setList(updatedList);
+      // setList(updatedList);
+
+      setVehicleList(updatedList);
   
       !updatedList.length ? setResultsFound(false) : setResultsFound(true);
     };
   
     useEffect(() => {
-      applyFilters();
-    }, [selectedRating, selectedCategory, cuisines, searchInput, selectedPrice]);
+      // applyFilters();
+    }, [selectedRating, selectedCategory, vehicles, searchInput, selectedPrice]);
   
     return (
       <div className='home'>
@@ -111,7 +152,7 @@ const BuyCarPage = () => {
               selectedRating={selectedRating}
               selectedPrice={selectedPrice}
               selectRating={handleSelectRating}
-              cuisines={cuisines}
+              vehicles={vehicles}
               changeChecked={handleChangeChecked}
               changePrice={handleChangePrice}
             />

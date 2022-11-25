@@ -11,7 +11,7 @@ const FilterPanel = ({
   selectedRating,
   selectedPrice,
   selectRating,
-  cuisines,
+  vehicles,
   changeChecked,
   changePrice,
 }) => (
@@ -26,10 +26,10 @@ const FilterPanel = ({
     </div>
     <div className='input-group'>
       <p className='label'>Marca</p>
-      {cuisines.map((cuisine) => (
+      {vehicles.map((vehicle) => (
         <CheckboxProton
-          key={cuisine.id}
-          cuisine={cuisine}
+          key={vehicle.id}
+          vehicle={vehicle}
           changeChecked={changeChecked}
         />
       ))}
