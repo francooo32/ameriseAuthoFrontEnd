@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ListItems.css';
 
-function ListItem({item: { coverSrc, brand, model, price, km, rating }}) {
+function ListItem({item: { coverSrc, brand, model, price, km, rating, location }}) {
   const navigation = useNavigate();
 
   return (
@@ -12,6 +12,7 @@ function ListItem({item: { coverSrc, brand, model, price, km, rating }}) {
     <header>
       <h1>{brand}</h1>
       <h4>{model}</h4>
+      <h4>{location}</h4>
       <span>🌟{rating}</span>
     </header>
     <footer>

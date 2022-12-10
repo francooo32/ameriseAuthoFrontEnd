@@ -6,8 +6,10 @@ import List from "../../components/List/List";
 import React, { useEffect, useState } from 'react';
 import EmptyView from '../../components/common/EmptyView/EmptyView';
 import './BuyCar.css';
+import { useCallback } from "react";
 
 const BuyCarPage = () => {
+  
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedRating, setSelectedRating] = useState(null);
     const [selectedPrice, setSelectedPrice] = useState([1000, 5000]);
@@ -21,21 +23,58 @@ const BuyCarPage = () => {
     // const [list, setList] = useState(dataList);
 
     const [list, setVehicleList] = useState([]);
+    
+    // useEffect(fetchVehicleList(), [fetch])
+
     useEffect(() => {
-        async function fetchVehicleList() {
+        const fetchVehicleList = async () => {
+          // async function fetchVehicleList(){
           debugger
           try{
+            // const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
+            // await fetch('https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle').then(resp =>{
+            // setVehicleList(resp.json())
+            // });
+            // await fetch('https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle')
+            // .then(resp => resp.json)
+            // .then(data => {
+            //   setVehicleList(data)
+            // })
+            
+            // console.log(responseJSON);
+            // setVehicleList(await response.json());
+            // function sleep(ms) {
+            //   return new Promise(resolve => setTimeout(resolve, ms));
+            // }
             const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
-            const response = await fetch(requestUrl);
-            const responseJSON = await response.json();
-            console.log(responseJSON);
-            setVehicleList(responseJSON);
+            const resp = await fetch(requestUrl)
+            setTimeout('', 6000);
+            const json = await resp.json();
+            setVehicleList(json)
           } catch {
             console.log('The url no trajo nada')
           }
         }
         fetchVehicleList();
       }, []);
+
+      // function sleep(ms) {
+      //         return new Promise(resolve => setTimeout(resolve, ms));
+      //       }
+            
+      // async function loadFetch(){
+      //   const url = "https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle";
+      //   const resp = await fetch(url);
+      //   const dataJson = resp.json;
+      //   setVehicleList(dataJson)
+      // }
+
+      // const fetchData = useCallback( async () => {
+      //       const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
+      //       const resp = await fetch(requestUrl)
+      //       const json =  await resp.json();
+      //       setVehicleList(json)
+      // },[])
 
       // useEffect(() => {
       //   debugger
@@ -75,24 +114,33 @@ const BuyCarPage = () => {
     //   let updatedList = dataList;
 
       // Initial vehicle load
-      const applyFilters = () => {
+      const applyFilters = async () => {
+        debugger
+        if(list <= 0){
+          const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
+            const resp = await fetch(requestUrl)
+            setTimeout('', 6000);
+            const json = await resp.json();
+            setVehicleList(json);
+            // list = json;
+        }
       debugger
       let updatedList = list;
-      // Rating Filter
 
-      // if (selectedRating) {
-      //   updatedList = updatedList.filter(
-      //     (item) => parseInt(item.rating) === parseInt(selectedRating)
-      //   );
-      // }
+      // Rating Filter
+      if (selectedRating) {
+        updatedList = updatedList.filter(
+          (item) => parseInt(item.rating) === parseInt(selectedRating)
+        );
+      }
   
       // Category Filter
 
-      // if (selectedCategory) {
-      //   updatedList = updatedList.filter(
-      //     (item) => item.category === selectedCategory
-      //   );
-      // }
+      if (selectedCategory) {
+        updatedList = updatedList.filter(
+          (item) => item.category === selectedCategory
+        );
+      }
   
       // Vehicle Filter
 
@@ -108,13 +156,13 @@ const BuyCarPage = () => {
   
       // Search Filter
 
-      // if (searchInput) {
-      //   updatedList = updatedList.filter(
-      //     (item) =>
-      //       item.brand.toLowerCase().search(searchInput.toLowerCase().trim()) !==
-      //       -1
-      //   );
-      // }
+      if (searchInput) {
+        updatedList = updatedList.filter(
+          (item) =>
+            item.brand.toLowerCase().search(searchInput.toLowerCase().trim()) !==
+            -1
+        );
+      }
   
       // Price Filter
       
@@ -127,13 +175,25 @@ const BuyCarPage = () => {
   
       // setList(updatedList);
 
+      if(updatedList > 0){
       setVehicleList(updatedList);
-  
       !updatedList.length ? setResultsFound(false) : setResultsFound(true);
-    };
+      }
   
+      
+    };
+
+    // useEffect( async () => {
+    //   debugger
+    //   await fetchVehicleList();
+      
+    // }, []);
+
     useEffect(() => {
-      // applyFilters();
+      debugger
+      // await loadFetch();
+       applyFilters();
+      
     }, [selectedRating, selectedCategory, vehicles, searchInput, selectedPrice]);
   
     return (

@@ -8,6 +8,8 @@ import "./FilterPanel.css";
 const FilterPanel = ({
   selectedCategory,
   selectCategory,
+  selectedLocation,
+  selectLocation,
   selectedRating,
   selectedPrice,
   selectRating,
@@ -35,7 +37,17 @@ const FilterPanel = ({
       ))}
     </div>
     <div className='input-group'>
-      <p className='label-range'>Price Range</p>
+      <p className='label'>Ubicación</p>
+      {vehicles.map((vehicle) => (
+        <CheckboxProton
+          key={vehicle.id}
+          vehicle={vehicle}
+          changeChecked={changeChecked}
+        />
+      ))}
+    </div>
+    <div className='input-group'>
+      <p className='label-range'>Rango de precio</p>
       <SliderProton value={selectedPrice} changePrice={changePrice} />
     </div>
     <div className='input-group'>
