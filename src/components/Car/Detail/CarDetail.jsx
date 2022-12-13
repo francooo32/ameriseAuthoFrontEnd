@@ -7,7 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { useState } from 'react';
 import ContactDialog from '../../ContactDialog';
-import ListItems from '../../../components/Car/Detail/CarDetail.jsx';
+import ListItems from '../../../components/List/ListItems/ListItems.jsx';
 
 const DATA = {id: 1, title: "Bmw", image: "/images/newCars/bmw.jpg", description: "Casi sin uso, cuidado y con chapa perfecta, motor solo con 1 año de uso, bateria y llantas nuevas."};
 const DATA2 = [
@@ -16,8 +16,8 @@ const DATA2 = [
     { title: "Financia a tu medida", description: "Trabajamos con las mejores opciones", image: "/images/dos.jpg" }
 ];
 
-function CarDetail() {
-    // const item = ListItems;
+function CarDetail({item: { coverSrc, brand, model, price, km, rating, location }}) {
+    const item = ListItems;
     const [open, setOpen] = useState(false);
     const handleClickOpen = () => {
         setOpen(true);
@@ -39,7 +39,7 @@ function CarDetail() {
             <Stack direction="column" justifyContent="space-between">
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4 }}>
                     <Typography variant="h4" component="div" alignSelf="center">
-                        {DATA.title}
+                        {item.brand}
                     </Typography>
 
                     <Typography variant="p" component="div">

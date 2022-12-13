@@ -11,14 +11,11 @@ function ListItem({item: { coverSrc, brand, model, price, km, rating, location }
     <img src='/images/newCars/bmw.jpg' alt='' />
     <header>
       <h1>{brand}</h1>
-      <h4>{model}</h4>
-      <h4>{location}</h4>
-      <span>🌟{rating}</span>
+      <h4>{model} • {location} • {km}</h4>
+      {/* <h4>{location}</h4>
+      <h4>{km}</h4> */}
     </header>
     <footer>
-      <p>
-        <span>{km}</span>
-      </p>
       <p>
         <b>${price}</b>
       </p>
