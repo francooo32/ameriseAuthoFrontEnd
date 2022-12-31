@@ -5,7 +5,8 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useState} from 'react';
 import ContactDialog from '../../ContactDialog';
 import ListItems from '../../../components/List/ListItems/ListItems.jsx';
 
@@ -16,13 +17,16 @@ const DATA2 = [
     { title: "Financia a tu medida", description: "Trabajamos con las mejores opciones", image: "/images/dos.jpg" }
 ];
 
-function CarDetail({item: { coverSrc, brand, model, price, km, rating, location }}) {
-    const item = ListItems;
+function CarDetail() {
+    
+    debugger
+    const location = useLocation();
+    const carDetail = location.state    
     const [open, setOpen] = useState(false);
     const handleClickOpen = () => {
         setOpen(true);
     };
-    
+
     const handleClose = () => {
         setOpen(false);
     };
@@ -39,7 +43,7 @@ function CarDetail({item: { coverSrc, brand, model, price, km, rating, location 
             <Stack direction="column" justifyContent="space-between">
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4 }}>
                     <Typography variant="h4" component="div" alignSelf="center">
-                        {item.brand}
+                        {carDetail.marca.brand}
                     </Typography>
 
                     <Typography variant="p" component="div">

@@ -1,12 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ListItems.css';
+import { Link } from 'react-router-dom'
 
 function ListItem({item: { coverSrc, brand, model, price, km, rating, location }}) {
   const navigation = useNavigate();
 
   return (
-    <div className='listItem-wrap' onClick={() => navigation("/detalle")}>
+    <div className='listItem-wrap' onClick={() => navigation("/detalle", {
+        state:{
+          marca : {brand}
+        }
+      })
+    }> 
+    
     {/* <img src={coverSrc} alt='' /> */}
     <img src='/images/newCars/bmw.jpg' alt='' />
     <header>

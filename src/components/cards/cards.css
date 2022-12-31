@@ -1,0 +1,9 @@
+.card-container-title{
+    display: flex;
+    justify-content: center;
+}
+
+.card-container{
+   display: flex;
+   justify-content: center;
+}

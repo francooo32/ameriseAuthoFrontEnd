@@ -9,6 +9,9 @@ import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import { useNavigate } from "react-router-dom";
 import { Facebook, Instagram } from "@mui/icons-material";
+import Cover from "../../components/cover/cover.jsx"
+import Cards from "../../components/cards/cards.jsx"
+import SellSection from "../../components/sellsection/sellsection.jsx"
 
 const DATA = [
     { title: "Te damos 3 meses de cobertura mecanica", description: "Y podes extenderla hasta 12 meses", image: "/images/tres.jpg" },
@@ -20,8 +23,13 @@ function LandingPage() {
     const navigate = useNavigate();
 
     return(
-        <> 
-            <section className={styles.section_container}>
+        <>      
+             {/* <div className="Home"> */}
+                <Cover/>
+                <Cards/>
+                <SellSection/>
+            {/* </div> */}
+            {/* <section className={styles.section_container}>
                 <Stack direction="column" spacing={2}>
                     <Typography variant="h4" component="div">
                         Palmerson
@@ -95,7 +103,7 @@ function LandingPage() {
                     </IconButton>
                     </a>   
                 </Stack>
-            </Stack>
+            </Stack> */}
         </>
     );
 }

@@ -12,7 +12,7 @@ const BuyCarPage = () => {
   
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedRating, setSelectedRating] = useState(null);
-    const [selectedPrice, setSelectedPrice] = useState([1000, 5000]);
+    const [selectedPrice, setSelectedPrice] = useState([0, 5000]);
   
     const [vehicles, setVehicles] = useState([
       { id: 1, checked: false, label: 'Bmw' },
@@ -31,21 +31,6 @@ const BuyCarPage = () => {
           // async function fetchVehicleList(){
           debugger
           try{
-            // const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
-            // await fetch('https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle').then(resp =>{
-            // setVehicleList(resp.json())
-            // });
-            // await fetch('https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle')
-            // .then(resp => resp.json)
-            // .then(data => {
-            //   setVehicleList(data)
-            // })
-            
-            // console.log(responseJSON);
-            // setVehicleList(await response.json());
-            // function sleep(ms) {
-            //   return new Promise(resolve => setTimeout(resolve, ms));
-            // }
             const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
             const resp = await fetch(requestUrl)
             setTimeout('', 6000);
@@ -57,36 +42,6 @@ const BuyCarPage = () => {
         }
         fetchVehicleList();
       }, []);
-
-      // function sleep(ms) {
-      //         return new Promise(resolve => setTimeout(resolve, ms));
-      //       }
-            
-      // async function loadFetch(){
-      //   const url = "https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle";
-      //   const resp = await fetch(url);
-      //   const dataJson = resp.json;
-      //   setVehicleList(dataJson)
-      // }
-
-      // const fetchData = useCallback( async () => {
-      //       const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
-      //       const resp = await fetch(requestUrl)
-      //       const json =  await resp.json();
-      //       setVehicleList(json)
-      // },[])
-
-      // useEffect(() => {
-      //   debugger
-      //   axios.get('https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle')
-      //     .then(res => {console.log(res)
-      //       debugger
-      //       setVehicleList(res.data)
-      //       })
-      //       .catch(err => {
-      //         console.log(err)
-      //       })
-      // }, []);
 
     const [resultsFound, setResultsFound] = useState(true);
     const [searchInput, setSearchInput] = useState('');
@@ -150,7 +105,7 @@ const BuyCarPage = () => {
   
       if (vehicleChecked.length) {
         updatedList = updatedList.filter((item) =>
-        vehicleChecked.includes(item.vehicle)
+        vehicleChecked.includes(item.brand)
         );
       }
   
@@ -169,13 +124,13 @@ const BuyCarPage = () => {
       const minPrice = selectedPrice[0];
       const maxPrice = selectedPrice[1];
   
-      updatedList = updatedList.filter(
-        (item) => item.price >= minPrice && item.price <= maxPrice
-      );
+      // updatedList = updatedList.filter(
+      //   (item) => item.price >= minPrice && item.price <= maxPrice
+      // );
   
       // setList(updatedList);
 
-      if(updatedList > 0){
+      if(updatedList.length > 0){
       setVehicleList(updatedList);
       !updatedList.length ? setResultsFound(false) : setResultsFound(true);
       }
