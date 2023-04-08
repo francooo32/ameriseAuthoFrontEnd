@@ -1,10 +1,10 @@
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+// import Stack from '@mui/material/Stack';
+// import Box from '@mui/material/Box';
+// import Typography from '@mui/material/Typography';
+// import Button from '@mui/material/Button';
+// import Card from '@mui/material/Card';
+// import CardContent from '@mui/material/CardContent';
+// import CardMedia from '@mui/material/CardMedia';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useState} from 'react';
 import ContactDialog from '../../ContactDialog';
@@ -31,57 +31,57 @@ function CarDetail() {
         setOpen(false);
     };
     
-    return(
-        <>
-        <Stack direction="row" alignItems="center">
-            <ContactDialog open={open} onClose={handleClose} />
+    // return(
+    //     <>
+    //     <Stack direction="row" alignItems="center">
+    //         <ContactDialog open={open} onClose={handleClose} />
 
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4 }}>
-                <img src={DATA.image} alt="Logo" style={{ width: 500 }} />
-            </Box>
+    //         <Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4 }}>
+    //             <img src={DATA.image} alt="Logo" style={{ width: 500 }} />
+    //         </Box>
 
-            <Stack direction="column" justifyContent="space-between">
-                <Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4 }}>
-                    <Typography variant="h4" component="div" alignSelf="center">
-                        {carDetail.marca.brand}
-                    </Typography>
+    //         <Stack direction="column" justifyContent="space-between">
+    //             <Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4 }}>
+    //                 <Typography variant="h4" component="div" alignSelf="center">
+    //                     {carDetail.marca.brand}
+    //                 </Typography>
 
-                    <Typography variant="p" component="div">
-                        {DATA.description}
-                    </Typography>
+    //                 <Typography variant="p" component="div">
+    //                     {DATA.description}
+    //                 </Typography>
 
-                    <Typography variant="p" component="div">
-                        PRECIO: A CONSULTAR
-                    </Typography>
-                </Box>
+    //                 <Typography variant="p" component="div">
+    //                     PRECIO: A CONSULTAR
+    //                 </Typography>
+    //             </Box>
 
-                <Button variant="outlined" onClick={() => navigation("/contact")
-    }>CONSULTAR</Button>
-            </Stack>
-        </Stack><Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4, backgroundColor: "primary.main" }}>
-                <Typography variant="h4" component="div" textAlign="center" sx={{ color: "white" }}>
-                    Por que elegirnos
-                </Typography>
+    //             <Button variant="outlined" onClick={() => navigation("/contact")
+    // }>CONSULTAR</Button>
+    //         </Stack>
+    //     </Stack><Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4, backgroundColor: "primary.main" }}>
+    //             <Typography variant="h4" component="div" textAlign="center" sx={{ color: "white" }}>
+    //                 Por que elegirnos
+    //             </Typography>
 
-                <Stack direction="row" justifyContent="center" flexWrap="wrap" gap={4}>
-                    {DATA2.map(item => <Card key={item.title} sx={{ maxWidth: 345 }} raised>
-                        <CardMedia component="img" height="140" image={item.image} alt="Auto" />
+    //             <Stack direction="row" justifyContent="center" flexWrap="wrap" gap={4}>
+    //                 {DATA2.map(item => <Card key={item.title} sx={{ maxWidth: 345 }} raised>
+    //                     <CardMedia component="img" height="140" image={item.image} alt="Auto" />
 
-                        <CardContent>
-                            <Typography gutterBottom variant="h6" component="div" textAlign="center">
-                                {item.title}
-                            </Typography>
+    //                     <CardContent>
+    //                         <Typography gutterBottom variant="h6" component="div" textAlign="center">
+    //                             {item.title}
+    //                         </Typography>
 
-                            <Typography variant="body2" color="text.main" textAlign="center">
-                                {item.description}
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                    )}
-                </Stack>
-            </Box>
-            </>
-    );
+    //                         <Typography variant="body2" color="text.main" textAlign="center">
+    //                             {item.description}
+    //                         </Typography>
+    //                     </CardContent>
+    //                 </Card>
+    //                 )}
+    //             </Stack>
+    //         </Box>
+    //         </>
+    // );
 }
 
 export default CarDetail;

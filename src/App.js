@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import LandingPage from "./pages/Landing/LandingPage"
-import { createTheme, colors, ThemeProvider } from '@mui/material';
+// import { createTheme, colors, ThemeProvider } from '@mui/material';
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import MainToolbar from './components/Ui/MainToolbar';
@@ -12,16 +12,16 @@ import BrandSelect from './components/sellsteps/brandselect/brandselect.jsx';
 import ModelSelect from './components/sellsteps/modelselect/modelselect.jsx';
 import ContactForm from './components/contactform/contactform.jsx';
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: colors.indigo[500],
-    },
-    secondary: {
-      main: colors.lightBlue[500]
-    }
-  },
-});
+// const theme = createTheme({
+//   palette: {
+//     primary: {
+//       main: colors.indigo[500],
+//     },
+//     secondary: {
+//       main: colors.lightBlue[500]
+//     }
+//   },
+// });
 
 function App() {
 
