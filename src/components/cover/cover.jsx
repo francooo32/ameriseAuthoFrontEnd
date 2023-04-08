@@ -1,6 +1,6 @@
 import React from 'react'
 import "./cover.css"
-import logoPhoto from "../../public/logoNew2.png"
+import logoPhoto from "../../public/nuevamarca/4.jpeg"
 import Button from '../button/button.jsx';
 import { BUTTON_TYPES } from '../common/data/buttonConst.jsx';
 

@@ -1,7 +1,7 @@
 .cover-container {
     display: flex;
-    background-color: rgb(161, 204, 218);
-    background-image: linear-gradient( to bottom left, rgb(161, 204, 218), rgb(255, 255, 255) 75%);
+    /* background-color: rgb(161, 204, 218);
+    background-image: linear-gradient( to bottom left, rgb(161, 204, 218), rgb(255, 255, 255) 75%); */
     height: 50vh;
 }
 
@@ -11,6 +11,8 @@
     justify-content: center;
     width: 50%;
     padding: 0px 0px 0px 70px;
+    background-color: #f6f6f678;
+    height: 48vh;
 }
 
 .cover-container .cover-text h1{
@@ -25,7 +27,7 @@
     align-self: center;
     overflow: hidden;
     /* padding: 0 20px 0 75px; */
-    height: 40vh;
+    height: 46vh;
     padding: 0px 0px 100px 0px;
 }
 
@@ -33,6 +35,7 @@
     /* object-fit: cover; */
     width: 100%;
     height: 55vh;
+    opacity: 0.9;
     /* position: absolute; */
     /* z-index: -1; */
 }

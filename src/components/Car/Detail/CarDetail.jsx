@@ -5,10 +5,9 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useState} from 'react';
 import ContactDialog from '../../ContactDialog';
-import ListItems from '../../../components/List/ListItems/ListItems.jsx';
 
 const DATA = {id: 1, title: "Bmw", image: "/images/newCars/bmw.jpg", description: "Casi sin uso, cuidado y con chapa perfecta, motor solo con 1 año de uso, bateria y llantas nuevas."};
 const DATA2 = [
@@ -22,6 +21,7 @@ function CarDetail() {
     debugger
     const location = useLocation();
     const carDetail = location.state    
+    const navigation = useNavigate();
     const [open, setOpen] = useState(false);
     const handleClickOpen = () => {
         setOpen(true);
@@ -55,7 +55,8 @@ function CarDetail() {
                     </Typography>
                 </Box>
 
-                <Button variant="outlined" onClick={handleClickOpen}>CONSULTAR</Button>
+                <Button variant="outlined" onClick={() => navigation("/contact")
+    }>CONSULTAR</Button>
             </Stack>
         </Stack><Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4, backgroundColor: "primary.main" }}>
                 <Typography variant="h4" component="div" textAlign="center" sx={{ color: "white" }}>

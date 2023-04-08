@@ -1,24 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import "./sellcar.css"
+import YearSelect from "../../components/sellsteps/yearselect/yearselect.jsx"
+
 
 const SellCar = () => {
 
   return (
-    <div className="cover-container">
-        <div className="cover-text">
-            <h1>Transformamos la compra y venta de autos usados en Argentina</h1>
-            <h3>Tenemos más de 2,000 autos certificados y garantizados</h3>
-            {/* <div className="button-wrapper"> 
-            <Button type={BUTTON_TYPES.PRIMARY} btnText="Compra el vehiculo de tus sueños!"/>
-            <Button type={BUTTON_TYPES.SECONDARY} btnText="Contactame" />
-            </div> */}
+    <div className="sellcar-container">
+        <div className="sellcar-text">
+            <h1>Vende tu auto!</h1>
         </div>
-        {/* <div className="cover-img">
-        <img src={logoPhoto} alt="logoPh"></img>
-        </div> */}
-        {/* <h1>Evelyn Denise</h1>
-        <p>Fotografía</p>  */}
-        
+        <YearSelect/>
     </div>
   )
 }

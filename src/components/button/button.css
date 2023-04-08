@@ -40,6 +40,7 @@
     text-transform: uppercase;
     opacity: 0.8; */
     padding: 12px 24px;
+    color: black;
     border-radius: 7px;
     color: rgb(0, 0, 0);
     background-image: linear-gradient(to left, #2c2c54bb, #83c7c3, #a0d7db);

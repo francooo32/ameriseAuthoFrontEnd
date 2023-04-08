@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ListItems.css';
-import { Link } from 'react-router-dom'
 
 function ListItem({item: { coverSrc, brand, model, price, km, rating, location }}) {
   const navigation = useNavigate();

@@ -1,0 +1,36 @@
+.sellcar-container {
+    /* display: flex; */
+    /* background-color: rgb(161, 204, 218);
+    background-image: linear-gradient( to bottom left, rgb(161, 204, 218), rgb(255, 255, 255) 75%); */
+    height: 10vh;
+}
+
+.sellcar-container .sellcar-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 0px 0px 70px;
+    border-bottom: 3px solid rgba(80, 80, 78, 0.596);
+}
+
+.sellcar-container .sellcar-text h1{
+    font-size: 50px;
+    padding: 0px 0px 0px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px){
+    .cover-container > h1 {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .cover-container > p {
+        text-align: center;
+        font-size: 22px;
+        width: 85%;
+    }
+}
