@@ -53,10 +53,8 @@
       "last 1 safari version"
     ]
   },
-  "engines": {
-    "npm": ">=8.7.0"
-  },
-  "overrides": {
-    "react": "$react"
+  "peerDependencies": {
+    "@babel/core": "^7.0.0",
+    "react": ">=16.8.0"
   }
 }
