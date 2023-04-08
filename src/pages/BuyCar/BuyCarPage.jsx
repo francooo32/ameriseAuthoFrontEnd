@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import CarList from "../../components/Car/ListContainer/CarList";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import FilterPanel from "../../components/FilterPanel/FilterPanel";
@@ -122,7 +121,7 @@ const BuyCarPage = () => {
       // Price Filter
       
       const minPrice = selectedPrice[0];
-      const maxPrice = selectedPrice[1];
+      const maxPrice = selectedPrice[20];
   
       // updatedList = updatedList.filter(
       //   (item) => item.price >= minPrice && item.price <= maxPrice

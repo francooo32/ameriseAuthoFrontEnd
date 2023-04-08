@@ -1,14 +1,5 @@
 import styles from "./LandingPage.module.css";
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
 import { useNavigate } from "react-router-dom";
-import { Facebook, Instagram } from "@mui/icons-material";
 import Cover from "../../components/cover/cover.jsx"
 import Cards from "../../components/cards/cards.jsx"
 import SellSection from "../../components/sellsection/sellsection.jsx"
