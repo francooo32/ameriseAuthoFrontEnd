@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import Brands from "../../selectelements/brands.jsx"
 import "./brandselect.css"
 
 const BrandSelect = () => {
@@ -8,28 +9,15 @@ const BrandSelect = () => {
     const navigation = useNavigate();
 
   return (
-    <div className="sellcar-container">
-        <div className="sellcar-text">
-            <h1>Vende tu auto!</h1>
-        </div>
-        <div className="brandselect-list">
-          
-            <ul>
-              <li>
-              <input id="button" type="submit" value="Bmw" onClick={() => navigation("/modelselect", {
-        state:{
-          year : formCar.year,
-          brand: "Bmw"
-        }
-      })
-    }/>
-              </li>
-            </ul>
-
-        </div>
-    </div>
-        
-  );
+    <>
+      <div className='brandDiv'>
+        <h1>
+          Elegí el año de tu auto
+        </h1>
+      </div>
+      <Brands />
+    </>
+    );
 }
 
 export default BrandSelect

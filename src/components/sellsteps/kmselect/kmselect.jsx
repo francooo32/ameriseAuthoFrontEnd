@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import Models from "../../selectelements/models.jsx"
-import "./modelselect.css"
+import Km from "../../selectelements/kms.jsx"
+import "./kmselect.css"
 
-const ModelSelect = () => {
+const KmSelect = () => {
     debugger
     const location = useLocation();
     const formCar = location.state
@@ -13,12 +13,12 @@ const ModelSelect = () => {
     <>
       <div className='modelDiv'>
         <h1>
-          Cuál es el modelo?
+          Indicanos el kilometraje aproximado
         </h1>
       </div>
-      <Models />
+      <Km />
     </>
   );
 }
 
-export default ModelSelect
+export default KmSelect

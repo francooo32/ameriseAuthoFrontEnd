@@ -10,6 +10,8 @@ import CarDetail from './components/Car/Detail/CarDetail';
 import SellCar from './pages/sellcar/sellcar.jsx';
 import BrandSelect from './components/sellsteps/brandselect/brandselect.jsx';
 import ModelSelect from './components/sellsteps/modelselect/modelselect.jsx';
+import ColorSelect from './components/sellsteps/colorselect/colorselect.jsx';
+import KmSelect from './components/sellsteps/kmselect/kmselect.jsx';
 import ContactForm from './components/contactform/contactform.jsx';
 
 // const theme = createTheme({
@@ -48,6 +50,8 @@ function App() {
           <Route path="/vender" element={<SellCar />} />
           <Route path="/brandselect" element={<BrandSelect />} />
           <Route path="/modelselect" element={<ModelSelect />} />
+          <Route path="/colorselect" element={<ColorSelect />} />
+          <Route path="/kmselect" element={<KmSelect />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
         

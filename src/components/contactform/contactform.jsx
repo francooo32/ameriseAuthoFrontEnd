@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import "./contactform.css"
+import { useNavigate, useLocation } from 'react-router-dom';
 import {useForm} from "react-hook-form"
 import {sendMail} from './helper/mailform'
-// import location from "../../public/media/icons/location.png"
-// import telephone from "../../public/media/icons/telephone.png"
-// import mail from "../../public/media/icons/email.png"
 
 const ContactForm = () => {
+
+debugger
+const location = useLocation();
+const formCar = location.state
+const navigation = useNavigate();
 
 const readerFile=(file)=>{
     debugger

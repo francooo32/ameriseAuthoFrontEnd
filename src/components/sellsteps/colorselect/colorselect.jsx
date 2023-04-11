@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import Models from "../../selectelements/models.jsx"
-import "./modelselect.css"
+import Colors from "../../selectelements/colors.jsx"
+import "./colorselect.css"
 
-const ModelSelect = () => {
+const ColorSelect = () => {
     debugger
     const location = useLocation();
     const formCar = location.state
@@ -13,12 +13,12 @@ const ModelSelect = () => {
     <>
       <div className='modelDiv'>
         <h1>
-          Cuál es el modelo?
+          Selecciona el color de tu vehículo
         </h1>
       </div>
-      <Models />
+      <Colors />
     </>
   );
 }
 
-export default ModelSelect
+export default ColorSelect
