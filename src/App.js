@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import LandingPage from "./pages/Landing/LandingPage"
 // import { createTheme, colors, ThemeProvider } from '@mui/material';

@@ -8,7 +8,7 @@ const SellCar = () => {
   return (
     <div className="sellcar-container">
         <div className="sellcar-text">
-            <h1>Vende tu auto!</h1>
+            <h1>¡Cotizamos tu auto!</h1>
         </div>
         <YearSelect/>
     </div>

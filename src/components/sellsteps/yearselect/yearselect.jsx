@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Row, Col } from "react-bootstrap";
 import Years from "../../selectelements/years.jsx"
 import "./yearselect.css"
 
@@ -9,35 +10,17 @@ const YearSelect = () => {
 
   return (
     <>
-    <div className='yearDiv'>
-      <h1>
-        Elegí el año de tu auto 
-      </h1>
-    </div>
-    <Years />
+    <Row className="aligh-items-center">
+      <Col xs={12} md={12} xl={12}>
+        <div className='yearDiv'>
+          <h1>
+            Elegí el año de tu vehículo
+          </h1>
+        </div>
+            <Years />
+      </Col>
+    </Row>
     </>
-    //     <div className="yearselect-list">
-          
-    //         <ul>
-    //           <li>
-    //           <input id="button" type="submit" value="2010" onClick={() => navigation("/brandselect", {
-    //     state:{
-    //       year : "2010"
-    //     }
-    //   })
-    // }/>
-    //           </li>
-    //           <li>
-    //           <input id="button" type="submit" value="2011" onClick={() => navigation("/brandselect", {
-    //     state:{
-    //       year : "2011"
-    //     }
-    //   })
-    // }/>
-    //           </li>
-    //         </ul>
-
-    //     </div>
   );
 }
 

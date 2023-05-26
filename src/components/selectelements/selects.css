@@ -1,11 +1,23 @@
+#yearHr {
+  width: 5%;
+  display: block;
+  height: 4px;
+  border: 0;
+  margin-top: 5px;
+  padding: 0;
+  background: linear-gradient(90deg, #751f2b 0, #dd522d 50%, #edd155 100%);
+}
+
 .yearselect-list{
     height: 80px;
     cursor: pointer;
-    text-align: center;
+    /* text-align: center; */
+    text-align: -webkit-center;
 }
 
 .yearselect-list p{
     /* color: white; */
+    font-family: essonnes-display, serif;
     font-size: 50px;
 }
 
@@ -22,14 +34,14 @@
 
 .yearselect-list ul li input{
   /* border-radius: 4px; */
-  border-bottom: 1px solid #000;
+  border-bottom: 0;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  font-weight: 600;
-  font-size: 40px;
+  font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 30px;
   padding: 4px 6px;
-  color: rgb(0, 0, 0);
+  color: rgb(200, 200, 200);
   background-color: rgba(240, 248, 255, 0);
   /* border-style: none; */
 }
@@ -38,7 +50,7 @@
 .sideselect-list{
   height: 80px;
   cursor: pointer;
-  text-align: center;
+  text-align: -webkit-center;
 }
 
 .sideselect-list p{
@@ -59,15 +71,15 @@ margin: 15px;
 
 .sideselect-list ul li input{
 /* border-radius: 4px; */
-border-bottom: 1px solid #000;
-border-top: 0;
-border-left: 0;
-border-right: 0;
-font-weight: 600;
-font-size: 40px;
-padding: 4px 6px;
-color: rgb(0, 0, 0);
-background-color: rgba(240, 248, 255, 0);
+border-bottom: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 30px;
+  padding: 4px 6px;
+  color: rgb(200, 200, 200);
+  background-color: rgba(240, 248, 255, 0);
 /* border-style: none; */
 }
 
@@ -106,7 +118,8 @@ border-right: 0;
 font-weight: 600;
 font-size: 40px;
 padding: 4px 6px;
-color: rgb(0, 0, 0);
+color: rgb(200, 200, 200);
 background-color: rgba(240, 248, 255, 0);
+font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 /* border-style: none; */
 }

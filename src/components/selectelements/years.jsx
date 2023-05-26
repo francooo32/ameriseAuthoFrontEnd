@@ -34,10 +34,11 @@ function YearsList() {
                                         }
                                     })
                                     }/>
+                                <hr id="yearHr"/>
                             </li>
                         </ul>
                     )}
-
+                    
                     {/* <ul>
                             <li>
                             <input id="button" type="submit" value="2010" onClick={() => navigation("/brandselect", {

@@ -11,55 +11,36 @@
 }
 
 .primaryBtn{
+    margin-top: 70px;
     padding: 12px 24px;
-    border-radius: 7px;
-    color: #fff;
-    background-image: linear-gradient(to left, #2c2c54bb, #83c7c3, #a0d7db);
-    /* background-size: 200%; */
-    font-weight: 600;
+    color: rgb(200, 200, 200);
+    border: 2px solid #fff;
     letter-spacing: 1.2px;
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     opacity: 0.8;
     text-decoration: none;
     width: 85%;
 }
 
 .secondaryBtn{
-    /* background-color: rgb(25, 25, 25);
-    padding: 12px 24px;
-    border-radius: 15px;
-    color: #fff;
-    background-image: linear-gradient(to left, #2c2c54, #1b1b29, #16191f);
-    background-size: 200%;
-    font-weight: 600;
+    margin-top: 80px;
+    padding: 12px 15px;
+    color: rgb(200, 200, 200);
+    border: 2px solid #fff;
     letter-spacing: 1.2px;
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;  
-    text-transform: uppercase;
-    opacity: 0.8; */
-    padding: 12px 24px;
-    color: black;
-    border-radius: 7px;
-    color: rgb(0, 0, 0);
-    background-image: linear-gradient(to left, #2c2c54bb, #83c7c3, #a0d7db);
-    /* background-size: 200%; */
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     opacity: 0.8;
     text-decoration: none;
-    width: 85%;
+    width: 75%;
 }
 
 .tertiaryBtn{
     background-color: rgb(25, 25, 25);
     padding: 12px 24px;
     border-radius: 15px;
-    color: #fff;
+    color: rgb(200, 200, 200);
     background-image: linear-gradient(to left, #2c2c54, #1b1b29, #16191f);
     background-size: 200%;
     font-weight: 600;

@@ -1,8 +1,11 @@
 .yearDiv{
   padding-top: 35px;
+  padding-bottom: 20px;
   border-bottom: 0.5px solid #0000004a;
 }
 
 .yearDiv h1{
   text-align: center;
+  font-family: essonnes-display, serif;
+  color: rgb(200, 200, 200);
 }

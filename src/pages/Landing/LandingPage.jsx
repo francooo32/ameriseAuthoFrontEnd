@@ -17,7 +17,7 @@ function LandingPage() {
         <>      
              {/* <div className="Home"> */}
                 <Cover/>
-                <Cards/>
+                {/* <Cards/> */}
                 <SellSection/>
             {/* </div> */}
             {/* <section className={styles.section_container}>

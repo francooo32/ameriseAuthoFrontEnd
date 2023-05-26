@@ -62,6 +62,7 @@ function BrandsList() {
                                         }
                                     })
                                     }/>
+                                    <hr id="yearHr"/>
                             </li>
                         </ul>
                     )}

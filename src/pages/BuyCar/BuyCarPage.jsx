@@ -28,7 +28,7 @@ const BuyCarPage = () => {
     useEffect(() => {
         const fetchVehicleList = async () => {
           // async function fetchVehicleList(){
-          debugger
+          // debugger
           try{
             const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
             const resp = await fetch(requestUrl)
@@ -69,7 +69,7 @@ const BuyCarPage = () => {
 
       // Initial vehicle load
       const applyFilters = async () => {
-        debugger
+        // debugger
         if(list <= 0){
           const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
             const resp = await fetch(requestUrl)
@@ -78,7 +78,7 @@ const BuyCarPage = () => {
             setVehicleList(json);
             // list = json;
         }
-      debugger
+      // debugger
       let updatedList = list;
 
       // Rating Filter
@@ -144,7 +144,7 @@ const BuyCarPage = () => {
     // }, []);
 
     useEffect(() => {
-      debugger
+      // debugger
       // await loadFetch();
        applyFilters();
       
