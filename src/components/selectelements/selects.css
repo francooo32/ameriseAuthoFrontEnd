@@ -87,7 +87,7 @@ border-bottom: 0;
 .sideselect-list-colors{
   height: 80px;
   cursor: pointer;
-  text-align: center;
+  text-align: -webkit-center;
 }
 
 .sideselect-list-colors p{
@@ -104,22 +104,55 @@ border-bottom: 0;
 
 .sideselect-list-colors ul li{
 margin: 15px;
-list-style: none;
-display: flex;
-justify-content: center;
+
 }
 
 .sideselect-list-colors ul li input{
 /* border-radius: 4px; */
-border-bottom: 1px solid #000;
-border-top: 0;
-border-left: 0;
-border-right: 0;
-font-weight: 600;
-font-size: 40px;
-padding: 4px 6px;
-color: rgb(200, 200, 200);
-background-color: rgba(240, 248, 255, 0);
-font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+border-bottom: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 30px;
+  padding: 4px 6px;
+  color: rgb(200, 200, 200);
+  background-color: rgba(240, 248, 255, 0);
 /* border-style: none; */
+}
+
+/* FORM BUTTON */
+
+.sideselect-list > form{
+  margin-top: 70px;
+  width: 20%;
+  display: inline-grid;
+  gap: 15px;
+}
+
+.sideselect-list > form #kmInput{
+  height: 50px;
+  width: 100%;
+  justify-self: center;
+  background: linear-gradient(90deg, #751f2b 0, #dd522d 50%, #edd155 100%);
+}
+
+.sideselect-list > form #kmInput, textarea{
+  color: #fff;
+  font-size: 35px;
+  font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.sideselect-list > form #button{
+  justify-self: center;
+  margin-top: 30px;
+  padding: 12px 15px;
+  color: rgb(221, 221, 221);
+  border: 2px solid #fff;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+  font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  opacity: 0.8;
+  text-decoration: none;
+  width: 55%;
+  background-color: #ffffff00;
 }

@@ -1,6 +1,9 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import { ALFAROMEO, AUDI, BAIC, BMW, CHANGAN, CHERY, CHEVROLET, CHRYSLER,
-        CITROEN, DFSK } from '../vehiclemodels/modelslist.jsx';
+        CITROEN, DFSK, DODGE, DS, FIAT, FORD, HAVAL, HONDA, HYUNDAI, JAC,
+        JEEP, KIA, KYC, LAND_ROVER, LIFAN, MASERATI, MERCEDES_BENZ, MINI,
+        MITSUBISHI, NISSAN, PEUGEOT, PORSCHE, RAM, RENAULT, SHINERAY, SMART,
+        SUBARU, SUZUKI, TOYOTA, VOLKSWAGEN, VOLVO } from '../vehiclemodels/modelslist.jsx';
 import "./selects.css"
 
 
@@ -25,6 +28,7 @@ function ModelList() {
                                             }
                                         })
                                         }/>
+                                        <hr id="yearHr"/>
                                 </li>
                             </ul>
                         )}
@@ -49,6 +53,7 @@ function ModelList() {
                                             }
                                         })
                                         }/>
+                                        <hr id="yearHr"/>
                                 </li>
                             </ul>
                         )}
@@ -73,6 +78,7 @@ function ModelList() {
                                             }
                                         })
                                         }/>
+                                        <hr id="yearHr"/>
                                 </li>
                             </ul>
                         )}
@@ -97,6 +103,7 @@ function ModelList() {
                                             }
                                         })
                                         }/>
+                                        <hr id="yearHr"/>
                                 </li>
                             </ul>
                         )}
@@ -121,6 +128,7 @@ function ModelList() {
                                             }
                                         })
                                         }/>
+                                        <hr id="yearHr"/>
                                 </li>
                             </ul>
                         )}
@@ -145,6 +153,7 @@ function ModelList() {
                                             }
                                         })
                                         }/>
+                                        <hr id="yearHr"/>
                                 </li>
                             </ul>
                         )}
@@ -169,6 +178,7 @@ function ModelList() {
                                             }
                                         })
                                         }/>
+                                        <hr id="yearHr"/>
                                 </li>
                             </ul>
                         )}
@@ -193,6 +203,7 @@ function ModelList() {
                                             }
                                         })
                                         }/>
+                                        <hr id="yearHr"/>
                                 </li>
                             </ul>
                         )}
@@ -217,6 +228,7 @@ function ModelList() {
                                             }
                                         })
                                         }/>
+                                        <hr id="yearHr"/>
                                 </li>
                             </ul>
                         )}
@@ -241,6 +253,7 @@ function ModelList() {
                                             }
                                         })
                                         }/>
+                                        <hr id="yearHr"/>
                                 </li>
                             </ul>
                         )}

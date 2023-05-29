@@ -41,6 +41,7 @@ function ColorList() {
                                         }
                                     })
                                     }/>
+                                    <hr id="yearHr"/>
                             </li>
                         </ul>
                     )}

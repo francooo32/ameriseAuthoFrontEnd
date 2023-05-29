@@ -210,3 +210,119 @@ export const DFSK = [
     {id: 4, label: "Furgon"},
     {id: 5, label: "C35"}
 ]
+
+export const DODGE = [
+    {id: 1, label: ""},
+]
+
+export const DS = [
+    {id: 1, label: ""},
+]
+
+export const FIAT = [
+    {id: 1, label: ""},
+]
+
+export const FORD = [
+    {id: 1, label: ""},
+]
+
+export const HAVAL = [
+    {id: 1, label: ""},
+]
+
+export const HONDA = [
+    {id: 1, label: ""},
+]
+
+export const HYUNDAI = [
+    {id: 1, label: ""},
+]
+
+export const JAC = [
+    {id: 1, label: ""},
+]
+
+export const JEEP = [
+    {id: 1, label: ""},
+]
+
+export const KIA = [
+    {id: 1, label: ""},
+]
+
+export const KYC = [
+    {id: 1, label: ""},
+]
+
+export const LAND_ROVER = [
+    {id: 1, label: ""},
+]
+
+export const LIFAN = [
+    {id: 1, label: ""},
+]
+
+export const MASERATI = [
+    {id: 1, label: ""},
+]
+
+export const MERCEDES_BENZ = [
+    {id: 1, label: ""},
+]
+
+export const MINI = [
+    {id: 1, label: ""},
+]
+
+export const MITSUBISHI = [
+    {id: 1, label: ""},
+]
+
+export const NISSAN = [
+    {id: 1, label: ""},
+]
+
+export const PEUGEOT = [
+    {id: 1, label: ""},
+]
+
+export const PORSCHE = [
+    {id: 1, label: ""},
+]
+
+export const RAM = [
+    {id: 1, label: ""},
+]
+
+export const RENAULT = [
+    {id: 1, label: ""},
+]
+
+export const SHINERAY = [
+    {id: 1, label: ""},
+]
+
+export const SMART = [
+    {id: 1, label: ""},
+]
+
+export const SUBARU = [
+    {id: 1, label: ""},
+]
+
+export const SUZUKI = [
+    {id: 1, label: ""},
+]
+
+export const TOYOTA = [
+    {id: 1, label: ""},
+]
+
+export const VOLKSWAGEN = [
+    {id: 1, label: ""},
+]
+
+export const VOLVO = [
+    {id: 1, label: ""},
+]

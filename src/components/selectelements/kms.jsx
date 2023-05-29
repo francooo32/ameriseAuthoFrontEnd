@@ -18,7 +18,7 @@ function KmsList() {
         <>
             <div className="sideselect-list">
                 <form action="">
-                    <input type="number" name="km" onChange={handleChange} max="1000000"/>
+                    <input id="kmInput" type="number" name="km" onChange={handleChange} max="1000000"/>
                     <input id="button" type="submit" value="Siguiente" onClick={() => navigation("/contact", {
                         state: {
                             year : formCar.year,
