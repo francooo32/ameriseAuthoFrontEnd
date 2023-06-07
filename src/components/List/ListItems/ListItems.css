@@ -4,6 +4,7 @@
 
 .listItem-wrap{
   display: flex;
+  background: rgb(19, 19, 19);
   flex-direction: column;
   box-shadow: 0 1px 5px 0 rgb(70 70 70 / 15%), 0 2px 2px 0 
               rgb(70 70 70 / 15%), 0 3px 2px -2px rgb(70 70 70 / 15%);

@@ -3,6 +3,7 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import FilterPanel from "../../components/FilterPanel/FilterPanel";
 import List from "../../components/List/List";
 import React, { useEffect, useState } from 'react';
+import { Row, Col } from "react-bootstrap";
 import EmptyView from '../../components/common/EmptyView/EmptyView';
 import './BuyCar.css';
 import { useCallback } from "react";
@@ -151,31 +152,37 @@ const BuyCarPage = () => {
     }, [selectedRating, selectedCategory, vehicles, searchInput, selectedPrice]);
   
     return (
-      <div className='home'>
+      <div className='buyCar'>
         {/* Search Bar */}
-        <SearchBar
-          value={searchInput}
-          changeInput={(e) => setSearchInput(e.target.value)}
-        />
-        <div className='home_panelList-wrap'>
-          {/* Filter Panel */}
-          <div className='home_panel-wrap'>
-            <FilterPanel
-              selectedCategory={selectedCategory}
-              selectCategory={handleSelectCategory}
-              selectedRating={selectedRating}
-              selectedPrice={selectedPrice}
-              selectRating={handleSelectRating}
-              vehicles={vehicles}
-              changeChecked={handleChangeChecked}
-              changePrice={handleChangePrice}
+        
+        <Row className="aligh-items-center">
+          <Col xs={12} md={12} xl={12}>
+            <SearchBar
+              value={searchInput}
+              changeInput={(e) => setSearchInput(e.target.value)}
             />
-          </div>
+          
+            <div className='home_panelList-wrap'>
+              {/* Filter Panel */}
+                  <div className='home_panel-wrap'>
+                    <FilterPanel
+                      selectedCategory={selectedCategory}
+                      selectCategory={handleSelectCategory}
+                      selectedRating={selectedRating}
+                      selectedPrice={selectedPrice}
+                      selectRating={handleSelectRating}
+                      vehicles={vehicles}
+                      changeChecked={handleChangeChecked}
+                      changePrice={handleChangePrice}
+                    />
+                  </div>
           {/* List & Empty View */}
-          <div className='home_list-wrap'>
-            {resultsFound ? <List list={list} /> : <EmptyView />}
-          </div>
-        </div>
+              <div className='home_list-wrap'>
+                {resultsFound ? <List list={list} /> : <EmptyView />}
+              </div>
+            </div>
+          </Col>
+        </Row>
       </div>
     );
   };

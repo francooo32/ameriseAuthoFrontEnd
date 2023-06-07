@@ -11,14 +11,16 @@ const useStyles = makeStyles({
   toggle: {
     fontFamily: `'Raleway', sans-serif`,
     fontSize: '.8rem',
+    color: '#fff',
     border: '1px solid rgba(0, 0, 0, 0.12)',
     borderRadius: '10px',
     '&.MuiToggleButtonGroup-groupedHorizontal:not(:last-child)': {
       borderRadius: '10px',
+      border: '1px solid rgb(200, 200, 200)',
     },
     '&.MuiToggleButtonGroup-groupedHorizontal:not(:first-child)': {
       borderRadius: '10px',
-      border: '1px solid rgba(0, 0, 0, 0.12)',
+      border: '1px solid rgb(200, 200, 200)',
     },
     '&.Mui-selected': {
       borderRadius: '10px',

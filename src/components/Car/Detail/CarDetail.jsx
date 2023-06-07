@@ -1,12 +1,7 @@
-// import Stack from '@mui/material/Stack';
-// import Box from '@mui/material/Box';
-// import Typography from '@mui/material/Typography';
-// import Button from '@mui/material/Button';
-// import Card from '@mui/material/Card';
-// import CardContent from '@mui/material/CardContent';
-// import CardMedia from '@mui/material/CardMedia';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useState} from 'react';
+import { Row, Col } from "react-bootstrap";
+import "./CarDetail.css"
 import ContactDialog from '../../ContactDialog';
 
 const DATA = {id: 1, title: "Bmw", image: "/images/newCars/bmw.jpg", description: "Casi sin uso, cuidado y con chapa perfecta, motor solo con 1 año de uso, bateria y llantas nuevas."};
@@ -31,57 +26,44 @@ function CarDetail() {
         setOpen(false);
     };
     
-    // return(
-    //     <>
-    //     <Stack direction="row" alignItems="center">
-    //         <ContactDialog open={open} onClose={handleClose} />
-
-    //         <Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4 }}>
-    //             <img src={DATA.image} alt="Logo" style={{ width: 500 }} />
-    //         </Box>
-
-    //         <Stack direction="column" justifyContent="space-between">
-    //             <Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4 }}>
-    //                 <Typography variant="h4" component="div" alignSelf="center">
-    //                     {carDetail.marca.brand}
-    //                 </Typography>
-
-    //                 <Typography variant="p" component="div">
-    //                     {DATA.description}
-    //                 </Typography>
-
-    //                 <Typography variant="p" component="div">
-    //                     PRECIO: A CONSULTAR
-    //                 </Typography>
-    //             </Box>
-
-    //             <Button variant="outlined" onClick={() => navigation("/contact")
-    // }>CONSULTAR</Button>
-    //         </Stack>
-    //     </Stack><Box sx={{ display: "flex", flexDirection: "column", gap: 4, padding: 4, backgroundColor: "primary.main" }}>
-    //             <Typography variant="h4" component="div" textAlign="center" sx={{ color: "white" }}>
-    //                 Por que elegirnos
-    //             </Typography>
-
-    //             <Stack direction="row" justifyContent="center" flexWrap="wrap" gap={4}>
-    //                 {DATA2.map(item => <Card key={item.title} sx={{ maxWidth: 345 }} raised>
-    //                     <CardMedia component="img" height="140" image={item.image} alt="Auto" />
-
-    //                     <CardContent>
-    //                         <Typography gutterBottom variant="h6" component="div" textAlign="center">
-    //                             {item.title}
-    //                         </Typography>
-
-    //                         <Typography variant="body2" color="text.main" textAlign="center">
-    //                             {item.description}
-    //                         </Typography>
-    //                     </CardContent>
-    //                 </Card>
-    //                 )}
-    //             </Stack>
-    //         </Box>
-    //         </>
-    // );
+    return (
+        <div className="cardetail-container">
+            <Row className="aligh-items-center">
+              <Col xs={12} md={12} xl={12}>
+                <div className="cardetail-img">
+                    {/* <img src={aboutPhoto} alt="aboutImg"></img> */}
+                    <img src='/images/newCars/bmw.jpg' alt='' />
+                </div>
+              </Col>
+            </Row>
+            <Row className="aligh-items-center">
+              <Col xs={12} md={12} xl={12}>
+                <div className="cardetail-desc">
+                    <div className="cardetail-title">
+                        <h1>{carDetail.marca.brand}</h1>
+                        <h2>{carDetail.modelo.model}</h2>
+                    </div>
+                    <hr id="carDetailHr"/>
+                    <div className="cardetail-profesion">
+                        <h3>Precio: {carDetail.precio.price}</h3>
+                    </div>
+                    <hr id="carDetailHr"/>
+                    <input id="buttonBuy" type="submit" value="Comprar" onClick={() => navigation("/contact", {
+                                state:{
+                                    buyCarDetail : carDetail
+                                            }
+                                        })
+                                        }/>
+                {/* <p>Hola! Mi nombre es Evelyn Denise, tengo 26 años y me formé como fotógrafa en ISEC, instituto que me brindo las primeras herramientas para adentrarme en el mundo de la comunicación visual. 
+                    A lo largo de los años experimente diversas ramas de la fotografía, entre ellas: gastronomía, producto, moda, documental y social. Conocer cada una de ellas me ha llevado a enamorarme principalmente de la fotografía publicitaria, por lo cual continue capacitandome como fotógrafa de producto y gastronomía aprendiendo de grandes referentes de la industria. 
+                    En lo profesional soy muy detallista, busco resultados de calidad y me apasiona la excelencia. Disfruto de comprometerme y sacar el máximo potencial a cada proyecto.
+                    Los invito a ver mi portfolio, donde podrán encontrar variedad de trabajos y notar cómo me desenvuelvo en cada área.
+                </p> */}
+                </div>
+              </Col>
+            </Row>
+        </div>
+      )
 }
 
 export default CarDetail;

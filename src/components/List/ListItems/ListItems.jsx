@@ -8,7 +8,11 @@ function ListItem({item: { coverSrc, brand, model, price, km, rating, location }
   return (
     <div className='listItem-wrap' onClick={() => navigation("/detalle", {
         state:{
-          marca : {brand}
+          marca : {brand},
+          modelo: {model},
+          ubicacion: {location},
+          kilometraje: {km},
+          precio: {price}
         }
       })
     }> 

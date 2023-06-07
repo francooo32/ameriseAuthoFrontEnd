@@ -1,9 +1,16 @@
 .label {
     margin-bottom: 0.8rem;
     font-weight: 600;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: rgb(200, 200, 200);
   }
   .input-group {
     margin-bottom: 2rem;
+  }
+
+  .input-group > div{
+    margin-top: 20px;
+    display: contents;
   }
   .label-range {
     margin-bottom: 2.5rem;

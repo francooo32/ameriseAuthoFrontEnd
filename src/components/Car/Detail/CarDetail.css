@@ -1,0 +1,114 @@
+.cardetail-container {
+    display: flex;
+    /* background-color: #252525; */
+    background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
+    color: black;
+    height: 100vh;
+    padding: 100px 0 0 0;
+}
+
+.cardetail-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 30%;
+    /* padding: 100px 0 100px 0; */
+}
+
+#carDetailHr {
+    display: block;
+    height: 4px;
+    border: 0;
+    margin-top: 20px;
+    padding: 0;
+    background: linear-gradient(90deg, #751f2b 0, #dd522d 50%, #edd155 100%);
+}
+
+.cardetail-title > h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: rgb(200, 200, 200);
+    font-family: essonnes-display, serif;
+}
+
+.cardetail-title > h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: rgb(200, 200, 200);
+    font-family: essonnes-display, serif;
+}
+
+.cardetail-profesion > h3{
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-size: 40px;
+    color: rgb(200, 200, 200);
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.cardetail-desc > p{
+    line-height: 1.5;
+    color: white;
+    font-size: 25px;
+}
+
+#buttonBuy{
+    justify-self: center;
+    margin-top: 30px;
+    padding: 12px 15px;
+    color: rgb(221, 221, 221);
+    border: 2px solid #fff;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    opacity: 0.8;
+    text-decoration: none;
+    width: 55%;
+    background-color: #ffffff00;
+  }
+
+.cardetail-img {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    overflow: hidden;
+    padding: 0 70px 0 75px;
+    border-radius: 25px;
+}
+
+.cardetail-img img{
+    /* height: 70vh; */
+    margin-top: 100px;
+    border-radius: 25px;
+    width: 1025px;
+}
+
+@media only screen and (max-width: 960px) {
+    .cardetail-container{
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+    }
+
+    .cardetail-desc{
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 20px 50px 20px;
+    }
+
+    .cardetail-desc > h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .cardetail-img{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .cardetail-img > img {
+        width: 100%;
+    }
+}

@@ -34,7 +34,7 @@ const readerFile=(file)=>{
     base64:"",
     status:false
   })
-  const {nombre, email, msj, base64, status}=values;
+  const {nombre, email, msj, base64, carDataForm, status}=values;
 
   const onSubmit = async (data) => {
     console.log(data)
@@ -44,11 +44,12 @@ const readerFile=(file)=>{
     const msj = data.msj
     const file = data.file
     const base64 = []
+    const carDataForm = formCar
     for(let i = 0; i < file.length; i++){
         base64[i] = await readerFile(file[i])
     }
     console.log(base64)
-    sendMail({nombre, email, base64, msj}).then(data=>{
+    sendMail({nombre, email, base64, msj, carDataForm}).then(data=>{
         if(data.err){
             console.log("err", data.err)
         }else{
@@ -70,7 +71,8 @@ const readerFile=(file)=>{
         </div> */}
 
         <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
-            <h1>Trabajemos juntos!</h1>
+            <h1>Ya casi finalizamos!</h1>
+            <h3>Completa estos ultimos datos</h3>
             <div className="contactCells">
                 <p>Nombre*</p>
                 <input type="text" {...register('nombre', {required:true, maxLength:20})}/>
@@ -93,9 +95,9 @@ const readerFile=(file)=>{
             </div>
 
             <div className="contactCells">
-                <p>Fotos*</p>
+                <p>Fotos* Cargue 6 fotos de su vehículo (frente, lados, detras)</p>
                 <input type="file" id="fileinput" multiple="multiple" {...register('file', {required:true})}/>
-                {errors.file?.type === 'requiered' && <p>Debe cargar por lo menos 5 fotos</p>}    
+                {errors.file?.type === 'requiered' && <p>Debe cargar 6 fotos fotos</p>}    
             </div>
 
             <div className="contactCells">
@@ -104,7 +106,7 @@ const readerFile=(file)=>{
                 {errors.msj?.type === 'required' && <p>El campo Mensaje es obligatorio</p>}
             </div>
 
-            <input id="button" type="submit" value="Enviar"/>
+            <input id="buttonForm" type="submit" value="Enviar"/>
 
         </form>
 

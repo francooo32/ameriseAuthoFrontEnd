@@ -1,7 +1,10 @@
-.home {
+.buyCar {
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
+    
   }
   .home_panelList-wrap,
   .home_panel-wrap,
@@ -10,12 +13,16 @@
   }
   
   .home_panelList-wrap {
+    color: rgb(200, 200, 200);
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     flex: 1;
     display: flex;
   }
   .home_panel-wrap {
     flex-basis: 280px;
     padding: 1rem;
+    background: rgb(19, 19, 19);
+    border-radius: 30px;
   }
   .home_list-wrap {
     flex: 1;
