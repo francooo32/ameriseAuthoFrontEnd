@@ -2,11 +2,10 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import LandingPage from "./pages/Landing/LandingPage"
-// import { createTheme, colors, ThemeProvider } from '@mui/material';
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
-import MainToolbar from './components/Ui/MainToolbar';
 import NavBar from './components/navBar/navBar.jsx';
+import Footer from './components/footer/footer.jsx';
 import CarDetail from './components/Car/Detail/CarDetail';
 import SellCar from './pages/sellcar/sellcar.jsx';
 import BrandSelect from './components/sellsteps/brandselect/brandselect.jsx';
@@ -55,6 +54,7 @@ function App() {
           <Route path="/kmselect" element={<KmSelect />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
+        <Footer/>
         
       {/* </ThemeProvider> */}
     </BrowserRouter>

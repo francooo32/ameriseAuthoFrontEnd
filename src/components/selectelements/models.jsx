@@ -262,6 +262,31 @@ function ModelList() {
         );
     }
 
+    //DODGE
+    if(formCar.brand == "Dodge"){
+        return(
+            <>
+                <div className="sideselect-list">
+                    {DODGE.map(model => 
+                            <ul>
+                                    <li>
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                state:{
+                                    year : formCar.year,
+                                    brand: formCar.brand,
+                                    model: model.label
+                                            }
+                                        })
+                                        }/>
+                                        <hr id="yearHr"/>
+                                </li>
+                            </ul>
+                        )}
+                </div>
+            </>
+        );
+    }
+
 }
 
 export default ModelList;
