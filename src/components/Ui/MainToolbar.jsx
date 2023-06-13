@@ -18,7 +18,6 @@ function MainToolbar() {
   //           <MenuIcon />
   //         </IconButton>
 
-  //         <img src="/images/palmerson-logo-removebg-preview.png" alt="Logo" style={{width: 56}} onClick={() => navigate("/")} />
   //       </Toolbar>
   //     </AppBar>
   //   </Box>
