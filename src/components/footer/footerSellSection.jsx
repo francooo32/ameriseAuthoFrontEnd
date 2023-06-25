@@ -8,11 +8,12 @@ import navIcon3 from "../../public/footerImg/nav-icon3.svg";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footerSellSection">
       <Container>
         <Row className="align-items-center">
           {/* <MailchimpForm /> */}
           <Col size={12} sm={6}>
+            <h1>AMERISE AUTOMOBILI</h1>
             {/* <img src={logo} alt="Logo" /> */}
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">

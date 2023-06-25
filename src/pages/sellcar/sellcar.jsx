@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import "./sellcar.css"
 import YearSelect from "../../components/sellsteps/yearselect/yearselect.jsx"
 
-
 const SellCar = () => {
 
   return (

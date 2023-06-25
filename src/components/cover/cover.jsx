@@ -18,7 +18,7 @@ const Cover = () => {
                 </h1>
                 <h3>Compra y vende con nosotros de forma segura!</h3>
                 <div className="button-wrapper"> 
-                <Button type={BUTTON_TYPES.SECONDARY} btnText="Vende tu vehículo UwU"/>
+                <Button type={BUTTON_TYPES.SECONDARY} btnText="Vende tu vehículo"/>
                 {/* <Button type={BUTTON_TYPES.SECONDARY} btnText="Contactame" /> */}
                 </div>
                 <hr/>

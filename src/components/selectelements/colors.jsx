@@ -1,5 +1,6 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import "./selects.css"
+import FooterSellSection from '../../components/footer/footerSellSection.jsx';
 
 const COLORS = [
     {id: 1, label: "Blanco", variable: 'white'},
@@ -45,7 +46,7 @@ function ColorList() {
                             </li>
                         </ul>
                     )}
-
+                <FooterSellSection/>
             </div>
 
             

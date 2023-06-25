@@ -1,5 +1,6 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import "./selects.css"
+import FooterSellSection from '../../components/footer/footerSellSection.jsx';
 
 const BRANDS = [
     {id: 1, label: "Alfa Romeo"},
@@ -66,7 +67,7 @@ function BrandsList() {
                             </li>
                         </ul>
                     )}
-
+                <FooterSellSection/>
             </div>
 
             

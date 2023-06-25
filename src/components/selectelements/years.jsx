@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import "./selects.css"
+import FooterSellSection from '../../components/footer/footerSellSection.jsx';
 
 const YEARS = [
     {id: 1, label: "2023"},
@@ -49,7 +50,9 @@ function YearsList() {
                                 }/>
                         </li>
               </ul> */}
+              <FooterSellSection/>
             </div>
+            
 
             
         </>

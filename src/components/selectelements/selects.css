@@ -25,6 +25,7 @@
     list-style: none;
     margin-left: auto;
     padding-right: 30px;
+    /* padding-left: 45%; */
     display: list-item;
 }
 
@@ -50,7 +51,7 @@
 .sideselect-list{
   height: 80px;
   cursor: pointer;
-  text-align: -webkit-center;
+  /* text-align: -webkit-center; */
 }
 
 .sideselect-list p{
@@ -61,7 +62,8 @@
 .sideselect-list ul{
   list-style: none;
   margin-left: auto;
-  padding-right: 30px;
+  /* padding-right: 30px; */
+  padding-left: 45%;
   display: list-item;
 }
 
@@ -122,27 +124,32 @@ border-bottom: 0;
 }
 
 /* FORM BUTTON */
+.sideselect-km-list{
+  height: 80px;
+  cursor: pointer;
+  text-align: -webkit-center;
+}
 
-.sideselect-list > form{
+.sideselect-km-list > form{
   margin-top: 70px;
   width: 20%;
   display: inline-grid;
   gap: 15px;
 }
 
-.sideselect-list > form #kmInput{
+.sideselect-km-list > form #kmInput{
   height: 50px;
   width: 100%;
   justify-self: center;
   background: linear-gradient(90deg, #751f2b 0, #dd522d 50%, #edd155 100%);
 }
 
-.sideselect-list > form #kmInput, textarea{
+.sideselect-km-list > form #kmInput, textarea{
   color: #fff;
   font-size: 35px;
   font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
-.sideselect-list > form #button{
+.sideselect-km-list > form #button{
   justify-self: center;
   margin-top: 30px;
   padding: 12px 15px;

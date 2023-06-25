@@ -1,6 +1,11 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(14, 14, 14)
+}
+
 .sellcar-container{
     background-image: linear-gradient( to bottom left, rgb(255 255 255) -700%, rgb(14 14 14) 45%);
-    height: 150vh;
+    height: 100%;
 }
 
 .sellcar-container .sellcar-text {

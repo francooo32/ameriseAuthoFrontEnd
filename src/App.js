@@ -5,7 +5,6 @@ import LandingPage from "./pages/Landing/LandingPage"
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import NavBar from './components/navBar/navBar.jsx';
-import Footer from './components/footer/footer.jsx';
 import CarDetail from './components/Car/Detail/CarDetail';
 import SellCar from './pages/sellcar/sellcar.jsx';
 import BrandSelect from './components/sellsteps/brandselect/brandselect.jsx';
@@ -13,17 +12,6 @@ import ModelSelect from './components/sellsteps/modelselect/modelselect.jsx';
 import ColorSelect from './components/sellsteps/colorselect/colorselect.jsx';
 import KmSelect from './components/sellsteps/kmselect/kmselect.jsx';
 import ContactForm from './components/contactform/contactform.jsx';
-
-// const theme = createTheme({
-//   palette: {
-//     primary: {
-//       main: colors.indigo[500],
-//     },
-//     secondary: {
-//       main: colors.lightBlue[500]
-//     }
-//   },
-// });
 
 function App() {
 
@@ -54,7 +42,7 @@ function App() {
           <Route path="/kmselect" element={<KmSelect />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
-        <Footer/>
+        
         
       {/* </ThemeProvider> */}
     </BrowserRouter>
