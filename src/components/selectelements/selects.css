@@ -8,12 +8,38 @@
   background: linear-gradient(90deg, #751f2b 0, #dd522d 50%, #edd155 100%);
 }
 
+#brandOrModelHr {
+  width: 2.6%;
+  display: block;
+  height: 4px;
+  border: 0;
+  margin-top: 5px;
+  margin-left: 46%;
+  padding: 0;
+  background: linear-gradient(90deg, #751f2b 0, #dd522d 50%, #edd155 100%);
+}
+
 .yearselect-list{
     height: 80px;
     cursor: pointer;
     /* text-align: center; */
     text-align: -webkit-center;
 }
+
+.yearselect-list #button{
+    /* border-radius: 4px; */
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 30px;
+    padding: 4px 6px;
+    color: rgb(200, 200, 200);
+    background-color: rgba(240, 248, 255, 0);
+}
+
+
 
 .yearselect-list p{
     /* color: white; */
@@ -83,6 +109,20 @@ border-bottom: 0;
   color: rgb(200, 200, 200);
   background-color: rgba(240, 248, 255, 0);
 /* border-style: none; */
+}
+
+.sideselect-list #buttonBrand{
+  /* border-radius: 4px; */
+  border-bottom: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 30px;
+  padding: 4px 6px;
+  padding-left: 46%;
+  color: rgb(200, 200, 200);
+  background-color: rgba(240, 248, 255, 0);
 }
 
 /*SIDE SELECT ORDER COLORS*/

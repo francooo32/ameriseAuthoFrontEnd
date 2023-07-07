@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import { Row, Col } from "react-bootstrap";
 import Years from "../../selectelements/years.jsx"
 import "./yearselect.css"
 
 const YearSelect = () => {
-
-    const navigation = useNavigate();
 
   return (
     <>

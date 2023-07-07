@@ -1,21 +1,21 @@
 import React from 'react';
 import { Row, Col } from "react-bootstrap";
-import Brands from "../../selectelements/brands.jsx"
-import "./brandselect.css"
+import Transmissions from "../../selectelements/transmissions.jsx"
+import "./transmissionselect.css"
 
-const BrandSelect = () => {
+const TransmissionSelect = () => {
 
   return (
     <>
     <div id="selectDivMain">
       <Row className="aligh-items-center">
         <Col xs={12} md={12} xl={12}>
-          <div className='brandDiv'>
+          <div className='transmissionDiv'>
             <h1>
-              Elegí la marca de tu auto
+              ¿Qué tipo de transmisión usa tu vehículo?
             </h1>
           </div>
-              <Brands />
+              <Transmissions />
         </Col>
       </Row>
     </div>
@@ -23,4 +23,4 @@ const BrandSelect = () => {
     );
 }
 
-export default BrandSelect
+export default TransmissionSelect

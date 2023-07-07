@@ -9,6 +9,12 @@ import CarDetail from './components/Car/Detail/CarDetail';
 import SellCar from './pages/sellcar/sellcar.jsx';
 import BrandSelect from './components/sellsteps/brandselect/brandselect.jsx';
 import ModelSelect from './components/sellsteps/modelselect/modelselect.jsx';
+import VersionSelect from './components/sellsteps/versionselect/versionselect.jsx';
+import FuelSelect from './components/sellsteps/fuelselect/fuelselect.jsx';
+import DoorSelect from './components/sellsteps/doorselect/doorselect.jsx';
+import TransmissionSelect from './components/sellsteps/transmissionselect/transmissionselect.jsx';
+import EngineSelect from './components/sellsteps/engineselect/engineselect.jsx';
+import BodySelect from './components/sellsteps/bodyselect/bodyselect.jsx';
 import ColorSelect from './components/sellsteps/colorselect/colorselect.jsx';
 import KmSelect from './components/sellsteps/kmselect/kmselect.jsx';
 import ContactForm from './components/contactform/contactform.jsx';
@@ -38,6 +44,12 @@ function App() {
           <Route path="/vender" element={<SellCar />} />
           <Route path="/brandselect" element={<BrandSelect />} />
           <Route path="/modelselect" element={<ModelSelect />} />
+          <Route path="/versionselect" element={<VersionSelect />} />
+          <Route path="/fuelselect" element={<FuelSelect />} />
+          <Route path="/doorselect" element={<DoorSelect />} />
+          <Route path="/transmissionselect" element={<TransmissionSelect />} />
+          <Route path="/engineselect" element={<EngineSelect />} />
+          <Route path="/bodyselect" element={<BodySelect />} />
           <Route path="/colorselect" element={<ColorSelect />} />
           <Route path="/kmselect" element={<KmSelect />} />
           <Route path="/contact" element={<ContactForm />} />

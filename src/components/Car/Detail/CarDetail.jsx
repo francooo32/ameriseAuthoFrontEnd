@@ -2,7 +2,6 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { useState} from 'react';
 import { Row, Col } from "react-bootstrap";
 import "./CarDetail.css"
-import ContactDialog from '../../ContactDialog';
 
 const DATA = {id: 1, title: "Bmw", image: "/images/newCars/bmw.jpg", description: "Casi sin uso, cuidado y con chapa perfecta, motor solo con 1 año de uso, bateria y llantas nuevas."};
 const DATA2 = [

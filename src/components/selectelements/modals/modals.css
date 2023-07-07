@@ -1,0 +1,76 @@
+#closeX{
+    color: rgb(200, 200, 200);
+    font-family: essonnes-display, serif;
+    font-size: 25px;
+    width: 25%;
+    margin-left: 20%;
+  }
+
+  .overlay{
+    text-align: -webkit-center;
+  }
+
+  .overlay .modalContainer .modalRight .modalContent #yearInput{
+    height: 50px;
+    width: 150%;
+    justify-self: center;
+    background-color: #ffff;
+  }
+
+  .overlay .modalContainer .modalRight .modalContent #yearButton{
+    border-radius: 20px;
+    font-family: essonnes-display, serif;
+    font-size: 23px;
+    letter-spacing: 2px;
+    padding: 8px 12px;
+    color: rgb(200, 200, 200);
+    background-color: rgb(41 40 38);
+    border-style: none;
+  }
+  
+
+  #yearInput, textarea{
+    text-align: center;
+    color: #111111;
+    font-size: 35px;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  }
+
+  .overlay .modalContainer .modalRight .modalContent{
+    display: table-caption;
+    width: 100%;
+  }
+
+  .overlay .modalContainer .modalRight .modalContent > form{
+    width: 100%;
+    display: inline-grid;
+    gap: 15px;
+  }
+
+  /* BRAND */
+
+  .overlay .modalContainer .modalRight .modalContent #brandInput{
+    height: 50px;
+    width: 150%;
+    justify-self: center;
+    background-color: #ffff;
+  }
+
+  .overlay .modalContainer .modalRight .modalContent #brandButton{
+    border-radius: 20px;
+    font-family: essonnes-display, serif;
+    font-size: 23px;
+    letter-spacing: 2px;
+    padding: 8px 12px;
+    color: rgb(200, 200, 200);
+    background-color: rgb(41 40 38);
+    border-style: none;
+  }
+  
+
+  #brandInput, textarea{
+    text-align: center;
+    color: #111111;
+    font-size: 35px;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  }

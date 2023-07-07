@@ -1,5 +1,8 @@
+import {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
+import {YEAR_ROUTE_REDIRECTION} from '../../constants/constantsSellSteps.jsx'
 import "./selects.css"
+import YearModal from "./modals/yearmodal.jsx"
 import FooterSellSection from '../../components/footer/footerSellSection.jsx';
 
 const YEARS = [
@@ -20,16 +23,16 @@ const YEARS = [
 ]
 
 function YearsList() {
+    const [openModal, setOpenModal] = useState(false);
     const navigation = useNavigate();
 
     return(
         <>
             <div className="yearselect-list">
-                {/* {YEARS.map(car => <CarItem key={car.id} car={car} />)} */}
                 {YEARS.map(year => 
                         <ul>
                                 <li>
-                                <input id="button" type="submit" value={year.label} onClick={() => navigation("/brandselect", {
+                                <input id="button" type="submit" value={year.label} onClick={() => navigation(YEAR_ROUTE_REDIRECTION, {
                             state:{
                             year : year.label
                                         }
@@ -39,17 +42,10 @@ function YearsList() {
                             </li>
                         </ul>
                     )}
-                    
-                    {/* <ul>
-                            <li>
-                            <input id="button" type="submit" value="2010" onClick={() => navigation("/brandselect", {
-                        state:{
-                        year : "2010"
-                                    }
-                                })
-                                }/>
-                        </li>
-              </ul> */}
+                   <button id="button" onClick={() => setOpenModal(true)}>Otros</button>
+                   <hr id="yearHr"/>
+                   <YearModal open={openModal} onClose={() => setOpenModal(false)}/>
+
               <FooterSellSection/>
             </div>
             

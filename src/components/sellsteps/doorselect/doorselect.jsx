@@ -1,9 +1,9 @@
 import React from 'react';
 import { Row, Col } from "react-bootstrap";
-import Kms from "../../selectelements/kms.jsx"
-import "./kmselect.css"
+import Doors from "../../selectelements/doors.jsx"
+import "./doorselect.css"
 
-const KmSelect = () => {
+const DoorSelect = () => {
 
   return (
     <>
@@ -12,10 +12,10 @@ const KmSelect = () => {
         <Col xs={12} md={12} xl={12}>
           <div className='modelDiv'>
             <h1>
-              Indicanos el kilometraje aproximado
+              Cuantas puertas tiene el vehículo?
             </h1>
           </div>
-          <Kms />
+          <Doors />
         </Col>
     </Row>
     </div>
@@ -23,4 +23,4 @@ const KmSelect = () => {
   );
 }
 
-export default KmSelect
+export default DoorSelect

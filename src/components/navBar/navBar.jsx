@@ -1,5 +1,6 @@
 import React from 'react'
 import "./navBar.css"
+import logoNav from "../../public/Logos/2Logo.png"
 
 const NavBar = ({isScrolling}) => {
 
@@ -12,7 +13,8 @@ const NavBar = ({isScrolling}) => {
         <div className="navbar-logo" onClick={(returnToTop)}>
           
           <a className="navbar-logo" href="/"  onClick={(returnToTop)}>
-            <p>HOME</p> 
+            {/* <p>HOME</p>  */}
+            <img id="logoNav" src={logoNav} alt="logoPh"></img>
             </a>
             
             <ul>

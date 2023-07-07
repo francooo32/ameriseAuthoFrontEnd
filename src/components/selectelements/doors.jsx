@@ -1,39 +1,34 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import {KM_ROUTE_REDIRECTION} from '../../constants/constantsSellSteps.jsx'
+import {DOOR_ROUTE_REDIRECTION} from '../../constants/constantsSellSteps.jsx'
 import "./selects.css"
-import FooterSellSection from '../../components/footer/footerSellSection.jsx';
+import FooterSellSection from '../footer/footerSellSection.jsx';
 
-var km = 0;
+var door = 0;
 
-function KmsList() {
+function DoorList() {
     const location = useLocation();
     const formCar = location.state
     const navigation = useNavigate();
 
     function handleChange(event) {
         console.log("Working:", event.target.value);
-        km = event.target.value
+        door = event.target.value
     }
 
     return (
         <>
             <div className="sideselect-km-list">
                 <form action="">
-                    <input id="kmInput" type="number" name="km" onChange={handleChange} max="1000000"/>
-                    <input id="button" type="submit" value="Siguiente" onClick={() => navigation(KM_ROUTE_REDIRECTION, {
+                    <input id="kmInput" type="number" name="door" onChange={handleChange} max="1000000"/>
+                    <input id="button" type="submit" value="Siguiente" onClick={() => navigation(DOOR_ROUTE_REDIRECTION, {
                         state: {
-                            year : formCar.year,
+                                year : formCar.year,
                                 brand: formCar.brand,
                                 model: formCar.model,
                                 version: formCar.version,
                                 fuel: formCar.fuel,
-                                door: formCar.door,
-                                transmission: formCar.transmission,
-                                engine: formCar.engine,
-                                body: formCar.body,
-                                color: formCar.color,
-                                km: km
+                                door: door
                             }
                         })
                         } 
@@ -45,4 +40,4 @@ function KmsList() {
     );
 }
 
-export default KmsList;
+export default DoorList;

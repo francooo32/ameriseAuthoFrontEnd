@@ -1,14 +1,9 @@
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
 import { Row, Col } from "react-bootstrap";
 import Colors from "../../selectelements/colors.jsx"
 import "./colorselect.css"
 
 const ColorSelect = () => {
-    debugger
-    const location = useLocation();
-    const formCar = location.state
-    const navigation = useNavigate();
 
   return (
     <>

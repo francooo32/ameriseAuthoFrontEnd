@@ -109,6 +109,11 @@
     margin-left: 25px;
     width: 3%;
   }
+  #footerImg{
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 30%;
+  }
   .footer .copyright p {
     font-weight: 400;
     font-size: 14px;

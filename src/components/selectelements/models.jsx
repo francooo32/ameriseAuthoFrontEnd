@@ -1,18 +1,37 @@
+import {useState} from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { ALFAROMEO, AUDI, BAIC, BMW, CHANGAN, CHERY, CHEVROLET, CHRYSLER,
         CITROEN, DFSK, DODGE, DS, FIAT, FORD, HAVAL, HONDA, HYUNDAI, JAC,
         JEEP, KIA, KYC, LAND_ROVER, LEXUS, LIFAN, MASERATI, MERCEDES_BENZ, MINI,
         MITSUBISHI, NISSAN, PEUGEOT, PORSCHE, RAM, RENAULT, SHINERAY, SMART,
         SUBARU, SUZUKI, TOYOTA, VOLKSWAGEN, VOLVO } from '../vehiclemodels/modelslist.jsx';
+import {MODEL_ROUTE_REDIRECTION} from '../../constants/constantsSellSteps.jsx'         
 import "./selects.css"
+import ModelModal from "./modals/modelmodal.jsx"
 import FooterSellSection from '../../components/footer/footerSellSection.jsx';
 
 
 function ModelList() {
+    debugger
+    const [openModal, setOpenModal] = useState(false);
     const location = useLocation();
     const formCar = location.state
     const navigation = useNavigate();
 
+    if(formCar.modelFlag){
+        return(
+            <>
+                <div className="sideselect-list">
+                    <button id="buttonBrand" onClick={() => setOpenModal(true)}>Otros</button>
+                    <hr id="brandOrModelHr"/>
+                    <ModelModal open={openModal} onClose={() => setOpenModal(false)} formCar={formCar} 
+                                redirection={MODEL_ROUTE_REDIRECTION}/>
+
+                    <FooterSellSection/>
+                </div>
+            </>
+        );
+    }
     //ALFA ROMEO
     if(formCar.brand == "Alfa Romeo"){
         return(
@@ -21,7 +40,7 @@ function ModelList() {
                     {ALFAROMEO.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -47,7 +66,7 @@ function ModelList() {
                     {AUDI.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -73,7 +92,7 @@ function ModelList() {
                     {BAIC.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -99,7 +118,7 @@ function ModelList() {
                     {BMW.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -125,7 +144,7 @@ function ModelList() {
                     {CHANGAN.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -151,7 +170,7 @@ function ModelList() {
                     {CHERY.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -177,7 +196,7 @@ function ModelList() {
                     {CHEVROLET.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -203,7 +222,7 @@ function ModelList() {
                     {CHRYSLER.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -229,7 +248,7 @@ function ModelList() {
                     {CITROEN.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -255,7 +274,7 @@ function ModelList() {
                     {DFSK.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -281,7 +300,7 @@ function ModelList() {
                     {DODGE.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -307,7 +326,7 @@ function ModelList() {
                     {DS.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -333,7 +352,7 @@ function ModelList() {
                     {FIAT.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -359,7 +378,7 @@ function ModelList() {
                     {FORD.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -385,7 +404,7 @@ function ModelList() {
                     {HAVAL.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -411,7 +430,7 @@ function ModelList() {
                     {HONDA.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -437,7 +456,7 @@ function ModelList() {
                     {HYUNDAI.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -463,7 +482,7 @@ function ModelList() {
                     {JAC.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -489,7 +508,7 @@ function ModelList() {
                     {JEEP.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -515,7 +534,7 @@ function ModelList() {
                     {KIA.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -541,7 +560,7 @@ function ModelList() {
                     {KYC.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -567,7 +586,7 @@ function ModelList() {
                     {LAND_ROVER.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -593,7 +612,7 @@ function ModelList() {
                     {LEXUS.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -619,7 +638,7 @@ function ModelList() {
                     {LIFAN.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -645,7 +664,7 @@ function ModelList() {
                     {MASERATI.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -671,7 +690,7 @@ function ModelList() {
                     {MERCEDES_BENZ.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -697,7 +716,7 @@ function ModelList() {
                     {MINI.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -723,7 +742,7 @@ function ModelList() {
                     {MITSUBISHI.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -749,7 +768,7 @@ function ModelList() {
                     {NISSAN.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -775,7 +794,7 @@ function ModelList() {
                     {PEUGEOT.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -801,7 +820,7 @@ function ModelList() {
                     {PORSCHE.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -827,7 +846,7 @@ function ModelList() {
                     {RAM.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -853,7 +872,7 @@ function ModelList() {
                     {RENAULT.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -879,7 +898,7 @@ function ModelList() {
                     {SHINERAY.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -905,7 +924,7 @@ function ModelList() {
                     {SMART.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -931,7 +950,7 @@ function ModelList() {
                     {SUBARU.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -957,7 +976,7 @@ function ModelList() {
                     {SUZUKI.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -983,7 +1002,7 @@ function ModelList() {
                     {TOYOTA.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -1009,7 +1028,7 @@ function ModelList() {
                     {VOLKSWAGEN.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,
@@ -1035,7 +1054,7 @@ function ModelList() {
                     {VOLVO.map(model => 
                             <ul>
                                     <li>
-                                    <input id="button" type="submit" value={model.label} onClick={() => navigation("/colorselect", {
+                                    <input id="button" type="submit" value={model.label} onClick={() => navigation(MODEL_ROUTE_REDIRECTION, {
                                 state:{
                                     year : formCar.year,
                                     brand: formCar.brand,

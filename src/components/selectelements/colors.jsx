@@ -1,4 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom';
+import {COLOR_ROUTE_REDIRECTION} from '../../constants/constantsSellSteps.jsx'
 import "./selects.css"
 import FooterSellSection from '../../components/footer/footerSellSection.jsx';
 
@@ -33,11 +34,17 @@ function ColorList() {
                                 <div style={{background: color.variable, borderRadius: '50%', width: '30px',
                                     height: '30px', borderColor: 'black'}}> 
                                 </div>
-                                <input id="button" type="submit" value={color.label} onClick={() => navigation("/kmselect", {
+                                <input id="button" type="submit" value={color.label} onClick={() => navigation(COLOR_ROUTE_REDIRECTION, {
                             state:{
                                 year : formCar.year,
                                 brand: formCar.brand,
                                 model: formCar.model,
+                                version: formCar.version,
+                                fuel: formCar.fuel,
+                                door: formCar.door,
+                                transmission: formCar.transmission,
+                                engine: formCar.engine,
+                                body: formCar.body,
                                 color: color.label
                                         }
                                     })

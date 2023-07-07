@@ -1,5 +1,8 @@
+import {useState} from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import {BRAND_ROUTE_REDIRECTION} from '../../constants/constantsSellSteps.jsx'
 import "./selects.css"
+import BrandModal from "./modals/brandmodal.jsx"
 import FooterSellSection from '../../components/footer/footerSellSection.jsx';
 
 const BRANDS = [
@@ -46,17 +49,18 @@ const BRANDS = [
 ]
 
 function BrandsList() {
+    const [openModal, setOpenModal] = useState(false);
     const location = useLocation();
     const formCar = location.state
     const navigation = useNavigate();
-
+    
     return(
         <>
             <div className="sideselect-list">
                 {BRANDS.map(brands => 
                         <ul>
                                 <li>
-                                <input id="button" type="submit" value={brands.label} onClick={() => navigation("/modelselect", {
+                                <input id="button" type="submit" value={brands.label} onClick={() => navigation(BRAND_ROUTE_REDIRECTION, {
                             state:{
                                 year : formCar.year,
                                 brand: brands.label
@@ -67,6 +71,10 @@ function BrandsList() {
                             </li>
                         </ul>
                     )}
+                    <button id="buttonBrand" onClick={() => setOpenModal(true)}>Otros</button>
+                    <hr id="brandOrModelHr"/>
+                    <BrandModal open={openModal} onClose={() => setOpenModal(false)} formCar={formCar}/>
+
                 <FooterSellSection/>
             </div>
 

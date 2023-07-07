@@ -8,6 +8,23 @@ body{
     height: 100%;
 }
 
+.sellcar-container #yearImg1 {
+    position: absolute;
+    height: 60%;
+    width: 50%;
+    margin: 200px 0px 0 0;
+    opacity: 0.2;
+}
+
+.sellcar-container #yearImg2 {
+    position: absolute;
+    height: 45%;
+    width: 40%;
+    margin: 120px 0 0 0;
+    margin-left: 57%;
+    opacity: 0.2;
+}
+
 .sellcar-container .sellcar-text {
     display: flex;
     flex-direction: column;
