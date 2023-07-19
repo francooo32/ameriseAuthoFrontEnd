@@ -1,5 +1,5 @@
 export const sendMail=data=>{
-    return fetch('http://localhost:5000/api/sendmail',{
+    return fetch('https://francodevmailservice.netlify.app/.netlify/functions/api/sendmail',{
         method:"POST",
         headers:{
             Accept:"application/json",

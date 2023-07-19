@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import LandingPage from "./pages/Landing/LandingPage"
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from './components/navBar/navBar.jsx';
 import CarDetail from './components/Car/Detail/CarDetail';
 import SellCar from './pages/sellcar/sellcar.jsx';
@@ -17,7 +17,10 @@ import EngineSelect from './components/sellsteps/engineselect/engineselect.jsx';
 import BodySelect from './components/sellsteps/bodyselect/bodyselect.jsx';
 import ColorSelect from './components/sellsteps/colorselect/colorselect.jsx';
 import KmSelect from './components/sellsteps/kmselect/kmselect.jsx';
+import ErrorSelect from './components/sellsteps/finalizationselect/errorselect.jsx';
+import CongratzSelect from './components/sellsteps/finalizationselect/congratzselect.jsx';
 import ContactForm from './components/contactform/contactform.jsx';
+
 
 function App() {
 
@@ -53,6 +56,8 @@ function App() {
           <Route path="/colorselect" element={<ColorSelect />} />
           <Route path="/kmselect" element={<KmSelect />} />
           <Route path="/contact" element={<ContactForm />} />
+          <Route path="/errorselect" element={<ErrorSelect />} />
+          <Route path="/congratzselect" element={<CongratzSelect />} />
         </Routes>
         
         

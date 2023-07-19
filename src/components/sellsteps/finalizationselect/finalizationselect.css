@@ -1,0 +1,49 @@
+/* Error */
+
+.errorDiv{
+  height: 100%;
+  padding-top: 220px;
+  border-bottom: 0.5px solid #0000004a;
+}
+
+.errorDiv h1{
+  color: rgb(200, 200, 200);
+  text-align: center;
+}
+
+.errorDiv p{
+  font-size: 25px;
+  color: rgb(200, 200, 200);
+  text-align: center;
+}
+
+.errorDiv p a{
+  border: 2px solid #fff;
+  color: rgb(200, 200, 200);
+  text-align: center;
+}
+
+/* Success */
+
+.successDiv{
+  height: 100%;
+  padding-top: 220px;
+  border-bottom: 0.5px solid #0000004a;
+}
+
+.successDiv h1{
+  color: rgb(200, 200, 200);
+  text-align: center;
+}
+
+.successDiv p{
+  font-size: 25px;
+  color: rgb(200, 200, 200);
+  text-align: center;
+}
+
+.successDiv p a{
+  border: 2px solid #fff;
+  color: rgb(200, 200, 200);
+  text-align: center;
+}

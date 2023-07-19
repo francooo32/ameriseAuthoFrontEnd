@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./contactform.css"
+import {ERROR_ROUTE_REDIRECTION, SUCCESS_ROUTE_REDIRECTION} from '../../constants/constantsSellSteps.jsx'
 import { useNavigate, useLocation } from 'react-router-dom';
 import {useForm} from "react-hook-form"
 import {sendMail} from './helper/mailform'
@@ -30,11 +31,11 @@ const readerFile=(file)=>{
     nombre:"",
     email:"",
     msj:"",
-    // file:[],
+    telefono:"",
     base64:"",
     status:false
   })
-  const {nombre, email, msj, base64, carDataForm, status}=values;
+  const {nombre, email, msj, telefono, base64, carDataForm, status}=values;
 
   const onSubmit = async (data) => {
     console.log(data)
@@ -42,19 +43,22 @@ const readerFile=(file)=>{
     const nombre = data.nombre
     const email = data.email
     const msj = data.msj
+    const telefono = data.telefono
     const file = data.file
     const base64 = []
     const carDataForm = formCar
     for(let i = 0; i < file.length; i++){
         base64[i] = await readerFile(file[i])
     }
-    console.log(base64)
-    sendMail({nombre, email, base64, msj, carDataForm}).then(data=>{
+    // console.log(base64)
+    sendMail({nombre, email, telefono, base64, msj, carDataForm}).then(data=>{
         if(data.err){
             console.log("err", data.err)
+            navigation(ERROR_ROUTE_REDIRECTION)
         }else{
             console.log("Success", data)
             setValues({...values,status:true})
+            navigation(SUCCESS_ROUTE_REDIRECTION)
         }
     }).catch(console.log("error sending the mail"))
   }
@@ -83,8 +87,8 @@ const readerFile=(file)=>{
             <div className="contactCells">
                 <p>Telefono*</p>
                 <input type="text" {...register('telefono', {required:true, maxLength:20})}/>
-                {errors.nombre?.type === 'required' && <p>El campo Nombre es obligatorio</p>}
-                {errors.nombre?.type === 'maxLength' && <p>El campo Nombre debe tener menos de 20 caracteres</p>}
+                {errors.nombre?.type === 'required' && <p>El campo Telefono es obligatorio</p>}
+                {errors.nombre?.type === 'maxLength' && <p>El campo Telefono debe tener menos de 20 caracteres</p>}
             </div>
 
             <div className="contactCells">
