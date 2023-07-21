@@ -20,3 +20,14 @@
   .searchBar-wrap input::placeholder {
     color: rgba(0, 0, 0, 0.26);
   }
+
+  .searchBar-wrap h3{
+    margin-left: 15%;
+    color: rgb(200, 200, 200);
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  }
+
+  #logoMercado{
+    margin-left: 2%;
+    width: 7%;
+  }

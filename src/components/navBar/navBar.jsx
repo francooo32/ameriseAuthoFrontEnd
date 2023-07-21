@@ -25,6 +25,9 @@ const NavBar = ({isScrolling}) => {
                 <a href="/vender">Vender</a>
               </li>
               <li>
+                <a href="/nosotros">Nosotros</a>
+              </li>
+              <li>
                 <a href="/contact">Contacto</a>
               </li>
             </ul>

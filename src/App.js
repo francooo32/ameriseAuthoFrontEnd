@@ -1,9 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/Landing/LandingPage"
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AboutUs from './components/aboutus/aboutus.jsx'
 import NavBar from './components/navBar/navBar.jsx';
 import CarDetail from './components/Car/Detail/CarDetail';
 import SellCar from './pages/sellcar/sellcar.jsx';
@@ -42,6 +43,7 @@ function App() {
         <NavBar isScrolling={scrollHeight}/>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/nosotros" element={<AboutUs />} />
           <Route path="/comprar" element={<BuyCarPage />} />
           <Route path="/detalle" element={<CarDetail />} />
           <Route path="/vender" element={<SellCar />} />

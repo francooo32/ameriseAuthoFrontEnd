@@ -1,0 +1,98 @@
+.cover-container-about {
+    display: flex;
+    background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
+    height: 100vh;
+}
+
+.cover-container-about .cover-text-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 0px 0px 70px;
+    /* height: 80vh; */
+}
+
+
+.cover-container-about .about-img {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    overflow: hidden;
+    margin-top: 20%;
+    margin-right: 50px;
+}
+
+.cover-container-about .about-img img{
+    object-fit: cover;
+    height: 55vh;
+    opacity: 0.7;
+}
+
+.cover-container-about .cover-text-about > h1 {
+    color: rgb(200, 200, 200);
+    font-size: 55px;
+    letter-spacing: 20px;
+    font-family: essonnes-display, serif;
+    text-transform: uppercase;
+}
+
+.cover-container-about .cover-text-about > h3 > h2 {
+    color: rgb(200, 200, 200);
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.cover-container-about .cover-text-about > h3 {
+    margin-top: -15%;
+    color: rgb(200, 200, 200);
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+hr {
+    display: block;
+    height: 4px;
+    border: 0;
+    margin-top: 80px;
+    padding: 0;
+    background: linear-gradient(90deg, #751f2b 0, #dd522d 50%, #edd155 100%);
+}
+
+#refCompra{
+    margin-top: 60px;
+    padding: 12px 24px;
+    color: rgb(200, 200, 200);
+    border: 2px solid #fff;
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    opacity: 0.8;
+    text-decoration: none;
+    width: 75%;
+}
+
+#logoAbout{
+    object-fit: cover;
+    width: 80%;
+    /* margin-top: -10%; */
+    /* margin-left: -8%; */
+}
+
+@media screen and (max-width: 960px){
+    .cover-container > h1 {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .cover-container > p {
+        text-align: center;
+        font-size: 22px;
+        width: 85%;
+    }
+}

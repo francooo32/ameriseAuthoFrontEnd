@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-// import { MailchimpForm } from "./MailchimpForm";
 import "./footer.css"
 import logoPhoto from "../../public/Logos/2.png"
 import navIcon1 from "../../public/footerImg/nav-icon1.svg";

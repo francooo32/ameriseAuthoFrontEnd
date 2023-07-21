@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // import { MailchimpForm } from "./MailchimpForm";
 // import logo from "../assets/img/logo.svg";
 import "./footer.css"
+import logoPhoto from "../../public/Logos/2.png"
 import navIcon1 from "../../public/footerImg/nav-icon1.svg";
 import navIcon2 from "../../public/footerImg/nav-icon2.svg";
 import navIcon3 from "../../public/footerImg/nav-icon3.svg";
@@ -13,8 +14,8 @@ function Footer() {
         <Row className="align-items-center">
           {/* <MailchimpForm /> */}
           <Col size={12} sm={6}>
-            <h1>AMERISE AUTOMOBILI</h1>
-            {/* <img src={logo} alt="Logo" /> */}
+            {/* <h1>AMERISE AUTOMOBILI</h1> */}
+            <img id="footerImg" src={logoPhoto} alt="Logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
