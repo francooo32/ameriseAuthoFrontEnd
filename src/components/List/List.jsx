@@ -7,6 +7,7 @@ const List = ({ list }) => (
     {list.map((item) => (
       <ListItem key={item.id} item={item} />
     ))}
+    {console.log(list)}
   </div>
 );
 

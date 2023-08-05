@@ -8,6 +8,7 @@ const useStyles = makeStyles({
     '&$checked': {
       color: '#000',
     },
+    color: 'rgb(200, 200, 200)'
   },
   checked: {},
   wrap: {

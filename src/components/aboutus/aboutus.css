@@ -1,35 +1,43 @@
 .cover-container-about {
-    display: flex;
+    display: grid;
     background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
     height: 100vh;
 }
 
-.cover-container-about .cover-text-about {
+.cover-container-about .info {
+    display: flex;
+}
+
+.cover-container-about .info .cover-text-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    padding: 0px 0px 0px 70px;
+    width: 80%;
+    margin-left: 20%;
+    /* padding: 0px 0px 0px 70px; */
+    height: 70%;
     /* height: 80vh; */
 }
 
-
-.cover-container-about .about-img {
-    width: 100%;
+.cover-container-about .info .about-img {
+    width: 140%;
     display: flex;
     align-self: center;
     overflow: hidden;
-    margin-top: 20%;
-    margin-right: 50px;
+    /* padding-right: 14%; */
+    margin-top: 15%;
+    /* margin-right: 29%; */
+    margin-left: -60%;
 }
 
-.cover-container-about .about-img img{
-    object-fit: cover;
+.cover-container-about .info .about-img img{
+    /* object-fit: cover; */
+    width: 100%;
     height: 55vh;
     opacity: 0.7;
 }
 
-.cover-container-about .cover-text-about > h1 {
+.cover-container-about .info .cover-text-about > h1 {
     color: rgb(200, 200, 200);
     font-size: 55px;
     letter-spacing: 20px;
@@ -37,7 +45,7 @@
     text-transform: uppercase;
 }
 
-.cover-container-about .cover-text-about > h3 > h2 {
+.cover-container-about .info .cover-text-about > h3 > h2 {
     color: rgb(200, 200, 200);
     font-size: 40px;
     letter-spacing: 4px;
@@ -45,7 +53,8 @@
     font-weight: lighter;
 }
 
-.cover-container-about .cover-text-about > h3 {
+.cover-container-about .info .cover-text-about > h3 {
+    width: 80%;
     margin-top: -15%;
     color: rgb(200, 200, 200);
     font-size: 15px;
@@ -83,6 +92,124 @@ hr {
     /* margin-top: -10%; */
     /* margin-left: -8%; */
 }
+
+/* ABOUT LOCATION CARDS SECTION */
+.home_list-wrap-about {
+    overflow-y: auto;
+    flex: 1;
+    padding: 3rem;
+  }
+
+.list-wrap-about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+  }
+
+.link{
+    text-decoration: none;
+  }
+  
+  .listItem-wrap-about{
+    display: flex;
+    margin-left: 20%;
+    background: rgb(19, 19, 19);
+    flex-direction: column;
+    box-shadow: 0 1px 5px 0 rgb(70 70 70 / 15%), 0 2px 2px 0 
+                rgb(70 70 70 / 15%), 0 3px 2px -2px rgb(70 70 70 / 15%);
+    box-sizing: border-box;
+    border-radius: 0.375rem;
+    height: 100%;
+  }
+  
+  .listItem-wrap-about:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  
+  .listItem-wrap-about img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      height: 230px;
+    }
+    .listItem-wrap-about header {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0 1rem 0;
+      /* align-items: center; */
+      flex-direction: column;
+      padding-left: 10px;
+    }
+
+    .listItem-wrap-about header h1{
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 5px;
+        font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        font-weight: 700;
+        color: rgb(200, 200, 200);
+      }
+
+      .listItem-wrap-about header h2{
+        display: flex;
+        justify-content: space-between;
+        font-size: 30px;
+        font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        color: rgb(200, 200, 200);
+      }
+  
+    .listItem-wrap-about header h4{
+      display: flex;
+      justify-content: space-between;
+      color: rgb(180, 180, 180);
+    }
+    
+    .listItem-wrap-about header span {
+      font-size: 0.7rem;
+      /* background-color: #97ffff; */
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+    .listItem-wrap-about footer {
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 10px;
+    }
+  
+    .listItem-wrap-about footer p{
+      color: rgb(200, 200, 200);
+      font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-weight: lighter;
+      font-size: 20px;
+    }
+
+    .listItem-wrap-about footer p li{
+        list-style: none;
+      }
+  
+    .listItem-wrap-about footer p:first-child span {
+      color: rgba(0, 0, 0, 0.26);
+      font-weight: 600;
+    }
+
+#buttonAboutForm{
+    justify-self: center;
+    margin-right: 5%;
+    color: rgb(221, 221, 221);
+    border: 2px solid #fff;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    opacity: 0.8;
+    text-decoration: none;
+    width: 25%;
+    background-color: #ffffff00;
+}
+
+    /* END OF ABOUT LOCATION CARDS SECTION */
 
 @media screen and (max-width: 960px){
     .cover-container > h1 {

@@ -1,5 +1,3 @@
 [
-{ "id" : 1, "brand" : "chevrolet", "model" : "suki", "year" : 2006, "km" : 250000 },
-{ "id" : 2, "brand" : "peugeot", "model" : "206", "year" : 2010, "km" : 150000 }, 
-{ "id" : 3, "brand" : "ferrari", "model" : "f1", "year" : 2020, "km" : 300000 }
+{ "id" : 1, "brand" : "chevrolet", "model" : "suki", "year": "2010", "km" : 250000, "vehicle": "vehicle", "price": 100000, "location": "" }
 ]

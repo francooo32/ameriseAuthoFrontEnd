@@ -31,7 +31,7 @@ function CarDetail() {
               <Col xs={12} md={12} xl={12}>
                 <div className="cardetail-img">
                     {/* <img src={aboutPhoto} alt="aboutImg"></img> */}
-                    <img src='/images/newCars/bmw.jpg' alt='' />
+                    <img src={carDetail.img.img} alt='imgCompra' />
                 </div>
               </Col>
             </Row>
@@ -41,13 +41,14 @@ function CarDetail() {
                     <div className="cardetail-title">
                         <h1>{carDetail.marca.brand}</h1>
                         <h2>{carDetail.modelo.model}</h2>
+                        <h2>{carDetail.version.version}</h2>
                     </div>
                     <hr id="carDetailHr"/>
                     <div className="cardetail-profesion">
                         <h3>Precio: {carDetail.precio.price}</h3>
                     </div>
                     <hr id="carDetailHr"/>
-                    <input id="buttonBuy" type="submit" value="Comprar" onClick={() => navigation("/contact", {
+                    <input id="buttonBuy" type="submit" value="Comprar" onClick={() => navigation("/contactbuy", {
                                 state:{
                                     buyCarDetail : carDetail
                                             }

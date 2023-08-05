@@ -5,6 +5,8 @@ import List from "../../components/List/List";
 import React, { useEffect, useState } from 'react';
 import { Row, Col } from "react-bootstrap";
 import EmptyView from '../../components/common/EmptyView/EmptyView';
+import vehiclesJson from './json/vehicles.json';
+import {VEHICLES_LIST} from '../../vehicles/vehiclesList.jsx'
 import './BuyCar.css';
 import { useCallback } from "react";
 
@@ -27,20 +29,22 @@ const BuyCarPage = () => {
     // useEffect(fetchVehicleList(), [fetch])
 
     useEffect(() => {
-        const fetchVehicleList = async () => {
-          // async function fetchVehicleList(){
-          // debugger
-          try{
-            const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
-            const resp = await fetch(requestUrl)
-            setTimeout('', 6000);
-            const json = await resp.json();
-            setVehicleList(json)
-          } catch {
-            console.log('The url no trajo nada')
-          }
-        }
-        fetchVehicleList();
+        // const fetchVehicleList = async () => {
+        //   // async function fetchVehicleList(){
+        //   // debugger
+        //   try{
+        //     const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
+        //     // const requestUrl = vehiclesJson;
+        //     const resp = await fetch(requestUrl)
+        //     setTimeout('', 6000);
+        //     const json = await resp.json();
+        //     setVehicleList(json)
+        //   } catch {
+        //     console.log('The url no trajo nada')
+        //   }
+        // }
+        // fetchVehicleList();
+        setVehicleList(VEHICLES_LIST);
       }, []);
 
     const [resultsFound, setResultsFound] = useState(true);
@@ -70,16 +74,19 @@ const BuyCarPage = () => {
 
       // Initial vehicle load
       const applyFilters = async () => {
-        // debugger
-        if(list <= 0){
-          const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
-            const resp = await fetch(requestUrl)
-            setTimeout('', 6000);
-            const json = await resp.json();
-            setVehicleList(json);
-            // list = json;
-        }
-      // debugger
+        debugger
+        // if(list <= 0){
+        //   const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
+        //     // const requestUrl = vehiclesJson;
+        //     const resp = await fetch(requestUrl)
+        //     // setTimeout('', 6000);
+        //     const json = await resp.json();
+        //     debugger
+        //     setVehicleList(json);
+        //     // list = json;
+        // }
+
+      setVehicleList(VEHICLES_LIST);
       let updatedList = list;
 
       // Rating Filter
