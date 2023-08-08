@@ -3,13 +3,6 @@ import { useState} from 'react';
 import { Row, Col } from "react-bootstrap";
 import "./CarDetail.css"
 
-const DATA = {id: 1, title: "Bmw", image: "/images/newCars/bmw.jpg", description: "Casi sin uso, cuidado y con chapa perfecta, motor solo con 1 año de uso, bateria y llantas nuevas."};
-const DATA2 = [
-    { title: "Te damos 3 meses de cobertura mecanica", description: "Y podes extenderla hasta 12 meses", image: "/images/tres.jpg" },
-    { title: "Certificamos todos nuestros autos", description: "Inpesccionamos nuestros autos para asegurar la calidad", image: "/images/uno.jpg" },
-    { title: "Financia a tu medida", description: "Trabajamos con las mejores opciones", image: "/images/dos.jpg" }
-];
-
 function CarDetail() {
     
     debugger
@@ -30,7 +23,6 @@ function CarDetail() {
             <Row className="aligh-items-center">
               <Col xs={12} md={12} xl={12}>
                 <div className="cardetail-img">
-                    {/* <img src={aboutPhoto} alt="aboutImg"></img> */}
                     <img src={carDetail.img.img} alt='imgCompra' />
                 </div>
               </Col>
@@ -50,15 +42,13 @@ function CarDetail() {
                     <hr id="carDetailHr"/>
                     <input id="buttonBuy" type="submit" value="Comprar" onClick={() => navigation("/contactbuy", {
                                 state:{
-                                    buyCarDetail : carDetail
+                                    brand: carDetail.marca.brand,
+                                    model: carDetail.modelo.model,
+                                    version: carDetail.version.version,
+                                    price: carDetail.precio.price
                                             }
                                         })
                                         }/>
-                {/* <p>Hola! Mi nombre es Evelyn Denise, tengo 26 años y me formé como fotógrafa en ISEC, instituto que me brindo las primeras herramientas para adentrarme en el mundo de la comunicación visual. 
-                    A lo largo de los años experimente diversas ramas de la fotografía, entre ellas: gastronomía, producto, moda, documental y social. Conocer cada una de ellas me ha llevado a enamorarme principalmente de la fotografía publicitaria, por lo cual continue capacitandome como fotógrafa de producto y gastronomía aprendiendo de grandes referentes de la industria. 
-                    En lo profesional soy muy detallista, busco resultados de calidad y me apasiona la excelencia. Disfruto de comprometerme y sacar el máximo potencial a cada proyecto.
-                    Los invito a ver mi portfolio, donde podrán encontrar variedad de trabajos y notar cómo me desenvuelvo en cada área.
-                </p> */}
                 </div>
               </Col>
             </Row>
