@@ -5,7 +5,7 @@ import "./selects.css"
 import BrandModal from "./modals/brandmodal.jsx"
 import FooterSellSection from '../../components/footer/footerSellSection.jsx';
 
-const BRANDS = [
+export const BRANDS = [
     {id: 1, label: "Alfa Romeo"},
     {id: 2, label: "Audi"},
     {id: 3, label: "Baic"},

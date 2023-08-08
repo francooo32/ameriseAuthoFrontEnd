@@ -1,12 +1,10 @@
 export const categoryList = [
     {
       id: 1,
-      value: 'place',
       label: 'Nuevo',
     },
     {
       id: 2,
-      value: 'dish',
       label: 'Usado',
     },
   ];

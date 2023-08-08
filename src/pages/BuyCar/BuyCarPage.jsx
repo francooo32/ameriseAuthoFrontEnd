@@ -7,6 +7,7 @@ import { Row, Col } from "react-bootstrap";
 import EmptyView from '../../components/common/EmptyView/EmptyView';
 import vehiclesJson from './json/vehicles.json';
 import {VEHICLES_LIST} from '../../vehicles/vehiclesList.jsx'
+import {BRANDS} from '../../components/selectelements/brands.jsx'
 import './BuyCar.css';
 import { useCallback } from "react";
 
@@ -16,11 +17,7 @@ const BuyCarPage = () => {
     const [selectedRating, setSelectedRating] = useState(null);
     const [selectedPrice, setSelectedPrice] = useState([0, 5000]);
   
-    const [vehicles, setVehicles] = useState([
-      { id: 1, checked: false, label: 'Bmw' },
-      { id: 2, checked: false, label: 'Chevrolet' },
-      { id: 3, checked: false, label: 'Ferrari' },
-    ]);
+    const [vehicles, setVehicles] = useState([]);
   
     // const [list, setList] = useState(dataList);
 
@@ -44,8 +41,19 @@ const BuyCarPage = () => {
         //   }
         // }
         // fetchVehicleList();
+        debugger
+        for(let i = 0; i < BRANDS.length; i++){
+          const vehicleLoad = {
+            id:BRANDS[i].id,
+            checked:false,
+            label:BRANDS[i].label
+          }
+          vehicles.push(vehicleLoad)
+        }
+        debugger
         setVehicleList(VEHICLES_LIST);
-      }, []);
+        setVehicles(vehicles);
+      }, [])
 
     const [resultsFound, setResultsFound] = useState(true);
     const [searchInput, setSearchInput] = useState('');
@@ -87,6 +95,7 @@ const BuyCarPage = () => {
         // }
 
       setVehicleList(VEHICLES_LIST);
+      debugger
       let updatedList = list;
 
       // Rating Filter
@@ -112,7 +121,7 @@ const BuyCarPage = () => {
   
       if (vehicleChecked.length) {
         updatedList = updatedList.filter((item) =>
-        vehicleChecked.includes(item.brand)
+        vehicleChecked.includes(item.brand.toLowerCase())
         );
       }
   
@@ -128,8 +137,8 @@ const BuyCarPage = () => {
   
       // Price Filter
       
-      const minPrice = selectedPrice[0];
-      const maxPrice = selectedPrice[20];
+      // const minPrice = selectedPrice[0];
+      const maxPrice = selectedPrice[100000000];
   
       // updatedList = updatedList.filter(
       //   (item) => item.price >= minPrice && item.price <= maxPrice
