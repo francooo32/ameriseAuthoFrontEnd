@@ -4,10 +4,12 @@
 
 .listItem-wrap{
   display: flex;
-  background: rgb(19, 19, 19);
+  /* background: rgb(19, 19, 19); */
+  background: linear-gradient(320deg, #751f2b4a 0, #dd522d00 50%, #edd1552e 100%);
   flex-direction: column;
-  box-shadow: 0 1px 5px 0 rgb(70 70 70 / 15%), 0 2px 2px 0 
-              rgb(70 70 70 / 15%), 0 3px 2px -2px rgb(70 70 70 / 15%);
+  box-shadow:  1px 5px 0 rgb(229 229 229 / 15%), 
+                0 2px 2px 0 rgb(175 175 175 / 15%), 
+                0 3px 2px -2px rgb(196 196 196 / 15%);
   box-sizing: border-box;
   border-radius: 0.375rem;
   height: 100%;
@@ -15,7 +17,7 @@
 
 .listItem-wrap:hover {
   transform: scale(1.1);
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 .listItem-wrap img {
@@ -33,10 +35,28 @@
     padding-left: 10px;
   }
 
+  .listItem-wrap header h1{
+    display: flex;
+        justify-content: space-between;
+        letter-spacing: 5px;
+        font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        font-weight: 700;
+        color: rgb(200, 200, 200);
+  }
+
+  .listItem-wrap header h2{
+        display: flex;
+        justify-content: space-between;
+        font-size: 30px;
+        font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        color: rgb(200, 200, 200);
+  }
+
   .listItem-wrap header h4{
     display: flex;
     justify-content: space-between;
-    color: rgb(180, 180, 180);
+    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: rgb(200, 200, 200);
   }
   
   .listItem-wrap header span {

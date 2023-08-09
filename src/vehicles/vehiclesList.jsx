@@ -14,4 +14,12 @@ export const VEHICLES_LIST = [
     km : "147.000 Km" , vehicle: "vehicle", price: "$ 4.190.000", location: "", 
     img: require('../public/vehiclesimg/Volkswagen/Volkswagen2.jpg').default},
 
+    {id : 5, brand : "Citroen", model : "C4", version: "1.6 X Am71", year: 2011, 
+    km : "132.000 Km" , vehicle: "vehicle", price: "$ 2.900.000", location: "", 
+    img: require('../public/vehiclesimg/Citroen/Citroen1.jpg').default},
+
+    {id : 6, brand : "Volkswagen", model : "Amarok", version: "Cd Tdi 180cv 4x2 Trendline", year: 2017, 
+    km : "47.000  Km" , vehicle: "vehicle", price: "$ 10.500.000", location: "", 
+    img: require('../public/vehiclesimg/Volkswagen/Volkswagen3.jpg').default},
+
 ]
