@@ -26,8 +26,8 @@ const Cover = () => {
                 <Button type={BUTTON_TYPES.SECONDARY} btnText="Vendemos tu vehiculo"/>
                 {/* <Button type={BUTTON_TYPES.SECONDARY} btnText="Contactame" /> */}
                 </div>
-                <hr/>
-                  <a class="animate__animated animate__fadeInLeft" href="#buysection" id="refCompra">
+                <hr id="coverHr"/>
+                  <a class="animate__animated animate__fadeInLeft" href="#buysection" id="refCompraCover">
                     Ver stock de vehiculos ↓
                     </a>
             </div>
