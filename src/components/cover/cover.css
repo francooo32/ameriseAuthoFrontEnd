@@ -32,17 +32,17 @@
     color: rgb(200, 200, 200);
     font-size: 55px;
     letter-spacing: 20px;
-    font-family: essonnes-display, serif;
+    font-family: Akko Regular;
     text-transform: uppercase;
 }
 
 .cover-container .cover-text > h3 > h2 {
     color: rgb(200, 200, 200);
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 4px;
     /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
-    font-family: 'frutiger';
-    font-weight: lighter;
+    font-family: Akko Regular;
+    /* font-weight: lighter; */
 }
 
 .cover-container .cover-text > h3 {
@@ -51,7 +51,7 @@
     font-size: 15px;
     letter-spacing: 4px;
     /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
-    font-family: 'frutiger';
+    font-family: Akko Regular;
     font-weight: lighter;
 }
 
@@ -98,13 +98,81 @@
     width: 31%;
     height: 6vh;
     border-radius: 27px;
-    font-family: 'frutiger';
+    font-family: Akko Regular;
     text-align: center;
     letter-spacing: 3px;
     font-size: 27px;
 }
 
 @media screen and (max-width: 1660px){
+    #logoCover {
+        object-fit: cover;
+        width: 75%;
+        margin-top: 1%;
+        margin-left: 2%;
+        /* opacity: 0.7; */
+    }
+
+    .cover-container .cover-text > h3 {
+        margin-top: -15%;
+        color: rgb(200, 200, 200);
+        font-size: 15px;
+        letter-spacing: 4px;
+        /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+        font-family: Akko Regular;
+        font-weight: lighter;
+    }
+
+    .cover-container .cover-img img {
+        object-fit: cover;
+        height: 46vh;
+        margin-top: 13%;
+        opacity: 0.7;
+    }
+
+    #coverHr {
+        display: block;
+        height: 4px;
+        border: 0;
+        margin-top: 50px;
+        padding: 0;
+        background: linear-gradient(90deg, #751f2b 0, #dd522d 50%, #edd155 100%);
+    }
+
+    #refCompraCover {
+        margin-top: 20px;
+        padding: 12px 24px;
+        color: rgb(200, 200, 200);
+        border: 2px solid #fff;
+        text-align: center;
+        letter-spacing: 1.2px;
+        font-size: 20px;
+        font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        opacity: 0.8;
+        text-decoration: none;
+        width: 75%;
+    }
+
+    .cover-button-modal{
+        margin-top: 10%;
+        text-align-last: center;
+    }
+
+    #modalCoverButton{
+        background-image: linear-gradient( to bottom left, rgb(255 62 0) -75%, rgb(14 14 14) 45%);
+        color: #e0e0e0;
+        /* border: none; */
+        width: 31%;
+        height: 6vh;
+        border-radius: 27px;
+        font-family: 'frutiger';
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1440px){
     #logoCover {
         object-fit: cover;
         width: 85%;

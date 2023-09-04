@@ -50,3 +50,18 @@
     text-transform: uppercase;
     opacity: 0.8;
 }
+
+@media screen and (max-width: 1660px){
+    .secondaryBtn{
+        margin-top: 40px;
+        padding: 12px 15px;
+        color: rgb(200, 200, 200);
+        border: 2px solid #fff;
+        letter-spacing: 1.2px;
+        font-size: 20px;
+        font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        opacity: 0.8;
+        text-decoration: none;
+        width: 75%;
+    }
+}
