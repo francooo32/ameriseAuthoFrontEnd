@@ -35,7 +35,7 @@ const AboutUs = () => {
           </Col>
         </Row>
         </div>
-        <div className="sucu">
+        <div className="seccion">
           <Row className="aligh-items-center">
             <Col xs={12} md={12} xl={12}>
           <div className='home_list-wrap-about'> 

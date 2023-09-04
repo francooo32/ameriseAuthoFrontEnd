@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/Landing/LandingPage"
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
 import AboutUs from './components/aboutus/aboutus.jsx'
+import Consignaciones from './components/consignaciones/consignaciones.jsx';
 import NavBar from './components/navBar/navBar.jsx';
 import CarDetail from './components/Car/Detail/CarDetail';
 import SellCar from './pages/sellcar/sellcar.jsx';
@@ -45,6 +46,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/nosotros" element={<AboutUs />} />
+          <Route path="/consignaciones" element={<Consignaciones />} />
           <Route path="/comprar" element={<BuyCarPage />} />
           <Route path="/detalle" element={<CarDetail />} />
           <Route path="/vender" element={<SellCar />} />

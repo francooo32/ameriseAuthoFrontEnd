@@ -1,0 +1,109 @@
+.modal-centrado {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 1051
+  }
+
+  .modal-s-consignaciones {
+    background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 511px;
+    height: 70vh;
+    /* background: #ffffff; */
+    border: 2px solid #e6ebf0;
+    border-radius: 8px;
+  }
+
+  .div-button-exit-consignaciones {
+    display: flex;
+    justify-content: end;
+  }
+
+  .buton-exit-consignaciones {
+    display: flex;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADaSURBVHgBfZKxEcIwDEUl4jEoUjABFS0dI1BmBJiAFRjBJS0dXVpKBqBwwQDQcQeJI8XxJbFs684XW/pP9yMbN7t9CaAqgL++3y4GMjHVLtwGTgBF7Qo5qKhZi1YdGNQAaGiVKXiEWIPGojqjK1SUaKhg6WupSbP1tkOI9lTTBseuEnYVCXEW55ZCuJcISIAS7iUC4lAg4sv2Jj1bWj+hCqyGg+CQA5uBsem5SnzamIL8P6WuCnPQ6EbCw5NLQxwux9b9C1NVsVyt6dB+6HCMQT5ez8ebtNdBqzsve5I2m+wwtgAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    Width: 13.13px;
+    margin-top: 3%;
+    margin-right: 3%;
+    top: 31px;
+    left: 6px;
+    height: 13.13px;
+  }
+
+  .title-first-consignaciones {
+    background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
+    height: 150px;
+    font-family: Frutiger;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #e0e0e0;
+  }
+
+  .title-first-consignaciones > h1{
+    text-align: center;
+    font-family: Frutiger;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .modal-container-consignaciones {
+    height: 100%;
+    padding: 25px 16px;
+    overflow-y: auto;
+  }
+
+  .modal-container-consignaciones > ul{
+    list-style-type: none;
+  }
+
+  .modal-container-consignaciones > ul > li > p{
+    font-family: 'frutiger';
+    font-size: 25px;
+    padding-top: 2%;
+    padding-left: 7%;
+    color: #e0e0e0;
+  }
+
+  .modal-container-consignaciones > ul > li > p > svg{
+    color: rgb(35, 206, 35);
+  }
+
+  .title-footer-relevamiento{
+    margin-top: 10%;
+    color: #e0e0e0;
+  }
+
+  .title-footer-relevamiento > h3{
+    font-family: 'frutiger';
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .cover-button-consignaciones{
+     margin-top: 10%;
+     text-align-last: center;
+  }
+
+  #consignacionesButton{
+    background-image: linear-gradient( to bottom left, rgb(255 153 0) -75%, rgb(14 14 14) 45%);
+    color: #e0e0e0;
+    border: none;
+    width: 40%;
+    height: 4vh;
+    border-radius: 12px;
+    font-family: 'frutiger';
+    text-align: center;
+    font-size: 20px;
+  }
+  

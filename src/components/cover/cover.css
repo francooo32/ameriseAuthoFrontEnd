@@ -19,7 +19,7 @@
     display: flex;
     align-self: center;
     overflow: hidden;
-    margin-top: 24%;
+    margin-top: 15%;
 }
 
 .cover-container .cover-img img{
@@ -38,9 +38,10 @@
 
 .cover-container .cover-text > h3 > h2 {
     color: rgb(200, 200, 200);
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 4px;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'frutiger';
     font-weight: lighter;
 }
 
@@ -49,7 +50,8 @@
     color: rgb(200, 200, 200);
     font-size: 15px;
     letter-spacing: 4px;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'frutiger';
     font-weight: lighter;
 }
 
@@ -81,16 +83,34 @@
     width: 115%;
     margin-top: -10%;
     margin-left: -8%;
-    opacity: 0.7;
+    /* opacity: 0.7; */
+}
+
+.cover-button-modal{
+    margin-top: 10%;
+    text-align-last: center;
+}
+
+#modalCoverButton{
+    background-image: linear-gradient( to bottom left, rgb(255 62 0) -75%, rgb(14 14 14) 45%);
+    color: #e0e0e0;
+    /* border: none; */
+    width: 31%;
+    height: 6vh;
+    border-radius: 27px;
+    font-family: 'frutiger';
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 27px;
 }
 
 @media screen and (max-width: 1660px){
     #logoCover {
         object-fit: cover;
         width: 85%;
-        margin-top: -10%;
-        margin-left: -8%;
-        opacity: 0.7;
+        margin-top: 1%;
+        margin-left: 2%;
+        /* opacity: 0.7; */
     }
 
     .cover-container .cover-text > h3 {
@@ -98,7 +118,8 @@
         color: rgb(200, 200, 200);
         font-size: 15px;
         letter-spacing: 4px;
-        font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+        font-family: 'frutiger';
         font-weight: lighter;
     }
 
@@ -130,6 +151,24 @@
         opacity: 0.8;
         text-decoration: none;
         width: 75%;
+    }
+
+    .cover-button-modal{
+        margin-top: 10%;
+        text-align-last: center;
+    }
+
+    #modalCoverButton{
+        background-image: linear-gradient( to bottom left, rgb(255 62 0) -75%, rgb(14 14 14) 45%);
+        color: #e0e0e0;
+        /* border: none; */
+        width: 31%;
+        height: 6vh;
+        border-radius: 27px;
+        font-family: 'frutiger';
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 20px;
     }
 }
 
