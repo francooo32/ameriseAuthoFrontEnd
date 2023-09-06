@@ -61,16 +61,16 @@ const Consignaciones = () => {
                     <div className='listItem-wrap-consignaciones'> 
                     <BiTask/>
                       <header>
-                        <h1>EVALUAMOS TU AUTO</h1>
-                        <h2>Nuestros profesionales determinarán el valor justo de mercado.</h2>
+                        <h1>NEGOCIAMOS POR VOS</h1>
+                        <h2>Obtendremos el mejor precio por tu vehículo.</h2>
                       </header>
                     </div>
 
                     <div className='listItem-wrap-consignaciones'> 
                     <BiTask/>
                       <header>
-                        <h1>EVALUAMOS TU AUTO</h1>
-                        <h2>Nuestros profesionales determinarán el valor justo de mercado.</h2>
+                        <h1>RELAJATE!</h1>
+                        <h2>Solo tenes que esperar noticias! Nuestro equipo es el más eficiente.</h2>
                       </header>
                     </div>
 
