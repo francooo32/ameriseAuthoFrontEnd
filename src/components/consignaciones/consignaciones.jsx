@@ -4,7 +4,9 @@ import aboutImg from "../../public/about/aboutimg.png"
 import logoPhoto from "../../public/Logos/2.png"
 import FooterSellSection from '../footer/footerSellSection.jsx';
 import {VEHICLES_LIST} from '../../vehicles/vehiclesList.jsx'
-import { BiTask } from "react-icons/bi";
+import { BiTask, BiHappyBeaming } from "react-icons/bi";
+import { IoMdMegaphone } from "react-icons/io";
+import { FaHandshake } from "react-icons/fa";
 import "./consignaciones.css"
 import 'animate.css';
 
@@ -51,7 +53,7 @@ const Consignaciones = () => {
                     </div>
 
                     <div className='listItem-wrap-consignaciones'> 
-                    <BiTask/>
+                    <IoMdMegaphone/>
                       <header>
                         <h1>LO PROMOCIONAMOS</h1>
                         <h2>Nos encargamos de todo el proceso de publicidad y promoción.</h2>
@@ -59,7 +61,7 @@ const Consignaciones = () => {
                     </div>
 
                     <div className='listItem-wrap-consignaciones'> 
-                    <BiTask/>
+                    <FaHandshake/>
                       <header>
                         <h1>NEGOCIAMOS POR VOS</h1>
                         <h2>Obtendremos el mejor precio por tu vehículo.</h2>
@@ -67,7 +69,7 @@ const Consignaciones = () => {
                     </div>
 
                     <div className='listItem-wrap-consignaciones'> 
-                    <BiTask/>
+                    <BiHappyBeaming/>
                       <header>
                         <h1>RELAJATE!</h1>
                         <h2>Solo tenes que esperar noticias! Nuestro equipo es el más eficiente.</h2>
