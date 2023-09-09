@@ -11,7 +11,6 @@ const DATA = [
 ];
 
 function LandingPage() {
-    const navigate = useNavigate();
 
     return(
         <>      

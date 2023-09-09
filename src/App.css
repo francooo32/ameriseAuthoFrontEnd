@@ -25,3 +25,10 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.wassap{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: green;
+}

@@ -1,12 +1,15 @@
 import React from 'react'
 import { Row, Col } from "react-bootstrap";
-import aboutImg from "../../public/about/aboutimg.png"
-import logoPhoto from "../../public/Logos/2.png"
-import FooterSellSection from '../footer/footerSellSection.jsx';
+import { BUTTON_TYPES } from '../common/data/buttonConst.jsx';
 import {VEHICLES_LIST} from '../../vehicles/vehiclesList.jsx'
 import { BiTask, BiHappyBeaming } from "react-icons/bi";
 import { IoMdMegaphone } from "react-icons/io";
 import { FaHandshake } from "react-icons/fa";
+import aboutImg from "../../public/about/consignaciones2.jpg"
+import logoPhoto from "../../public/Logos/2.png"
+import Button from '../button/button.jsx';
+import FooterSellSection from '../footer/footerSellSection.jsx';
+
 import "./consignaciones.css"
 import 'animate.css';
 
@@ -24,6 +27,7 @@ const Consignaciones = () => {
                 <h2>¡Nuestras consignaciones!</h2> <br />
                 En VITTORIA ofrecemos servicios de consignación para ayudarte a vender tu vehículo de manera rápida y eficiente.
               </h3>
+              <Button type={BUTTON_TYPES.SECONDARY} btnText="¡Vendé con nosotros!"/>
             </div>
           </Col>
         </Row>
@@ -31,7 +35,6 @@ const Consignaciones = () => {
           <Col xs={12} md={12} xl={12}>
             <div className="consignaciones-img">
               <img src={aboutImg} alt="logoPh"></img>
-              {/* <h1>AMERISE</h1> */}
             </div>
           </Col>
         </Row>

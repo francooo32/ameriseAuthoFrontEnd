@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BsWhatsapp } from "react-icons/bs";
 import LandingPage from "./pages/Landing/LandingPage"
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
 import AboutUs from './components/aboutus/aboutus.jsx'
@@ -42,6 +43,9 @@ function App() {
     <BrowserRouter>
       {/* <ThemeProvider theme={theme}> */}
         {/* <MainToolbar /> */}
+        <div className='wassap'>
+          <a><BsWhatsapp/></a>
+        </div>
         <NavBar isScrolling={scrollHeight}/>
         <Routes>
           <Route path="/" element={<LandingPage />} />

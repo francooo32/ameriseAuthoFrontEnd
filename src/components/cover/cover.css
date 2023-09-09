@@ -59,13 +59,13 @@
     display: block;
     height: 4px;
     border: 0;
-    margin-top: 80px;
+    margin-top: 30px;
     padding: 0;
     background: linear-gradient(90deg, #751f2b 0, #dd522d 50%, #edd155 100%);
 }
 
 #refCompraCover{
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 12px 24px;
     color: rgb(200, 200, 200);
     border: 2px solid #fff;
@@ -104,14 +104,14 @@
     font-size: 27px;
 }
 
-@media screen and (min-width: 1921px) and (max-width: 2200px){
+/* @media screen and (min-width: 1921px) and (max-width: 2200px){
     #logoCover {
         object-fit: cover;
         width: 70%;
         margin-top: 1%;
         margin-left: 15%;
     }
-}
+} */
 
 @media screen and (max-width: 1660px){
     #logoCover {
@@ -183,8 +183,8 @@
 @media screen and (max-width: 1366px){
     #logoCover {
         object-fit: cover;
-        width: 50%;
-        margin-top: 1%;
+        width: 80%;
+        margin-top: -5%;
         margin-left: 2%;
         /* opacity: 0.7; */
     }
@@ -192,11 +192,21 @@
     .cover-container .cover-text > h3 {
         margin-top: -15%;
         color: rgb(200, 200, 200);
-        font-size: 15px;
+        font-size: 14px;
         letter-spacing: 4px;
         /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
-        font-family: 'frutiger';
-        font-weight: lighter;
+        font-family: Akko Regular;
+    }
+
+    .cover-container .cover-text > h3 > h2 {
+        color: rgb(200, 200, 200);
+        /* margin-top: 13%; */
+        font-size: 30px;
+        width: 85%;
+        letter-spacing: 4px;
+        /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+        font-family: Akko Regular;
+        /* font-weight: lighter; */
     }
 
     .cover-container .cover-img img {
@@ -210,13 +220,13 @@
         display: block;
         height: 4px;
         border: 0;
-        margin-top: 50px;
+        margin-top: 20px;
         padding: 0;
         background: linear-gradient(90deg, #751f2b 0, #dd522d 50%, #edd155 100%);
     }
 
     #refCompraCover {
-        margin-top: 20px;
+        margin-top: 10px;
         padding: 12px 24px;
         color: rgb(200, 200, 200);
         border: 2px solid #fff;
