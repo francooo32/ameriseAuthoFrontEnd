@@ -98,11 +98,11 @@ const readerFile=(file)=>{
                 {errors.email?.type === 'pattern' && <p>El formato de email es incorrecto</p>}    
             </div>
 
-            <div className="contactCells">
+            {/* <div className="contactCells">
                 <p>Fotos* Cargue 6 fotos de su vehículo (frente, lados, detras)</p>
                 <input type="file" id="fileinput" multiple="multiple" {...register('file', {required:true})}/>
                 {errors.file?.type === 'requiered' && <p>Debe cargar 6 fotos fotos</p>}    
-            </div>
+            </div> */}
 
             <div className="contactCells">
                 <p for="msj">Mensaje*</p>

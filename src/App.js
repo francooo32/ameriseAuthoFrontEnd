@@ -23,6 +23,7 @@ import KmSelect from './components/sellsteps/kmselect/kmselect.jsx';
 import ErrorSelect from './components/sellsteps/finalizationselect/errorselect.jsx';
 import CongratzSelect from './components/sellsteps/finalizationselect/congratzselect.jsx';
 import ContactForm from './components/contactform/contactform.jsx';
+import ContactFormUs from './components/contactform/contactformUs.jsx';
 import ContactFormBuy from './components/contactform/contactformbuy.jsx';
 
 
@@ -67,6 +68,7 @@ function App() {
           <Route path="/colorselect" element={<ColorSelect />} />
           <Route path="/kmselect" element={<KmSelect />} />
           <Route path="/contact" element={<ContactForm />} />
+          <Route path="/contactUs" element={<ContactFormUs />} />
           <Route path="/contactbuy" element={<ContactFormBuy />} />
           <Route path="/errorselect" element={<ErrorSelect />} />
           <Route path="/congratzselect" element={<CongratzSelect />} />

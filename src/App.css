@@ -45,3 +45,26 @@ body {
   width: 100%;
   height: 60px;
 }
+
+@media screen and (max-width: 1366px){
+  .wassap{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    color: green;
+  }
+  
+  .wassap > a{
+    color: green;
+  }
+  
+  .wassap > a:hover{
+    color: green;
+  }
+  
+  .wassap > a > svg{
+    width: 100%;
+    height: 40px;
+  }
+
+}

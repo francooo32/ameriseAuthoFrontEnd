@@ -13,7 +13,6 @@ const NavBar = ({isScrolling}) => {
         <div className="navbar-logo" onClick={(returnToTop)}>
           
           <a className="navbar-logo" href="/"  onClick={(returnToTop)}>
-            {/* <p>HOME</p>  */}
             <img id="logoNav" src={logoNav} alt="logoPh"></img>
             </a>
             
@@ -28,7 +27,7 @@ const NavBar = ({isScrolling}) => {
                 <a href="/nosotros">Nosotros</a>
               </li>
               <li>
-                <a href="/contact">Contacto</a>
+                <a href="/contactUs">Contacto</a>
               </li>
             </ul>
 

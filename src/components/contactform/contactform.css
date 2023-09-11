@@ -1,7 +1,7 @@
 .contact-container {
     display: flex;
     background-image: linear-gradient( to bottom left, rgb(255 255 255) -700%, rgb(14 14 14) 45%);
-    height: 120vh;
+    height: 100vh;
     padding: 100px 0 100px 0;
     justify-content: center;
 }
@@ -21,26 +21,32 @@
 }
 
 .contact-container .contactForm{
+    background-image: linear-gradient(45deg, rgb(100 24 0 / 35%) 0, #000000 50%, rgb(100 24 0 / 19%) 100%);
+    margin-top: 2%;
     display: flex;
     flex-direction: column; 
-    width: 410px;
-    height: 100vh;
+    width: 35%;
+    height: 80vh;
+    border: 1px solid #fff;
 }
 
 .contact-container .contactForm h1{
-    font-size: 45px;
+    text-align: center;
+    font-size: 50px;
     text-transform: uppercase;
     color: rgb(200, 200, 200);
+    margin-top: 3%;
     margin-bottom: 20px;
-    font-family: essonnes-display, serif;
+    font-family: Akko Regular;
 }
 
-.contact-container .contactForm h3{
-    font-size: 35px;
-    /* text-transform: uppercase; */
+.contact-container .contactForm h3 {
+    font-size: 33px;
     color: rgb(200, 200, 200);
     margin-bottom: 20px;
-    font-family: essonnes-display, serif;
+    font-family: Akko Regular;
+    width: 100%;
+    padding-left: 3%;
 }
 
 .contact-container .contactForm .contactCells{
@@ -48,12 +54,14 @@
 }
 
 .contact-container .contactForm .contactCells p{
+    margin-left: 4%;
+    width: 90%;
     color: rgb(200, 200, 200);
     margin-top: 20px;
     margin-bottom: 0;
     font-size: 20px;
     font-weight: bolder;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Akko Regular;
 }
 
 .contact-container .contactForm .contactCells input{
@@ -61,14 +69,14 @@
 }
 
 #buttonForm{
-    justify-self: center;
+    align-self: center;
     margin-top: 30px;
     padding: 12px 15px;
     color: rgb(221, 221, 221);
     border: 2px solid #fff;
     letter-spacing: 1.2px;
     font-size: 20px;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Akko Regular;
     opacity: 0.8;
     text-decoration: none;
     width: 55%;
@@ -76,28 +84,30 @@
 }
 
 .contact-container .contactForm .contactCells input[type=text] {
-  justify-self: center;
-  padding: 12px 15px;
-  color: rgb(221, 221, 221);
-  border: 2px solid #fff;
-  letter-spacing: 1.2px;
-  font-size: 20px;
-  font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  opacity: 0.8;
-  text-decoration: none;
-  width: 100%;
-  background-color: #ffffff00;
-}
-
-  .contact-container .contactForm .contactCells textarea {
     justify-self: center;
-    width: 100%;
     padding: 12px 15px;
     color: rgb(221, 221, 221);
     border: 2px solid #fff;
     letter-spacing: 1.2px;
     font-size: 20px;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Akko Regular;
+    opacity: 0.8;
+    text-decoration: none;
+    margin-left: 4%;
+    width: 90%;
+    background-color: #ffffff00;
+}
+
+  .contact-container .contactForm .contactCells textarea {
+    justify-self: center;
+    margin-left: 4%;
+    width: 90%;
+    padding: 12px 15px;
+    color: rgb(221, 221, 221);
+    border: 2px solid #fff;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    font-family: Akko Regular;
     opacity: 0.8;
     text-decoration: none;
     background-color: #ffffff00;
@@ -107,7 +117,7 @@
     color: rgb(200, 200, 200);
     font-size: 15px;
     font-weight: bolder;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Akko Regular;
 }
 
 .contact-desc{
