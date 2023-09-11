@@ -88,7 +88,7 @@ hr {
 }
 
 .seccion-consignacion{
-  background-image: linear-gradient( to top right, rgb(255 255 255 / 56%) -935%, rgb(11 11 11))
+  background-image: linear-gradient( to top right, rgb(255 255 255 / 56%) -935%, #060606)
 }
 
 #logoConsignaciones{
@@ -270,7 +270,7 @@ hr {
 }
   
 .seccion-consignacion{
-    background-image: linear-gradient( to top right, rgb(255 255 255) -240%, rgb(11 11 11) 45%);
+    background-image: linear-gradient( to top right, rgb(255 255 255) -240%, #060606 45%);
   }
 
   .consignacion-title h1{
@@ -324,7 +324,7 @@ hr {
 @media screen and (max-width: 1440px){
 
   .seccion-consignacion{
-    background-image: linear-gradient( to top right, rgb(255 255 255) -240%, rgb(11 11 11) 45%);
+    background-image: linear-gradient( to top right, rgb(255 255 255) -240%, #060606 45%);
   }
 
   .cover-container-consignaciones {

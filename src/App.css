@@ -28,7 +28,20 @@ body {
 
 .wassap{
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5%;
+  right: 3%;
   color: green;
+}
+
+.wassap > a{
+  color: green;
+}
+
+.wassap > a:hover{
+  color: green;
+}
+
+.wassap > a > svg{
+  width: 100%;
+  height: 60px;
 }
