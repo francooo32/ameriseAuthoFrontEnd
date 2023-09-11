@@ -51,7 +51,9 @@ const AboutUs = () => {
                           <b>Inventario</b>
                           <li>+ {VEHICLES_LIST.length} Autos</li>
                         </p>
-                        <button id="buttonAboutForm">Ver</button>
+                        <button id="buttonAboutForm">
+                          <a href="https://goo.gl/maps/yVmGHzuMidWsnV3r8" target='_blank'>Ver</a>
+                          </button>
                       </footer>
                     </div>
 

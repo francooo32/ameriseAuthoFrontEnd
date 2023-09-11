@@ -210,6 +210,16 @@ hr {
     background-color: #ffffff00;
 }
 
+#buttonAboutForm > a{
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+}
+
+#buttonAboutForm > a:hover{
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+}
+
     /* END OF ABOUT LOCATION CARDS SECTION */
 
 @media screen and (max-width: 960px){
