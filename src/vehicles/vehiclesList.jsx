@@ -1,6 +1,14 @@
 export const VEHICLES_LIST = [
     {id : 1, brand : "BMW", model : "Serie 3", version: "328i", year: 2016, km : "82.000 Km", vehicle: "vehicle", 
-    price: "U$S 38.000", location: "", img: require('../public/vehiclesimg/Bmw/Bmw1.jpg').default},
+    price: "U$S 38.000", location: "", img: require('../public/vehiclesimg/Bmw/Bmw1.jpg').default,
+    caracteristicas: {
+        puertas: 4,
+        sensor: "Si",
+        transmision: "Manual",
+        combustible: "Nafta",
+        motor: "2.0"
+        }    
+    },
 
     {id : 2, brand : "Volkswagen", model : "Tiguan", version: "Sport & Style Tsi", year: 2011, 
     km : "150.000 Km" , vehicle: "vehicle", price: "U$S 15.000", location: "", 

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ListItems.css';
 
-function ListItem({item: { coverSrc, brand, model, price, km, rating, location, version, img }}) {
+function ListItem({item: { coverSrc, year, brand, model, price, km, location, version, img, caracteristicas }}) {
   const navigation = useNavigate();
 
   return (
@@ -14,12 +14,13 @@ function ListItem({item: { coverSrc, brand, model, price, km, rating, location, 
           version: {version},
           ubicacion: {location},
           kilometraje: {km},
-          precio: {price}
+          precio: {price},
+          year: {year},
+          details: {caracteristicas}
         }
       })
     }> 
     
-    {/* <img src={coverSrc} alt='' /> */}
     <img src={img} alt='' />
     <header>
       <h1>{brand}</h1>
