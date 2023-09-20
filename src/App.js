@@ -45,7 +45,7 @@ function App() {
       {/* <ThemeProvider theme={theme}> */}
         {/* <MainToolbar /> */}
         <div className='wassap'>
-          <a href='https://wa.me/541162767256' target='_blank'>
+          <a href='https://wa.me/541130545474' target='_blank'>
             <BsWhatsapp/>
             </a>
         </div>
