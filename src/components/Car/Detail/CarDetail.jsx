@@ -41,6 +41,15 @@ function CarDetail() {
                            <p>Tipo de combustible: {carDetail.details.caracteristicas.combustible}</p>
                         </li>
                       </ul>
+
+                      <ul>
+                        <li>
+                           <p>Puertas: {carDetail.details.caracteristicas.puertas}</p>
+                        </li>
+                        <li>
+                           <p>Motor: {carDetail.details.caracteristicas.motor}</p>
+                        </li>
+                      </ul>
                     </div>
                     
                     <hr id="carDetailHr"/>
@@ -53,7 +62,7 @@ function CarDetail() {
                 <div className="cardetail-desc">
                     <div className="cardetail-title">
                         <h1>{carDetail.marca.brand} <h2>{carDetail.modelo.model} <h3>{carDetail.version.version}</h3></h2></h1>
-                        <p>{carDetail.year.year}  {carDetail.kilometraje.km}</p>
+                        <p>{carDetail.year.year} | {carDetail.kilometraje.km}</p>
                     </div>
                     <hr id="carDetailHr"/>
                     <div className="cardetail-profesion">
@@ -77,7 +86,9 @@ function CarDetail() {
                 </div>
 
                 <div className="cardetail-consignaciones-container">
-
+                  <div className="cardetail-title-first-consignaciones">
+                            <h1 className="h1-ng">BENEFICIOS DE LA CONSIGNACIÓN</h1>
+                        </div>
                           <ul>
                               <li>
                               <p><FaCheck/> Fotografías Profesionales</p>

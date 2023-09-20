@@ -39,7 +39,7 @@
     display: flex;
         justify-content: space-between;
         letter-spacing: 5px;
-        font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        font-family: Akko Regular;
         font-weight: 700;
         color: rgb(200, 200, 200);
   }
@@ -48,14 +48,14 @@
         display: flex;
         justify-content: space-between;
         font-size: 30px;
-        font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        font-family: Akko Regular;
         color: rgb(200, 200, 200);
   }
 
   .listItem-wrap header h4{
     display: flex;
     justify-content: space-between;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Akko Regular;
     color: rgb(200, 200, 200);
   }
   
@@ -75,7 +75,7 @@
 
   .listItem-wrap footer p{
     color: rgb(200, 200, 200);
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Akko Regular;
     font-weight: lighter;
     font-size: 30px;
   }
