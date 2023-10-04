@@ -1,10 +1,9 @@
 import React from 'react'
-import "./sellsection.css"
 import { Row, Col } from "react-bootstrap";
-import logoPhoto from "../../public/sources/mitsu.png"
-import BuyCarPageCarousel from "../../components/Carousel/buycarpagecarousel.jsx"
-import Button from '../button/button.jsx';
 import { BUTTON_TYPES } from '../common/data/buttonConst.jsx';
+import logoPhoto from "../../public/sources/mitsu.png"
+import Button from '../button/button.jsx';
+import "./sellsection.css"
 
 const SellSection = () => {
 
@@ -28,19 +27,15 @@ const SellSection = () => {
                   elegir.
                 </h3>
                 <div className="button-wrapper"> 
-                <Button type={BUTTON_TYPES.PRIMARY} btnText="CONOCE NUESTRO STOCK DE VEHICULOS DISPONIBLES"/>
+                <Button type={BUTTON_TYPES.PRIMARY} btnText="CONOCÉ NUESTRO STOCK!"/>
                 </div>
                 <hr/>
                 <h4>Nuestro equipo capacitado está aquí para ayudarte a encontrar <br/>
                   el vehículo perfecto que se ajuste a tus necesidades. <br/>
                   ¡Descubrí tu auto soñado con Vittoria y conseguilo al mejor precio!</h4>
-                {/* <BuyCarPageCarousel/> */}
             </div>
           </Col>
         </Row>
-        {/* <h1>Evelyn Denise</h1>
-        <p>Fotografía</p>  */}
-        
     </section>
   )
 }

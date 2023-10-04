@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { BsWhatsapp } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
 import LandingPage from "./pages/Landing/LandingPage"
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
 import AboutUs from './components/aboutus/aboutus.jsx'
@@ -46,7 +46,7 @@ function App() {
         {/* <MainToolbar /> */}
         <div className='wassap'>
           <a href='https://wa.me/541130545474' target='_blank'>
-            <BsWhatsapp/>
+            <IoLogoWhatsapp/>
             </a>
         </div>
         <NavBar isScrolling={scrollHeight}/>

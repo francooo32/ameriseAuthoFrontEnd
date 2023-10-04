@@ -28,8 +28,11 @@ body {
 
 .wassap{
   position: fixed;
+  border-radius: 12px;
+  width: 3%;
   bottom: 5%;
   right: 3%;
+  background-color: white;
   color: green;
 }
 
@@ -49,8 +52,11 @@ body {
 @media screen and (max-width: 1366px){
   .wassap{
     position: fixed;
+    border-radius: 12px;
+    width: 3%;
     bottom: 5%;
     right: 5%;
+    background-color: white;
     color: green;
   }
   

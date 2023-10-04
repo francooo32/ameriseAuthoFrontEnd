@@ -21,7 +21,7 @@ const YearModal = ({open, onClose}) => {
                   <p id="closeX" onClick={onClose} className="closeBtn">x</p>
                   <div className="modalContent">
                       <form action="">
-                          <input id="yearInput" type="number" name="year" max="1000" onChange={handleChange}/>
+                          <input id="yearInput" type="text" name="year" pattern="[0-9]{10}" maxlength="4" onChange={handleChange}/>
                           <input id="yearButton" type="submit" value="Continuemos! ->" onClick={() => navigation("/brandselect", {
                               state: {
                                   year : year,

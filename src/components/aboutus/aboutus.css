@@ -1,7 +1,7 @@
 .cover-container-about {
     display: grid;
     background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
-    height: 100vh;
+    height: 120vh;
 }
 
 .cover-container-about .info {
@@ -30,6 +30,37 @@
     margin-left: -60%;
 }
 
+/* Map Start */
+
+.cover-container-about .info .about-map {
+  width: 180%;
+  /* height: 20vh; */
+  display: flex;
+  align-self: center;
+  overflow: hidden;
+  /* padding-right: 14%; */
+  margin-top: 50%;
+  /* margin-right: 29%; */
+  margin-left: -110%;
+}
+
+.cover-container-about .info .about-map .mapouter {
+  width: 100%;
+  height: 370px;
+}
+
+.cover-container-about .info .about-map .mapouter .gmap_canvas {
+  width: 78%;
+  height: 200px;
+}
+
+.cover-container-about .info .about-map .mapouter .gmap_canvas .gmap_iframe{
+  width: 125%;
+  height: 185%;
+}
+
+/* Map End */
+
 .cover-container-about .info .about-img img{
     /* object-fit: cover; */
     width: 100%;
@@ -41,7 +72,7 @@
     color: rgb(200, 200, 200);
     font-size: 55px;
     letter-spacing: 20px;
-    font-family: 'frutiger';
+    font-family: Akko Regular;
     text-transform: uppercase;
 }
 
@@ -49,7 +80,7 @@
     color: rgb(200, 200, 200);
     font-size: 40px;
     letter-spacing: 4px;
-    font-family: 'frutiger';
+    font-family: Akko Regular;
     font-weight: lighter;
 }
 
@@ -57,9 +88,9 @@
     width: 80%;
     margin-top: -15%;
     color: rgb(200, 200, 200);
-    font-size: 15px;
-    letter-spacing: 4px;
-    font-family: 'frutiger';
+    font-size: 20px;
+    /* letter-spacing: 4px; */
+    font-family: Akko Regular;
     font-weight: lighter;
 }
 
@@ -80,7 +111,7 @@ hr {
     text-align: center;
     letter-spacing: 1.2px;
     font-size: 20px;
-    font-family: 'frutiger';
+    font-family: Akko Regular;
     opacity: 0.8;
     text-decoration: none;
     width: 75%;
@@ -147,7 +178,7 @@ hr {
         display: flex;
         justify-content: space-between;
         letter-spacing: 5px;
-        font-family: 'frutiger';
+        font-family: Akko Regular;
         font-weight: 700;
         color: rgb(200, 200, 200);
       }
@@ -156,7 +187,7 @@ hr {
         display: flex;
         justify-content: space-between;
         font-size: 30px;
-        font-family: 'frutiger';
+        font-family: Akko Regular;
         color: rgb(200, 200, 200);
       }
   
@@ -182,7 +213,7 @@ hr {
   
     .listItem-wrap-about footer p{
       color: rgb(200, 200, 200);
-      font-family: 'frutiger';
+      font-family: Akko Regular;
       font-weight: lighter;
       font-size: 20px;
     }
@@ -203,7 +234,7 @@ hr {
     border: 2px solid #fff;
     letter-spacing: 1.2px;
     font-size: 20px;
-    font-family: 'frutiger';
+    font-family: Akko Regular;
     opacity: 0.8;
     text-decoration: none;
     width: 25%;

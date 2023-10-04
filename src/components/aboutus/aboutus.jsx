@@ -28,8 +28,17 @@ const AboutUs = () => {
         </Row>
         <Row className="aligh-items-center">
           <Col xs={12} md={12} xl={12}>
-            <div className="about-img">
-              <img src={aboutImg} alt="logoPh"></img>
+            {/* <div className="about-img"> */}
+            <div className="about-map">
+              {/* <img src={aboutImg} alt="logoPh"></img> */}
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Av. Gaona 1449 paso del rey&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Unlimited</a>
+                  </div>
+                  {/* <style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas 
+                    {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style> */}
+                  </div>
               {/* <h1>AMERISE</h1> */}
             </div>
           </Col>
