@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useState} from 'react'
 import "./modals.css"
 import { Row, Col } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
-
-var year = 0;
+import { validateIsNumber } from '../../../utils/regex';
+import { formaterStringBlockInvalidInput } from '../../../utils/formater';
 
 const YearModal = ({open, onClose}) => {
   const navigation = useNavigate();
+  const [year, setYear] = useState("");
 
   function handleChange(event) {
-    year = event.target.value
+    // year = event.target.value
+    debugger
+    validateIsNumber(event.target.value) ? setYear(event.target.value) : (setYear(formaterStringBlockInvalidInput(event.target.value)))
   }
+
   if(!open) return null
   return (
     <div className="overlay">
@@ -21,7 +25,13 @@ const YearModal = ({open, onClose}) => {
                   <p id="closeX" onClick={onClose} className="closeBtn">x</p>
                   <div className="modalContent">
                       <form action="">
-                          <input id="yearInput" type="text" name="year" pattern="[0-9]{10}" maxlength="4" onChange={handleChange}/>
+                          <input id="yearInput" 
+                          value={year}
+                          type="text" 
+                          name="year" 
+                          pattern="[0-9]{10}" maxlength="4" 
+                          onChange={handleChange}
+                          />
                           <input id="yearButton" type="submit" value="Continuemos! ->" onClick={() => navigation("/brandselect", {
                               state: {
                                   year : year,

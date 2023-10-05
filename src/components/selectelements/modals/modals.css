@@ -1,6 +1,6 @@
 #closeX{
     color: rgb(200, 200, 200);
-    font-family: essonnes-display, serif;
+    font-family: Akko Regular;
     font-size: 25px;
     width: 25%;
     margin-left: 20%;
@@ -19,7 +19,7 @@
 
   .overlay .modalContainer .modalRight .modalContent #yearButton{
     border-radius: 20px;
-    font-family: essonnes-display, serif;
+    font-family: Akko Regular;
     font-size: 23px;
     letter-spacing: 2px;
     padding: 8px 12px;
@@ -33,7 +33,7 @@
     text-align: center;
     color: #111111;
     font-size: 35px;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Akko Regular;
   }
 
   .overlay .modalContainer .modalRight .modalContent{
@@ -58,7 +58,7 @@
 
   .overlay .modalContainer .modalRight .modalContent #brandButton{
     border-radius: 20px;
-    font-family: essonnes-display, serif;
+    font-family: Akko Regular;
     font-size: 23px;
     letter-spacing: 2px;
     padding: 8px 12px;
@@ -72,5 +72,5 @@
     text-align: center;
     color: #111111;
     font-size: 35px;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Akko Regular;
   }

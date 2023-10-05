@@ -18,14 +18,14 @@ const FilterPanel = ({
   changePrice,
 }) => (
   <div>
-    <div className='input-group'>
+    {/* <div className='input-group'>
       <p className='label'>Category</p>
       <FilterListToggle
         options={categoryList}
         value={selectedCategory}
         selectToggle={selectCategory}
       />
-    </div>
+    </div> */}
     <div className='input-group'>
       <p className='label'>Marca</p>
       {vehicles.map((vehicle) => (
@@ -46,10 +46,10 @@ const FilterPanel = ({
         />
       ))}
     </div> */}
-    <div className='input-group'>
+    {/* <div className='input-group'>
       <p className='label-range'>Rango de precio</p>
       <SliderProton value={selectedPrice} changePrice={changePrice} />
-    </div>
+    </div> */}
     {/* <div className='input-group'>
       <p className='label'>Star Rating</p>
       <FilterListToggle

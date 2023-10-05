@@ -38,7 +38,7 @@
   .title-first-consignaciones {
     background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
     height: 150px;
-    font-family: Frutiger;
+    font-family: Akko Regular;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -51,7 +51,7 @@
 
   .title-first-consignaciones > h1{
     text-align: center;
-    font-family: Frutiger;
+    font-family: Akko Regular;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -68,7 +68,7 @@
   }
 
   .modal-container-consignaciones > ul > li > p{
-    font-family: 'frutiger';
+    font-family: Akko Regular;
     font-size: 25px;
     padding-top: 2%;
     padding-left: 7%;
@@ -85,7 +85,7 @@
   }
 
   .title-footer-relevamiento > h3{
-    font-family: 'frutiger';
+    font-family: Akko Regular;
     text-align: center;
     font-size: 20px;
   }
@@ -102,7 +102,7 @@
     width: 40%;
     height: 4vh;
     border-radius: 12px;
-    font-family: 'frutiger';
+    font-family: Akko Regular;
     text-align: center;
     font-size: 20px;
   }
@@ -149,7 +149,7 @@
     .title-first-consignaciones {
       background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
       height: 150px;
-      font-family: Frutiger;
+      font-family: Akko Regular;
       font-style: normal;
       font-weight: 700;
       font-size: 16px;
@@ -162,7 +162,7 @@
   
     .title-first-consignaciones > h1{
       text-align: center;
-      font-family: Frutiger;
+      font-family: Akko Regular;
       font-style: normal;
       font-weight: 700;
       font-size: 40px;
@@ -179,7 +179,7 @@
     }
   
     .modal-container-consignaciones > ul > li > p{
-      font-family: 'frutiger';
+      font-family: Akko Regular;
       font-size: 25px;
       padding-top: 2%;
       padding-left: 7%;
@@ -196,7 +196,7 @@
     }
   
     .title-footer-relevamiento > h3{
-      font-family: 'frutiger';
+      font-family: Akko Regular;
       text-align: center;
       font-size: 20px;
     }
@@ -213,7 +213,7 @@
       width: 40%;
       height: 4vh;
       border-radius: 12px;
-      font-family: 'frutiger';
+      font-family: Akko Regular;
       text-align: center;
       font-size: 20px;
     }

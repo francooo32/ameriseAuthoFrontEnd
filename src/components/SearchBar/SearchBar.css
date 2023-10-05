@@ -14,7 +14,7 @@
     outline: none;
     border: none;
     width: 100%;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Akko Regular;
   }
   
   .searchBar-wrap input::placeholder {
@@ -25,7 +25,7 @@
     margin-left: 15%;
     color: rgb(200, 200, 200);
     font-size: 15px;
-    font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Akko Regular;
   }
 
   #logoMercado{
