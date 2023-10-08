@@ -10,10 +10,11 @@
   }
   
   .searchBar-wrap input {
+    height: 0%;
+    width: 25%;
     font-size: 1.5rem;
     outline: none;
     border: none;
-    width: 100%;
     font-family: Akko Regular;
   }
   

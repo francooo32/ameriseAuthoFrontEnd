@@ -12,11 +12,11 @@ const SearchBar = ({ value, changeInput }) => (
       value={value}
       onChange={changeInput}
     />
-    <h3>También podes descubrir nuestro stock disponible en 
+    {/* <h3>También podes descubrir nuestro stock disponible en 
       <a href="https://vehiculos.mercadolibre.com.ar/_CustId_243234445" target="_blank">
         <img id="logoMercado" src={logoMercadoLibre} alt="logoMercado"></img>
       </a>
-    </h3>
+    </h3> */}
   </div>
 );
 
