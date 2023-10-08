@@ -12,7 +12,6 @@ function EngineList() {
     const navigation = useNavigate();
 
     function handleChange(event) {
-        console.log("Working:", event.target.value);
         engine = event.target.value
     }
 

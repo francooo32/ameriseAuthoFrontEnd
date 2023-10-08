@@ -6,7 +6,6 @@ import "./CarDetail.css"
 
 function CarDetail() {
     
-    debugger
     const location = useLocation();
     const carDetail = location.state    
     const navigation = useNavigate();

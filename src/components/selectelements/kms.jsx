@@ -12,7 +12,6 @@ function KmsList() {
     const navigation = useNavigate();
 
     function handleChange(event) {
-        console.log("Working:", event.target.value);
         km = event.target.value
     }
 

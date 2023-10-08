@@ -13,8 +13,6 @@ function DoorList() {
     const [door, setDoor] = useState("");
 
     function handleChange(event) {
-        console.log("Working:", event.target.value);
-        // door = event.target.value
         validateIsNumber(event.target.value) ? setDoor(event.target.value) : (setDoor(formaterStringBlockInvalidInput(event.target.value)))
     }
 

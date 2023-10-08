@@ -1,32 +1,23 @@
-import CarList from "../../components/Car/ListContainer/CarList";
+
+import React, { useEffect, useState } from 'react';
+import { Row, Col } from "react-bootstrap";
+import {VEHICLES_LIST} from '../../vehicles/vehiclesList.jsx'
+import {BRANDS} from '../../components/selectelements/brands.jsx'
+import EmptyView from '../../components/common/EmptyView/EmptyView';
 import SearchBar from "../../components/SearchBar/SearchBar";
 import FilterPanel from "../../components/FilterPanel/FilterPanel";
 import List from "../../components/List/List";
-import React, { useEffect, useState } from 'react';
-import { Row, Col } from "react-bootstrap";
-import EmptyView from '../../components/common/EmptyView/EmptyView';
-import vehiclesJson from './json/vehicles.json';
-import {VEHICLES_LIST} from '../../vehicles/vehiclesList.jsx'
-import {BRANDS} from '../../components/selectelements/brands.jsx'
 import './BuyCar.css';
-import { useCallback } from "react";
 
 const BuyCarPage = () => {
   
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedRating, setSelectedRating] = useState(null);
     const [selectedPrice, setSelectedPrice] = useState([0, 5000]);
-  
     const [vehicles, setVehicles] = useState([]);
-  
-    // const [list, setList] = useState(dataList);
-
     const [list, setVehicleList] = useState([]);
-    
-    // useEffect(fetchVehicleList(), [fetch])
 
     useEffect(() => {
-        debugger
         for(let i = 0; i < BRANDS.length; i++){
           const vehicleLoad = {
             id:BRANDS[i].id,
@@ -35,7 +26,6 @@ const BuyCarPage = () => {
           }
           vehicles.push(vehicleLoad)
         }
-        debugger
         setVehicleList(VEHICLES_LIST);
         setVehicles(vehicles);
       }, [])
@@ -54,7 +44,6 @@ const BuyCarPage = () => {
       const changeCheckedVehicles = vehiclesStateList.map((item) =>
         item.id === id ? { ...item, checked: !item.checked } : item
       );
-      debugger
       setVehicles(changeCheckedVehicles);
     };
   
@@ -68,20 +57,8 @@ const BuyCarPage = () => {
 
       // Initial vehicle load
       const applyFilters = async () => {
-        debugger
-        // if(list <= 0){
-        //   const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
-        //     // const requestUrl = vehiclesJson;
-        //     const resp = await fetch(requestUrl)
-        //     // setTimeout('', 6000);
-        //     const json = await resp.json();
-        //     debugger
-        //     setVehicleList(json);
-        //     // list = json;
-        // }
 
       setVehicleList(VEHICLES_LIST);
-      debugger
       let updatedList = list;
 
       for(let i = 0; i < vehicles?.length; i++){
@@ -150,13 +127,11 @@ const BuyCarPage = () => {
     };
 
     // useEffect( async () => {
-    //   debugger
     //   await fetchVehicleList();
       
     // }, []);
 
     useEffect(() => {
-      // debugger
       // await loadFetch();
        applyFilters();
       

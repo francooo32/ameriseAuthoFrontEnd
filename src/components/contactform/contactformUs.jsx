@@ -1,19 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import "./contactform.css"
+import React, { useState } from 'react';
 import {ERROR_ROUTE_REDIRECTION, SUCCESS_ROUTE_REDIRECTION} from '../../constants/constantsSellSteps.jsx'
 import { useNavigate, useLocation } from 'react-router-dom';
 import {useForm} from "react-hook-form"
 import {sendMail} from './helper/mailform'
+import "./contactform.css"
 
 const ContactForm = () => {
 
-debugger
 const location = useLocation();
 const formCar = location.state
 const navigation = useNavigate();
 
 const readerFile=(file)=>{
-    debugger
     return new Promise((resolve, reject)=>{
         const fileReader = new FileReader();
         fileReader.readAsDataURL(file)
@@ -38,8 +36,6 @@ const readerFile=(file)=>{
   const {nombre, email, msj, telefono, base64, carDataForm, status}=values;
 
   const onSubmit = async (data) => {
-    console.log(data)
-    debugger
     const nombre = data.nombre
     const email = data.email
     const msj = data.msj
@@ -50,13 +46,10 @@ const readerFile=(file)=>{
     for(let i = 0; i < file.length; i++){
         base64[i] = await readerFile(file[i])
     }
-    // console.log(base64)
     sendMail({nombre, email, telefono, base64, msj, carDataForm}).then(data=>{
         if(data.err){
-            console.log("err", data.err)
             navigation(ERROR_ROUTE_REDIRECTION)
         }else{
-            console.log("Success", data)
             setValues({...values,status:true})
             navigation(SUCCESS_ROUTE_REDIRECTION)
         }
@@ -65,15 +58,6 @@ const readerFile=(file)=>{
 
   return (
     <div className="contact-container">
-        {/* <h1>Pongamosnos en contacto!</h1> */}
-
-        {/* <div className='contact-list'>
-            <h3>--Envíame un mensaje!</h3> 
-            <p><img src={location} alt="loc" width="15px" />Alfredo Lorenzo Palacios 457</p>
-            <p><img src={telephone} alt="tel" width="15px" />1162767256</p>
-            <p><img src={mail} alt="email" width="15px" />ph.evelyndenise@gmail.com</p>
-        </div> */}
-
         <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
             <h1>Ponete en contacto con nosotros!</h1>
             <h3>Completa estos datos y nos comunicaremos.</h3>

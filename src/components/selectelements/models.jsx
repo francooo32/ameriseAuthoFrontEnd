@@ -6,13 +6,12 @@ import { ALFAROMEO, AUDI, BAIC, BMW, CHANGAN, CHERY, CHEVROLET, CHRYSLER,
         MITSUBISHI, NISSAN, PEUGEOT, PORSCHE, RAM, RENAULT, SHINERAY, SMART,
         SUBARU, SUZUKI, TOYOTA, VOLKSWAGEN, VOLVO } from '../vehiclemodels/modelslist.jsx';
 import {MODEL_ROUTE_REDIRECTION} from '../../constants/constantsSellSteps.jsx'         
-import "./selects.css"
 import ModelModal from "./modals/modelmodal.jsx"
 import FooterSellSection from '../../components/footer/footerSellSection.jsx';
+import "./selects.css"
 
 
 function ModelList() {
-    debugger
     const [openModal, setOpenModal] = useState(false);
     const location = useLocation();
     const formCar = location.state

@@ -1,13 +1,12 @@
 import React from 'react'
-import "./modals.css"
 import { Row, Col } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
+import "./modals.css"
 
 var brand = "";
 
 const BrandModal = ({open, onClose, formCar}) => {
   const navigation = useNavigate();
-  debugger
   function handleChange(event) {
     brand = event.target.value
   }

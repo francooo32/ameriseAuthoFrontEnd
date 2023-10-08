@@ -1,44 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import "./contactform.css"
+import React, { useState } from 'react';
 import {ERROR_ROUTE_REDIRECTION, SUCCESS_ROUTE_REDIRECTION} from '../../constants/constantsSellSteps.jsx'
 import { useNavigate, useLocation } from 'react-router-dom';
 import {useForm} from "react-hook-form"
 import {sendMail} from './helper/mailform'
+import "./contactform.css"
 
 const ContactFormBuy = () => {
 
-debugger
 const location = useLocation();
 const formCar = location.state
 const navigation = useNavigate();
-
-  const { register, formState: {errors}, handleSubmit} = useForm();
-  
-  const [values, setValues]=useState({
+const { register, formState: {errors}, handleSubmit} = useForm();
+const [values, setValues]=useState({
     nombre:"",
     email:"",
     msj:"",
     telefono:"",
     status:false
   })
-  
-  const {nombre, email, msj, telefono, carDataForm, status}=values;
-
-  const onSubmit = async (data) => {
-    console.log(data)
-    debugger
+const {nombre, email, msj, telefono, carDataForm, status}=values;
+const onSubmit = async (data) => {
     const nombre = data.nombre
     const email = data.email
     const msj = data.msj
     const telefono = data.telefono
     const carDataForm = formCar
-    // console.log(base64)
     sendMail({nombre, email, telefono, msj, carDataForm}).then(data=>{
         if(data.err){
-            console.log("err", data.err)
             navigation(ERROR_ROUTE_REDIRECTION)
         }else{
-            console.log("Success", data)
             setValues({...values,status:true})
             navigation(SUCCESS_ROUTE_REDIRECTION)
         }
