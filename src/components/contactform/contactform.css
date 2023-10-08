@@ -173,6 +173,19 @@
     overflow: hidden;
 }
 
+@media screen and (max-width: 1366px){
+
+    .contact-container .contactForm{
+        background-image: linear-gradient(45deg, rgb(100 24 0 / 35%) 0, #000000 50%, rgb(100 24 0 / 19%) 100%);
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column; 
+        width: 35%;
+        height: 110vh;
+        border: 1px solid #fff;
+    }
+}
+
 @media only screen and (max-width: 960px) {
     .contact-container{
         flex-direction: column;

@@ -105,21 +105,37 @@
     border-radius: 18px;
   }
   .footer img {
-    margin-top: 20px;
-    margin-left: 25px;
+    margin-top: 5%;
+    margin-left: 5%;
     width: 3%;
   }
+
   #footerImg{
-    margin-top: 20px;
-    margin-left: 25px;
-    width: 30%;
+    margin-top: 5%;
+    margin-left: 9%;
+    width: 25%;
   }
+
   .footer .copyright p {
     font-weight: 400;
     font-size: 14px;
     color: #B8B8B8;
     letter-spacing: 0.5px;
     margin-top: 20px;
+  }
+
+  .footer ul {
+    margin-left: 10%;
+    list-style: none;
+  }
+
+  .footer ul li {
+    padding-top: 1%;
+  }
+
+  .footer ul li a{
+    text-decoration: none;
+    color: rgb(200, 200, 200);
   }
 
   .footer .copyright .version {
@@ -137,7 +153,7 @@
     background-color: #121212;
     /* position: relative; */
     width: 100%;
-    height: 68vh;
+    height: 50vh;
     margin-top: 80px;
   }
 
@@ -249,11 +265,27 @@
     letter-spacing: 0.5px;
     border-radius: 18px;
   }
+  
   .footerSellSection img {
     margin-top: 20px;
     margin-left: 25px;
     width: 3%;
   }
+
+  .footerSellSection .container ul {
+    margin-left: -32%;
+    list-style: none;
+  }
+
+  .footerSellSection .container ul li {
+    padding-top: 1%;
+  }
+
+  .footerSellSection .container ul li a{
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+  }
+
   .footerSellSection .social-icon{
     margin-top: 20px;
   }
