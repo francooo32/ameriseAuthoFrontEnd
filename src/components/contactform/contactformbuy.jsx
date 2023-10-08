@@ -49,8 +49,8 @@ const navigation = useNavigate();
     <div className="contact-container">
 
         <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
-            <h1>Ya casi finalizamos!</h1>
-            <h3>Completa estos ultimos datos</h3>
+            <h1>Excelente elección!</h1>
+            <h3>Completa estos últimos datos y nos comunicaremos</h3>
             <div className="contactCells">
                 <p>Nombre*</p>
                 <input type="text" {...register('nombre', {required:true, maxLength:20})}/>

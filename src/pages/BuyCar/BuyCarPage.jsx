@@ -26,21 +26,6 @@ const BuyCarPage = () => {
     // useEffect(fetchVehicleList(), [fetch])
 
     useEffect(() => {
-        // const fetchVehicleList = async () => {
-        //   // async function fetchVehicleList(){
-        //   // debugger
-        //   try{
-        //     const requestUrl = 'https://62f0385257311485d12e9ab4.mockapi.io/vehicleapi/vehicle';
-        //     // const requestUrl = vehiclesJson;
-        //     const resp = await fetch(requestUrl)
-        //     setTimeout('', 6000);
-        //     const json = await resp.json();
-        //     setVehicleList(json)
-        //   } catch {
-        //     console.log('The url no trajo nada')
-        //   }
-        // }
-        // fetchVehicleList();
         debugger
         for(let i = 0; i < BRANDS.length; i++){
           const vehicleLoad = {
@@ -69,6 +54,7 @@ const BuyCarPage = () => {
       const changeCheckedVehicles = vehiclesStateList.map((item) =>
         item.id === id ? { ...item, checked: !item.checked } : item
       );
+      debugger
       setVehicles(changeCheckedVehicles);
     };
   
@@ -97,6 +83,15 @@ const BuyCarPage = () => {
       setVehicleList(VEHICLES_LIST);
       debugger
       let updatedList = list;
+
+      for(let i = 0; i < vehicles?.length; i++){
+        if(vehicles[i]?.checked == true){
+          updatedList = list;
+          break
+        }else{
+          updatedList = VEHICLES_LIST;
+        }
+      }
 
       // Rating Filter
       if (selectedRating) {

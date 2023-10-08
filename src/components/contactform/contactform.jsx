@@ -100,8 +100,11 @@ const readerFile=(file)=>{
 
             <div className="contactCells">
                 <p>Fotos* Cargue 6 fotos de su vehículo (frente, lados, detras)</p>
-                <input type="file" id="fileinput" multiple="multiple" {...register('file', {required:true})}/>
-                {errors.file?.type === 'requiered' && <p>Debe cargar 6 fotos fotos</p>}    
+                <label class="custom-file-upload">
+                    <p id="fileP">Cargar archivos</p>
+                    <input type="file" id="fileinput" multiple="multiple" {...register('file', {required:true})}/>
+                </label>
+                {errors.file?.type === 'requiered' && <p>Debe cargar 6 fotos</p>}    
             </div>
 
             <div className="contactCells">

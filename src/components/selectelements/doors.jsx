@@ -6,8 +6,6 @@ import { formaterStringBlockInvalidInput } from '../../utils/formater';
 import FooterSellSection from '../footer/footerSellSection.jsx';
 import "./selects.css"
 
-var door = 0;
-
 function DoorList() {
     const location = useLocation();
     const formCar = location.state

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BUTTON_TYPES } from '../common/data/buttonConst.jsx';
 import { Row, Col } from "react-bootstrap";
 import {ModalConsignaciones} from '../modals/ModalConsignaciones.jsx'
-import carPhoto from "../../public/sources/porch.png"
+import carPhoto from "../../public/sources/porch2.png"
 import logoPhoto from "../../public/Logos/2.png"
 import Button from '../button/button.jsx';
 import "./cover.css"

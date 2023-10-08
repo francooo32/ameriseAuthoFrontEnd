@@ -28,7 +28,7 @@ body {
 
 .wassap{
   position: fixed;
-  border-radius: 12px;
+  border-radius: 100%;
   width: 3%;
   bottom: 5%;
   right: 3%;
@@ -52,7 +52,7 @@ body {
 @media screen and (max-width: 1366px){
   .wassap{
     position: fixed;
-    border-radius: 12px;
+    border-radius: 100%;
     width: 3%;
     bottom: 5%;
     right: 5%;

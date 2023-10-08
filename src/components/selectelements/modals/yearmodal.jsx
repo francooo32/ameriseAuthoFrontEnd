@@ -11,7 +11,6 @@ const YearModal = ({open, onClose}) => {
 
   function handleChange(event) {
     // year = event.target.value
-    debugger
     validateIsNumber(event.target.value) ? setYear(event.target.value) : (setYear(formaterStringBlockInvalidInput(event.target.value)))
   }
 
@@ -29,7 +28,7 @@ const YearModal = ({open, onClose}) => {
                           value={year}
                           type="text" 
                           name="year" 
-                          pattern="[0-9]{10}" maxlength="4" 
+                          maxlength="4" 
                           onChange={handleChange}
                           />
                           <input id="yearButton" type="submit" value="Continuemos! ->" onClick={() => navigation("/brandselect", {

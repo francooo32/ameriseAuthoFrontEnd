@@ -35,7 +35,7 @@ function CarDetail() {
                     <div className="cardetail-caracteristicas-title">
                       <ul>
                         <li>
-                           <p>Sensor de estacionamiento: {carDetail.details.caracteristicas.sensor}</p>
+                           <p>Combustible: {carDetail.details.caracteristicas.transmision}</p>
                         </li>
                         <li>
                            <p>Tipo de combustible: {carDetail.details.caracteristicas.combustible}</p>

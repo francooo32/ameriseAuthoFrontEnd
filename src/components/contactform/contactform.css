@@ -113,9 +113,38 @@
     background-color: #ffffff00;
   }
 
+.contact-container .contactForm .contactCells .custom-file-upload{
+    height: 3%;
+    width: 15%;
+    margin-left: 4%;
+    margin-top: 1%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}  
+
+.contact-container .contactForm .contactCells input[type="file"]  
+{
+    display:none;
+}
+
 #fileinput{
+    /* margin-left: 4%;
+    margin-top: 2%; */
     color: rgb(200, 200, 200);
     font-size: 15px;
+    font-weight: bolder;
+    font-family: Akko Regular;
+}
+
+#fileP{
+    margin-left: -6%;
+    width: 130%;
+    color: rgb(200, 200, 200);
+    margin-top: -3px;
+    margin-bottom: 2%;
+    font-size: 13px;
     font-weight: bolder;
     font-family: Akko Regular;
 }

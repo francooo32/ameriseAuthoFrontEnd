@@ -1,7 +1,6 @@
 import { VALIDATE_NUMBER, VALIDATE_NUMBER_MAX100 } from "./regexContants";
 
 export function validateIsNumber(input){
-    debugger
     var lastCharToEvaluate = input.substr(input.length - 1);
     return VALIDATE_NUMBER.test(lastCharToEvaluate);
 }
