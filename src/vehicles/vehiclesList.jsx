@@ -538,4 +538,40 @@ export const VEHICLES_LIST = [
         }    
     },
 
+    {id : 46, brand : "Audi", model : "A4", version: "2.0 T Fsi 211cv Manual", year: 2011, 
+    km : "113.000 Km" , vehicle: "vehicle", price: "U$S 16.500", location: "", 
+    img: require('../public/vehiclesimg/Audi/Audi4.png').default, 
+    caracteristicas: {
+        puertas: 4 ,
+        sensor: "No",
+        transmision: "Manual",
+        combustible: "Nafta",
+        motor: "2.0"
+        }    
+    },
+
+    {id : 47, brand : "Peugeot", model : "208", version: "1.2t Gt", year: 2021, 
+    km : "25.000 Km" , vehicle: "vehicle", price: "U$S 32.000", location: "", 
+    img: require('../public/vehiclesimg/Peugeot/Peugeot4.png').default, 
+    caracteristicas: {
+        puertas: 5 ,
+        sensor: "No",
+        transmision: "Manual",
+        combustible: "Nafta",
+        motor: "1.2"
+        }    
+    },
+
+    {id : 48, brand : "Peugeot", model : "408", version: "1.6 Feline Thp 163cv Tiptronic", year: 2016, 
+    km : "66.000 Km" , vehicle: "vehicle", price: "U$S 10.000", location: "", 
+    img: require('../public/vehiclesimg/Peugeot/Peugeot5.png').default, 
+    caracteristicas: {
+        puertas: 4 ,
+        sensor: "Si",
+        transmision: "Automática",
+        combustible: "Nafta",
+        motor: "1.6"
+        }    
+    },
+
 ]
