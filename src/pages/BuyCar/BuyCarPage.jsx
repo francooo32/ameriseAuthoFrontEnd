@@ -7,6 +7,7 @@ import EmptyView from '../../components/common/EmptyView/EmptyView';
 import SearchBar from "../../components/SearchBar/SearchBar";
 import FilterPanel from "../../components/FilterPanel/FilterPanel";
 import List from "../../components/List/List";
+import ReactPaginate from 'react-paginate';
 import './BuyCar.css';
 
 const BuyCarPage = () => {
@@ -137,6 +138,17 @@ const BuyCarPage = () => {
       
     }, [selectedRating, selectedCategory, vehicles, searchInput, selectedPrice]);
   
+    const itemsPerPage = 12;
+    const [itemOffset, setItemOffset] = useState(0);
+    const endOffset = itemOffset + itemsPerPage;
+    const itemsToDisplay = list.slice(itemOffset, endOffset);
+    const pageCount = Math.ceil(list.length / itemsPerPage);
+
+    const handlePageClick = (event) => {
+      const newOffset = (event.selected * itemsPerPage) % list.length;
+      setItemOffset(newOffset);
+    };
+
     return (
       <div className='buyCar'>
         {/* Search Bar */}
@@ -164,7 +176,24 @@ const BuyCarPage = () => {
                   </div>
           {/* List & Empty View */}
               <div className='home_list-wrap'>
-                {resultsFound ? <List list={list} /> : <EmptyView />}
+                {resultsFound ? <List list={itemsToDisplay} /> : <EmptyView />}
+                  <div className="pagination-div">
+                    <ReactPaginate
+                        breakLabel="..."
+                        nextLabel=">"
+                        onPageChange={handlePageClick}
+                        marginPagesDisplayed={3}
+                        pageRangeDisplayed={2}
+                        pageCount={pageCount}
+                        previousLabel="<"
+                        renderOnZeroPageCount={null}
+                        containerClassName='pagination'
+                        pageClassName='page-item'
+                        pageLinkClassName='page-link-sup'
+                        previousLinkClassName='page-link-sup'
+                        activeLinkClassName='active' 
+                      />
+                </div>
               </div>
             </div>
           </Col>

@@ -29,6 +29,23 @@
     padding: 3rem;
   }
 
+  /*Pagination start*/
+
+  .home_list-wrap .pagination-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    letter-spacing: 10px;
+    font-family: 'Akko Regular';
+  }
+
+  .home_list-wrap .pagination-div ul li a{
+    color: white;
+    text-decoration: none;
+  }
+
+  /*Pagination end*/
+
   @media screen and (max-width: 1366px){
     .buyCar {
       padding-top: 60px;
