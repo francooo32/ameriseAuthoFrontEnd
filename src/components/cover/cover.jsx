@@ -23,14 +23,13 @@ const Cover = () => {
                   <br/>
                   En Vittoria Automobili, ofrecemos consignación de autos usados para garantizar 
                   una venta exitosa y sin estrés. <br/>
-                  {/* ¡Confía en nosotros y obtén el mejor valor para tu vehículo! 💰 */}
                   </h3>
                 <div className="button-wrapper"> 
-                <Button type={BUTTON_TYPES.SECONDARY} btnText="Vendemos tu vehiculo"/>
+                <Button type={BUTTON_TYPES.SECONDARY} btnText="Vendemos tu auto"/>
                 </div>
                 <hr id="coverHr"/>
                   <a class="animate__animated animate__fadeInLeft" href="#buysection" id="refCompraCover">
-                    Ver stock de vehiculos ↓
+                    Ver stock de autos ↓
                     </a>
             </div>
           </Col>

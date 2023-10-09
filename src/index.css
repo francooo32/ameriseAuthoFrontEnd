@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: scroll;
 }
 
 @font-face {

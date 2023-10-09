@@ -9,6 +9,7 @@
 body {
   font-family: Akko Regular;
   background-color: #151515;
+  overflow: scroll;
 }
 
 input {
@@ -16,15 +17,18 @@ input {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-::-webkit-scrollbar {
-  display: none;
+/* ::-webkit-scrollbar {
+  display: flex;
+  height: 50%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-}
+} */
 
 .wassap{
   position: fixed;

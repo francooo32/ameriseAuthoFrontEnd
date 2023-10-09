@@ -1,5 +1,5 @@
 .buyCar {
-    padding-top: 60px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -27,4 +27,15 @@
   .home_list-wrap {
     flex: 1;
     padding: 3rem;
+  }
+
+  @media screen and (max-width: 1366px){
+    .buyCar {
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
+      
+    }
   }
