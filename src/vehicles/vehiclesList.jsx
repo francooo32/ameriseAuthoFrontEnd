@@ -346,7 +346,7 @@ export const VEHICLES_LIST = [
         }    
     },
 
-    {id : 30, brand : "BMW", model : "Serie 3", version: "2.0 328i Sedán Sport 245cv", year: 2016, 
+    {id : 30, brand : "Bmw", model : "Serie 3", version: "2.0 328i Sedán Sport 245cv", year: 2016, 
     km : "82.000 Km" , vehicle: "vehicle", price: "U$S 38.000", location: "", 
     img: require('../public/vehiclesimg/Bmw/Bmw3.png').default, 
     caracteristicas: {
@@ -391,6 +391,150 @@ export const VEHICLES_LIST = [
         transmision: "Manual",
         combustible: "Nafta",
         motor: "2.0"
+        }    
+    },
+
+    {id : 34, brand : "Jeep", model : "Compass", version: "2.4 Longitude", year: 2018, 
+    km : "37.000 Km" , vehicle: "vehicle", price: "U$S 34.000", location: "", 
+    img: require('../public/vehiclesimg/Jeep/Jeep2.jpg').default, 
+    caracteristicas: {
+        puertas: 5 ,
+        sensor: "No",
+        transmision: "Manual",
+        combustible: "Nafta",
+        motor: "2.4"
+        }    
+    },
+
+    {id : 35, brand : "Audi", model : "TT", version: "1.8 T Fsi", year: 2012, 
+    km : "60.000 Km" , vehicle: "vehicle", price: "U$S 29.000", location: "", 
+    img: require('../public/vehiclesimg/Audi/Audi3.png').default, 
+    caracteristicas: {
+        puertas: 2 ,
+        sensor: "No",
+        transmision: "Manual",
+        combustible: "Nafta",
+        motor: "1.8"
+        }    
+    },
+
+    {id : 36, brand : "Volkswagen", model : "Vento", version: "1.4 Comfortline 150cv At", year: 2019, 
+    km : "58.000 Km" , vehicle: "vehicle", price: "U$S 24.000", location: "", 
+    img: require('../public/vehiclesimg/Volkswagen/Volkswagen10.png').default, 
+    caracteristicas: {
+        puertas: 4 ,
+        sensor: "No",
+        transmision: "Automática",
+        combustible: "Nafta",
+        motor: "1.4"
+        }    
+    },
+
+    {id : 37, brand : "Bmw", model : "Serie 5", version: "2.8 528i Executive At", year: 1997, 
+    km : "257.000 Km" , vehicle: "vehicle", price: "U$S 6.000", location: "", 
+    img: require('../public/vehiclesimg/Bmw/Bmw4.png').default, 
+    caracteristicas: {
+        puertas: 4 ,
+        sensor: "No",
+        transmision: "Automática",
+        combustible: "Nafta",
+        motor: "2.8"
+        }    
+    },
+
+    {id : 38, brand : "Chevrolet", model : "Cruze II", version: "1.4 Ltz At 153cv", year: 2017, 
+    km : "75.000 Km" , vehicle: "vehicle", price: "U$S 18.000", location: "", 
+    img: require('../public/vehiclesimg/Chevrolet/Chevrolet3.png').default, 
+    caracteristicas: {
+        puertas: 5 ,
+        sensor: "No",
+        transmision: "Automática",
+        combustible: "Nafta",
+        motor: "1.4"
+        }    
+    },
+
+    {id : 39, brand : "Kia", model : "Sorento", version: "2.4 Ex 4x2 6at", year: 2013, 
+    km : "92.000 Km" , vehicle: "vehicle", price: "U$S 16.000", location: "", 
+    img: require('../public/vehiclesimg/Kia/Kia1.png').default, 
+    caracteristicas: {
+        puertas: 5 ,
+        sensor: "No",
+        transmision: "Automática",
+        combustible: "Nafta",
+        motor: "2.4"
+        }    
+    },
+
+    {id : 40, brand : "Ram", model : "1500", version: "5.7 Laramie Atx V8", year: 2014, 
+    km : "55.000 Km" , vehicle: "vehicle", price: "U$S 38.000", location: "", 
+    img: require('../public/vehiclesimg/Ram/Ram1.png').default, 
+    caracteristicas: {
+        puertas: 4 ,
+        sensor: "Si",
+        transmision: "Automática",
+        combustible: "Nafta",
+        motor: "5.7"
+        }    
+    },
+
+    {id : 41, brand : "Ram", model : "1500", version: "5.7 Laramie Atx V8", year: 2020, 
+    km : "59.700 Km" , vehicle: "vehicle", price: "U$S 58.000", location: "", 
+    img: require('../public/vehiclesimg/Ram/Ram2.png').default, 
+    caracteristicas: {
+        puertas: 4 ,
+        sensor: "Si",
+        transmision: "Automática",
+        combustible: "Nafta",
+        motor: "5.7"
+        }    
+    },
+
+    {id : 42, brand : "Peugeot", model : "208", version: "1.5 Active", year: 2017, 
+    km : "75.000 Km" , vehicle: "vehicle", price: "$ 6.600.000", location: "", 
+    img: require('../public/vehiclesimg/Peugeot/Peugeot3.png').default, 
+    caracteristicas: {
+        puertas: 5 ,
+        sensor: "No",
+        transmision: "Manual",
+        combustible: "Nafta",
+        motor: "1.5"
+        }    
+    },
+
+    {id : 43, brand : "Renault", model : "Kangoo", version: "1.6 Furgon Ph3 Confort 5as Lc", year: 2015, 
+    km : "136.000 Km" , vehicle: "vehicle", price: "$ 5.700.000", location: "", 
+    img: require('../public/vehiclesimg/Renault/Renault5.png').default, 
+    caracteristicas: {
+        puertas: 3 ,
+        sensor: "No",
+        transmision: "Manual",
+        combustible: "Nafta",
+        motor: "1.6"
+        }    
+    },
+
+    {id : 44, brand : "Toyota", model : "Corolla", version: "1.8 Xei Mt", year: 2010, 
+    km : "110.000 Km" , vehicle: "vehicle", price: "$ 6.050.000", location: "", 
+    img: require('../public/vehiclesimg/Toyota/Toyota2.png').default, 
+    caracteristicas: {
+        puertas: 4 ,
+        sensor: "No",
+        transmision: "Manual",
+        combustible: "Nafta",
+        motor: "1.8"
+        }    
+    },
+
+    {id : 45, brand : "Kia", model : "Soul", version: "1.6 Pop 4at", year: 2011, 
+    km : "103.000 Km" , vehicle: "vehicle", price: "U$S 8.200", location: "", 
+    img: require('../public/vehiclesimg/Kia/Kia2.png').default, 
+    caracteristicas: {
+        puertas: 5 ,
+        sensor: "No",
+        transmision: "Automática",
+        combustible: "Nafta",
+        motor: "1.6"
         }    
     },
 
