@@ -42,7 +42,7 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     font-size: 30px;
     padding: 4px 6px;
     color: rgb(200, 200, 200);
@@ -53,7 +53,7 @@
 
 .yearselect-list p{
     /* color: white; */
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     font-size: 50px;
 }
 
@@ -75,7 +75,7 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  font-family: Akko Regular;
+  font-family: 'Proxima Nova', sans-serif;
   font-size: 30px;
   padding: 4px 6px;
   color: rgb(200, 200, 200);
@@ -121,7 +121,7 @@ border-bottom: 0;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  font-family: Akko Regular;
+  font-family: 'Proxima Nova', sans-serif;
   font-size: 30px;
   padding: 4px 6px;
   color: rgb(200, 200, 200);
@@ -135,7 +135,7 @@ border-bottom: 0;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  font-family: Akko Regular;
+  font-family: 'Proxima Nova', sans-serif;
   font-size: 30px;
   padding: 4px 6px;
   padding-left: 46%;
@@ -173,7 +173,7 @@ border-bottom: 0;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  font-family: Akko Regular;
+  font-family: 'Proxima Nova', sans-serif;
   font-size: 30px;
   padding: 4px 6px;
   color: rgb(200, 200, 200);
@@ -205,7 +205,7 @@ border-bottom: 0;
 .sideselect-km-list > form #kmInput, textarea{
   color: #fff;
   font-size: 35px;
-  font-family: Akko Regular;
+  font-family: 'Proxima Nova', sans-serif;
 }
 .sideselect-km-list > form #button{
   justify-self: center;
@@ -215,7 +215,7 @@ border-bottom: 0;
   border: 2px solid #fff;
   letter-spacing: 1.2px;
   font-size: 20px;
-  font-family: Akko Regular;
+  font-family: 'Proxima Nova', sans-serif;
   opacity: 0.8;
   text-decoration: none;
   width: 55%;

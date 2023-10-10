@@ -39,7 +39,7 @@ const onSubmit = async (data) => {
     <div className="contact-container">
 
         <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
-            <h1>Excelente elección!</h1>
+            <h1>En breves nos contactaremos!</h1>
             <h3>Completa estos últimos datos y nos comunicaremos</h3>
             <div className="contactCells">
                 <p>Nombre*</p>

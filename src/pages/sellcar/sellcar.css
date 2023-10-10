@@ -1,5 +1,5 @@
 body{
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     background-color: rgb(14, 14, 14)
 }
 
@@ -37,7 +37,7 @@ body{
     padding: 100px 0px 0px 0;
     text-align: center;
     text-transform: uppercase;
-    font-family: Akko Regular;
+    font-family:'Proxima Nova', sans-serif;
     color: rgb(200, 200, 200);
 }
 
