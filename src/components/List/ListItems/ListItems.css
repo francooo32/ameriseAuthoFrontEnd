@@ -4,6 +4,7 @@
 
 .listItem-wrap{
   display: flex;
+  width: 90%;
   cursor: pointer;
   /* background: rgb(19, 19, 19); */
   background: linear-gradient(320deg, #751f2b4a 0, #dd522d00 50%, #edd1552e 100%);
@@ -33,30 +34,30 @@
     margin: 1rem 0 1rem 0;
     /* align-items: center; */
     flex-direction: column;
-    padding-left: 10px;
+    padding-left: 11%;
   }
 
   .listItem-wrap header h1{
-    display: flex;
+        display: flex;
+        font-size: 30px;
         justify-content: space-between;
-        letter-spacing: 5px;
-        font-family: Akko Regular;
-        /* font-weight: 700; */
+        font-family: 'Proxima Nova', sans-serif;
         color: rgb(200, 200, 200);
   }
 
   .listItem-wrap header h2{
         display: flex;
         justify-content: space-between;
-        font-size: 30px;
-        font-family: Akko Regular;
+        font-size: 15px;
+        font-family: 'Proxima Nova', sans-serif;
         color: rgb(200, 200, 200);
   }
 
   .listItem-wrap header h4{
     display: flex;
     justify-content: space-between;
-    font-family: Akko Regular;
+    font-size: 15px;
+    font-family: 'Proxima Nova', sans-serif;
     color: rgb(200, 200, 200);
   }
   
@@ -71,14 +72,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10px;
+    padding-left: 11%;
   }
 
   .listItem-wrap footer p{
     color: rgb(200, 200, 200);
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .listItem-wrap footer p:first-child span {

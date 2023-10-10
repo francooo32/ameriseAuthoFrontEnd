@@ -19,6 +19,7 @@
     display: flex;
   }
   .home_panel-wrap {
+    margin-left: 5%;
     flex-basis: 280px;
     padding: 1rem;
     background: rgb(19, 19, 19);
@@ -55,4 +56,28 @@
       background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
       
     }
+
+    .listItem-wrap {
+      display: flex;
+      width: 90%;
+      cursor: pointer;
+      /* background: rgb(19, 19, 19); */
+      background: linear-gradient(320deg, #751f2b4a 0, #dd522d00 50%, #edd1552e 100%);
+      flex-direction: column;
+      box-shadow: 1px 5px 0 rgb(229 229 229 / 15%), 0 2px 2px 0 rgb(175 175 175 / 15%), 0 3px 2px -2px rgb(196 196 196 / 15%);
+      box-sizing: border-box;
+      border-radius: 0.375rem;
+      height: 95%;
   }
+
+    .home_list-wrap {
+      flex: 1 1;
+      padding: 1rem;
+  }
+
+    .list-wrap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+  }
+}

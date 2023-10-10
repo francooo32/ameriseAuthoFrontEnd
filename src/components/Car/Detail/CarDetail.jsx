@@ -68,7 +68,7 @@ function CarDetail() {
                         <h2>{carDetail.precio.price}</h2>
                     </div>
                     <hr id="carDetailHr"/>
-                    <input id="buttonBuy" type="submit" value="Consultar" onClick={() => navigation("/contactbuy", {
+                    <input id="buttonBuyDetail" type="submit" value="Consultar" onClick={() => navigation("/contactbuy", {
                                 state:{
                                     brand: carDetail.marca.brand,
                                     model: carDetail.modelo.model,
@@ -106,7 +106,7 @@ function CarDetail() {
                           <h3 className="h3-ng">Si no se vende lo compramos nosotros!</h3>
                       </div>
                       <div className="cover-button-consignaciones">
-                            <button id="consignacionesButton"
+                            <button id="consignacionesButtonDetail"
                                 onClick={() => navigation("/consignaciones")}
                                 >
                                 Conoce mas!
