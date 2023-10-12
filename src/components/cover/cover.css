@@ -263,9 +263,15 @@
     #logoCover {
         object-fit: cover;
         width: 100%;
-        margin-top: 15%;
-        margin-left: -6%;
+        margin-top: 0%;
+        margin-left: -5%;
         /* opacity: 0.7; */
+    }
+
+    .cover-container {
+        display: flex;
+        background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
+        height: 75vh;
     }
 
     .cover-container > h1 {
@@ -329,17 +335,31 @@
     }
 
     #refCompraCover {
+        margin-left: 5%;
         margin-top: 10px;
         padding: 12px 24px;
         color: rgb(200, 200, 200);
         border: 2px solid #fff;
         text-align: center;
         letter-spacing: 1.2px;
-        font-size: 20px;
+        font-size: 10px;
         font-family: Akko Regular;
         opacity: 0.8;
         text-decoration: none;
-        width: 86%;
+        width: 75%;
+    }
+
+    .secondaryBtn {
+        margin-top: 40px;
+        padding: 12px 15px;
+        color: rgb(200, 200, 200);
+        border: 2px solid #fff;
+        letter-spacing: 1.2px;
+        font-size: 10px;
+        font-family: Akko Regular;
+        opacity: 0.8;
+        text-decoration: none;
+        width: 75%;
     }
 
 }

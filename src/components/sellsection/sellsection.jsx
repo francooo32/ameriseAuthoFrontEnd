@@ -9,7 +9,7 @@ const SellSection = () => {
 
   return (
     <section className="sellsection-container" id="buysection">
-      <Row className="sellsection-img aligh-items-center">
+      <Row className="sellsection-img-display aligh-items-center">
         <Col xs={12} md={12} xl={12}>
             <div className="sellsection-img">
               <img src={logoPhoto} alt="logoPh"></img>
@@ -29,7 +29,7 @@ const SellSection = () => {
                 <div className="button-wrapper"> 
                 <Button type={BUTTON_TYPES.PRIMARY} btnText="CONOCÉ NUESTRO STOCK!"/>
                 </div>
-                <hr/>
+                <hr id="sellsectionHr"/>
                 <h4>Nuestro equipo capacitado está aquí para ayudarte a encontrar <br/>
                   el vehículo perfecto que se ajuste a tus necesidades. <br/>
                   ¡Descubrí tu auto soñado con Vittoria y conseguilo al mejor precio!</h4>
