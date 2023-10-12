@@ -88,6 +88,12 @@
     display: none;
   }
 
+  .home_list-wrap {
+    flex: 1 1;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
   .list-wrap {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
