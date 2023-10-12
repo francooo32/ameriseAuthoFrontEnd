@@ -52,6 +52,7 @@
   /* color: #212121; */
   visibility: hidden;
   opacity: 0;
+  color: white;
 }
 
 .navbar .navbar-logo .nav-close-btn{
@@ -63,6 +64,7 @@
   /* color: #212121; */
   visibility: hidden;
   opacity: 0;
+  color: white;
 }
 
 .scrolling {
@@ -97,7 +99,7 @@
 
   .navbar-logo ul {
     display: inline-grid;
-    margin-top: 35%;
+    margin-top: 15%;
     list-style: none;
     grid-gap: 3rem;
     gap: 3rem;
@@ -113,6 +115,7 @@
   .navbar .navbar-logo .nav-btn{
     visibility: visible;
     opacity: 1;
+    color: white;
   }
 
   .navbar .navbar-logo .nav-close-btn{
@@ -121,6 +124,7 @@
     margin-top: 70%;
     visibility: visible;
     opacity: 1;
+    color: white;
   }
 
   .nav-btn{
