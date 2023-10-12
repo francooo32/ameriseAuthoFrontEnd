@@ -96,4 +96,8 @@
         font-size: 22px;
         width: 85%;
     }
+
+    .sellsection-container .sellsection-img {
+        display: none;
+    }
 }

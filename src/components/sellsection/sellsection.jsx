@@ -9,7 +9,7 @@ const SellSection = () => {
 
   return (
     <section className="sellsection-container" id="buysection">
-      <Row className="aligh-items-center">
+      <Row className="sellsection-img aligh-items-center">
         <Col xs={12} md={12} xl={12}>
             <div className="sellsection-img">
               <img src={logoPhoto} alt="logoPh"></img>

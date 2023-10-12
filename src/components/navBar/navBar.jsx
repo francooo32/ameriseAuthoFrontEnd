@@ -1,6 +1,6 @@
 import React from 'react'
-import "./navBar.css"
 import logoNav from "../../public/Logos/2Logo.png"
+import "./navBar.css"
 
 const NavBar = ({isScrolling}) => {
 

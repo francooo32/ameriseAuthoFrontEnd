@@ -34,7 +34,7 @@ const Cover = () => {
             </div>
           </Col>
         </Row>
-        <Row className="aligh-items-center">
+        <Row className="img-row aligh-items-center">
           <Col xs={12} md={12} xl={12}>
             <div className="cover-img">
               <img src={carPhoto} alt="logoPh"></img>
