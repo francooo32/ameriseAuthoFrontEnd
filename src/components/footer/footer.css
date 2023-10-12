@@ -303,3 +303,13 @@
     letter-spacing: 0.5px;
     margin-top: 20px;
   }
+
+  @media screen and (max-width: 960px){
+
+    #footerImg {
+      margin-top: 5%;
+      margin-left: 35%;
+      width: 25%;
+  }
+  
+  }
