@@ -41,13 +41,14 @@ const readerFile=(file)=>{
     const msj = data.msj
     const telefono = data.telefono
     const file = data.file
+    const toSendEmail = "vittoriaautomobilicontacto@gmail.com"
     const base64 = []
     const carDataForm = formCar
     for(let i = 0; i < file.length; i++){
         base64[i] = await readerFile(file[i])
     }
-    sendMail({nombre, email, telefono, base64, msj, carDataForm}).then(data=>{
-        if(data.err){
+    sendMail({nombre, email, telefono, base64, msj, carDataForm, toSendEmail}).then(data=>{
+        if(data.code == 400){
             navigation(ERROR_ROUTE_REDIRECTION)
         }else{
             setValues({...values,status:true})
@@ -71,8 +72,8 @@ const readerFile=(file)=>{
             <div className="contactCells">
                 <p>Telefono*</p>
                 <input type="text" {...register('telefono', {required:true, maxLength:20})}/>
-                {errors.nombre?.type === 'required' && <p>El campo Telefono es obligatorio</p>}
-                {errors.nombre?.type === 'maxLength' && <p>El campo Telefono debe tener menos de 20 caracteres</p>}
+                {errors.telefono?.type === 'required' && <p>El campo Telefono es obligatorio</p>}
+                {errors.telefono?.type === 'maxLength' && <p>El campo Telefono debe tener menos de 20 caracteres</p>}
             </div>
 
             <div className="contactCells">
@@ -87,8 +88,8 @@ const readerFile=(file)=>{
                 <label class="custom-file-upload">
                     <p id="fileP">Cargar archivos</p>
                     <input type="file" id="fileinput" multiple="multiple" {...register('file', {required:true})}/>
+                    {errors.file?.type === 'requiered' && <p>Debe cargar 6 fotos</p>}
                 </label>
-                {errors.file?.type === 'requiered' && <p>Debe cargar 6 fotos</p>}    
             </div>
 
             <div className="contactCells">

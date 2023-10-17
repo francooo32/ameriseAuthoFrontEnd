@@ -15,10 +15,10 @@ const ErrorSelect = () => {
         <Col xs={12} md={12} xl={12}>
           <div className='errorDiv'>
             <h1>
-              Algo salio mal :S
+              Algo salió mal 
             </h1>
             <p>
-              Por favor, reintenta en unos momentos! <br/>
+              Por favor, reintenta en unos momentos <br/>
               <a onClick={() => navigation(KM_ROUTE_REDIRECTION)}> 
               Volver
               </a>

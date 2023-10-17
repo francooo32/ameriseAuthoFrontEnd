@@ -18,8 +18,8 @@ const   CongratzSelect = () => {
               ¡Excelente!
             </h1>
             <p>
-              Pronto un representante se pondra en contacto. <br/>
-              Mientras tanto, conoce alguno de nuestros vehículos! <br/>
+              Pronto un representante se pondrá en contacto. <br/>
+              Mientras tanto, conocé alguno de nuestros vehículos! <br/>
               <a onClick={() => navigation(SUCCESS_BUY_ROUTE_REDIRECTION)}> 
               Descubrir
               </a>
