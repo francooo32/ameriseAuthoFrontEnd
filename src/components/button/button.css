@@ -68,15 +68,15 @@
 
 @media screen and (max-width: 1400px){
     .secondaryBtn{
-        margin-top: 40px;
+        margin-top: 20px;
         padding: 5px 15px;
         color: rgb(200, 200, 200);
         border: 2px solid #fff;
         letter-spacing: 1.2px;
-        font-size: 10px;
+        font-size: 15px;
         font-family: Akko Regular;
         opacity: 0.8;
         text-decoration: none;
-        width: 40%;
+        width: 50%;
     }
 }
