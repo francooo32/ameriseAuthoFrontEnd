@@ -72,7 +72,7 @@
     color: rgb(200, 200, 200);
     font-size: 55px;
     letter-spacing: 20px;
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     text-transform: uppercase;
 }
 
@@ -80,7 +80,7 @@
     color: rgb(200, 200, 200);
     font-size: 40px;
     letter-spacing: 4px;
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     font-weight: lighter;
 }
 
@@ -90,7 +90,7 @@
     color: rgb(200, 200, 200);
     font-size: 20px;
     /* letter-spacing: 4px; */
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     font-weight: lighter;
 }
 
@@ -111,7 +111,7 @@ hr {
     text-align: center;
     letter-spacing: 1.2px;
     font-size: 20px;
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     opacity: 0.8;
     text-decoration: none;
     width: 75%;
@@ -178,7 +178,7 @@ hr {
         display: flex;
         justify-content: space-between;
         letter-spacing: 5px;
-        font-family: Akko Regular;
+        font-family: 'Proxima Nova', sans-serif;
         font-weight: 700;
         color: rgb(200, 200, 200);
       }
@@ -187,7 +187,7 @@ hr {
         display: flex;
         justify-content: space-between;
         font-size: 30px;
-        font-family: Akko Regular;
+        font-family: 'Proxima Nova', sans-serif;
         color: rgb(200, 200, 200);
       }
   
@@ -213,7 +213,7 @@ hr {
   
     .listItem-wrap-about footer p{
       color: rgb(200, 200, 200);
-      font-family: Akko Regular;
+      font-family: 'Proxima Nova', sans-serif;
       font-weight: lighter;
       font-size: 20px;
     }
@@ -234,7 +234,7 @@ hr {
     border: 2px solid #fff;
     letter-spacing: 1.2px;
     font-size: 20px;
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     opacity: 0.8;
     text-decoration: none;
     width: 25%;
@@ -253,21 +253,42 @@ hr {
 
     /* END OF ABOUT LOCATION CARDS SECTION */
 
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1400px){
 
   #logoAbout {
     object-fit: cover;
-    width: 80%;
+    width: 70%;
     margin-top: 10%;
   }
+
+  .cover-container-about .info{
+    height: 60vh;
+  }
+
+  .cover-container-about .info .cover-text-about > h3 > h2 {
+    color: rgb(200, 200, 200);
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: lighter;
+}
+
+  .cover-container-about .info .cover-text-about > h3 {
+    width: 80%;
+    margin-top: -15%;
+    color: rgb(200, 200, 200);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Akko Regular;
+    font-weight: lighter;
+  } 
 
   .listItem-wrap-about header h1{
     display: flex;
     justify-content: space-between;
     letter-spacing: 5px;
-    font-size: 200%;
-    font-family: Akko Regular;
-    font-weight: 700;
+    font-size: 170%;
+    font-family: 'Proxima Nova', sans-serif;
     color: rgb(200, 200, 200);
   }
 
@@ -275,16 +296,17 @@ hr {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     color: rgb(200, 200, 200);
   }
 
   .listItem-wrap-about footer p{
     color: rgb(200, 200, 200);
-    font-family: Akko Regular;
+    font-family: 'Proxima Nova', sans-serif;
     font-weight: lighter;
     font-size: 15px;
   }
+  
 
 }
 
