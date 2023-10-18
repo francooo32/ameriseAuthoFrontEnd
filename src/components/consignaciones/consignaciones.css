@@ -408,12 +408,12 @@ hr {
   .modal-s-consignaciones {
     display: flex;
     position: absolute;
-    bottom: -500px;
+    bottom: -475px;
     background-image: linear-gradient( to bottom left, rgb(255 255 255) -470%, rgb(14 14 14) 45%);
     box-sizing: border-box;
     flex-direction: column;
-    width: 450px;
-    height: 67vh;
+    width: 420px;
+    height: 70vh;
     border: 2px solid #e6ebf0;
     border-radius: 8px;
 }
