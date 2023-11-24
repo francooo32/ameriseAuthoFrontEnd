@@ -82,11 +82,9 @@ body {
     height: 2%;
     position: fixed;
     border-radius: 100%;
-    width: 4%;
-    bottom: 10%;
+    width: 10%;
+    bottom: 8%;
     right: 8%;
-    /* background-color: white; */
-    color: green;
   }
 
   .wassap > a > svg {

@@ -27,13 +27,11 @@ import ContactForm from './components/contactform/contactform.jsx';
 import ContactFormUs from './components/contactform/contactformUs.jsx';
 import ContactFormBuy from './components/contactform/contactformbuy.jsx';
 
-
 function App() {
-
   const [scrollHeight, setScrolHeight] = useState(0) 
 
   const handleScroll = () => {
-    const position = window.pageY;
+    const position = window.scrollY;
     setScrolHeight(position); 
   }
 
@@ -43,7 +41,6 @@ function App() {
 
   const openOtherRef = () => {
     let locs = ["https://wa.me/541151109934", "https://wa.me/541130938744"];
-
     for (let i = 0; i < locs.length; i++) {
       window.open(locs[i])
     }
@@ -51,13 +48,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <ThemeProvider theme={theme}> */}
-        {/* <MainToolbar /> */}
-        {/* <div className='wassap'>
-          <a href='https://wa.me/541167040921' onClick={openOtherRef} target='_blank'>
-            <IoLogoWhatsapp />
-            </a>
-        </div> */}
         <div className='wassap'>
           <a href="https://wa.me/541167040921" onClick={openOtherRef} target="_blank">
             <img src={wassap} alt="" />
@@ -88,8 +78,6 @@ function App() {
           <Route path="/congratzselect" element={<CongratzSelect />} />
         </Routes>
         
-        
-      {/* </ThemeProvider> */}
     </BrowserRouter>
   );
 }

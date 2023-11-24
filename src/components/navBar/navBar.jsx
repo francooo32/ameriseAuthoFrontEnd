@@ -4,7 +4,7 @@ import logoNav from "../../public/Logos/2Logo.png"
 import "./navBar.css"
 
 const NavBar = ({isScrolling}) => {
-  const navRef = useRef();
+  const navRef = useRef(null);
 
   const showNavBar = () => {
     navRef.current.classList.toggle("responsive_nav")
@@ -35,9 +35,9 @@ const NavBar = ({isScrolling}) => {
           <li>
             <a href="/contactUs">Contacto</a>
           </li>
-          <button className="nav-btn nav-close-btn" onClick={showNavBar}>
+          {/* <button className="nav-btn nav-close-btn" onClick={showNavBar}>
             <FaTimes />
-          </button>
+          </button> */}
         </ul>
 
       </div>

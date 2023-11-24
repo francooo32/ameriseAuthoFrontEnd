@@ -69,7 +69,7 @@
 
 .scrolling {
     padding-top: 20px;
-    background-color: #212121;
+    background-color: #1212125a;
     transition: all 0.5s ease;
 }
 
@@ -108,7 +108,7 @@
   }
 
   .responsive_nav {
-    height: 45%;
+    height: 60%;
     transform: none;
   }
 
@@ -135,7 +135,11 @@
   }
 
   #logoNav {
-    display: none;
+    /* display: none; */
+    margin-top: 30%;
+    width: 50%;
+    height: 65%;
+    opacity: 0.7;
 }
 
 }
