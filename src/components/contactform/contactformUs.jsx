@@ -43,7 +43,7 @@ const readerFile=(file)=>{
     const file = data.file
     const base64 = []
     const carDataForm = formCar
-    for(let i = 0; i < file.length; i++){
+    for(let i = 0; i < file?.length; i++){
         base64[i] = await readerFile(file[i])
     }
     sendMail({nombre, email, telefono, base64, msj, carDataForm}).then(data=>{
