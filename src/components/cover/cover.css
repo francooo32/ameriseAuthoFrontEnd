@@ -263,7 +263,7 @@
     #logoCover {
         object-fit: cover;
         width: 90%;
-        margin-top: 10%;
+        margin-top: 0%;
         margin-left: 0%;
         /* opacity: 0.7; */
     }
