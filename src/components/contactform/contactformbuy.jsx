@@ -22,10 +22,11 @@ const {nombre, email, msj, telefono, carDataForm, status}=values;
 const onSubmit = async (data) => {
     const nombre = data.nombre
     const email = data.email
+    const toSendEmail = "vittoriaautomobilicontacto@gmail.com"
     const msj = data.msj
     const telefono = data.telefono
     const carDataForm = formCar
-    sendMail({nombre, email, telefono, msj, carDataForm}).then(data=>{
+    sendMail({nombre, email, telefono, msj, carDataForm, toSendEmail}).then(data=>{
         if(data.err){
             navigation(ERROR_ROUTE_REDIRECTION)
         }else{

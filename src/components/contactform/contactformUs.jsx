@@ -39,6 +39,7 @@ const readerFile=(file)=>{
     const nombre = data.nombre
     const email = data.email
     const msj = data.msj
+    const toSendEmail = "vittoriaautomobilicontacto@gmail.com"
     const telefono = data.telefono
     const file = data.file
     const base64 = []
@@ -46,7 +47,7 @@ const readerFile=(file)=>{
     for(let i = 0; i < file?.length; i++){
         base64[i] = await readerFile(file[i])
     }
-    sendMail({nombre, email, telefono, base64, msj, carDataForm}).then(data=>{
+    sendMail({nombre, email, telefono, base64, msj, carDataForm, toSendEmail}).then(data=>{
         if(data.err){
             navigation(ERROR_ROUTE_REDIRECTION)
         }else{
