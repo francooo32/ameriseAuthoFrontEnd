@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { IoLogoWhatsapp } from "react-icons/io";
+import wassap from '../src/public/svg/icons8-whatsapp.svg';
 import LandingPage from "./pages/Landing/LandingPage"
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
 import AboutUs from './components/aboutus/aboutus.jsx'
@@ -32,7 +33,7 @@ function App() {
   const [scrollHeight, setScrolHeight] = useState(0) 
 
   const handleScroll = () => {
-    const position = window.pageYOffset;
+    const position = window.pageY;
     setScrolHeight(position); 
   }
 
@@ -52,10 +53,15 @@ function App() {
     <BrowserRouter>
       {/* <ThemeProvider theme={theme}> */}
         {/* <MainToolbar /> */}
-        <div className='wassap'>
+        {/* <div className='wassap'>
           <a href='https://wa.me/541167040921' onClick={openOtherRef} target='_blank'>
             <IoLogoWhatsapp />
             </a>
+        </div> */}
+        <div className='wassap'>
+          <a href="https://wa.me/541167040921" onClick={openOtherRef} target="_blank">
+            <img src={wassap} alt="" />
+          </a>
         </div>
         <NavBar isScrolling={scrollHeight}/>
         <Routes>
