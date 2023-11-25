@@ -57,7 +57,7 @@ function CarDetail() {
               </Col>
             </Row>
             <Row className="aligh-items-center">
-              <Col xs={12} md={12} xl={12}>
+              <Col xs={6} md={12} xl={12}>
                 <div className="cardetail-desc">
                     <div className="cardetail-title">
                         <h1>{carDetail.marca.brand} <h2>{carDetail.modelo.model} <h3>{carDetail.version.version}</h3></h2></h1>
