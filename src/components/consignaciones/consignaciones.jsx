@@ -27,7 +27,9 @@ const Consignaciones = () => {
                 <h2>¡Nuestras consignaciones!</h2> <br />
                 En VITTORIA ofrecemos servicios de consignación para ayudarte a vender tu vehículo de manera rápida y eficiente.
               </h3>
+              <div className="secondaryBttnDiv">
               <Button type={BUTTON_TYPES.SECONDARY} btnText="¡Vendé con nosotros!"/>
+              </div>
             </div>
           </Col>
         </Row>

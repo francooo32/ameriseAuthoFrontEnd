@@ -6,7 +6,7 @@
 
 .cover-container-consignaciones .info-consignacion {
     display: flex;
-    height: 70vh;
+    height: 80vh;
 }
 
 .cover-container-consignaciones .info-consignacion .cover-text-consignaciones {
@@ -631,6 +631,11 @@ hr {
     font-weight: lighter;
   }
 
+  .secondaryBttnDiv{
+    margin-left: 40%;
+    width: 100%;
+  }
+
   .secondaryBtn {
     margin-top: 40px;
     margin-left: 40%;
@@ -691,6 +696,6 @@ hr {
     height: 43vh;
     margin-top: 340%;
     bottom: 7%;
-}
+  }
 
 }
