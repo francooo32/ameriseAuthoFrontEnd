@@ -6,3 +6,19 @@
 .modelDiv h1{
   text-align: center;
 }
+
+@media screen and (max-width: 960px){
+
+  .modelDiv {
+    height: 15vh;
+    padding-top: 60px;
+    border-bottom: 0.5px solid #0000004a;
+  }
+
+  .modelDiv h1 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Proxima Nova', sans-serif;
+    color: rgb(200, 200, 200);
+  }
+}

@@ -3,11 +3,11 @@ import logoPhoto from "../../public/Logos/2.png"
 import navIcon1 from "../../public/footerImg/nav-icon1.svg";
 import navIcon2 from "../../public/footerImg/nav-icon2.svg";
 import navIcon3 from "../../public/footerImg/nav-icon3.svg";
-import "./footer.css"
+import "./footerConsignacion.css"
 
-function Footer() {
+function FooterConsignacion() {
   return (
-    <footer className="footerSellSection">
+    <footer className="footerConsignacion">
       <Container>
         <Row className="align-items-center">
           <Col size={12} sm={6}>
@@ -35,4 +35,4 @@ function Footer() {
   )
 }
 
-export default Footer;
+export default FooterConsignacion;

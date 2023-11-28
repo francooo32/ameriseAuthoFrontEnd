@@ -41,7 +41,7 @@ function Footer() {
 
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="copyright">
-              <p className="version">Vr 1.0</p>
+              <p className="version">Vr 1.7</p>
             </div>
           </Col>
 

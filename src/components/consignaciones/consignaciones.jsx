@@ -1,15 +1,13 @@
 import React from 'react'
 import { Row, Col } from "react-bootstrap";
 import { BUTTON_TYPES } from '../common/data/buttonConst.jsx';
-import {VEHICLES_LIST} from '../../vehicles/vehiclesList.jsx'
 import { BiTask, BiHappyBeaming } from "react-icons/bi";
 import { IoMdMegaphone } from "react-icons/io";
 import { FaHandshake } from "react-icons/fa";
 import aboutImg from "../../public/about/consignaciones2.jpg"
 import logoPhoto from "../../public/Logos/2.png"
 import Button from '../button/button.jsx';
-import FooterSellSection from '../footer/footerSellSection.jsx';
-
+import FooterConsignacion from './footerConsignaciones.jsx';
 import "./consignaciones.css"
 import 'animate.css';
 
@@ -88,7 +86,7 @@ const Consignaciones = () => {
           </Row>
         </div>
       </div>
-      <FooterSellSection />
+      <FooterConsignacion />
     </>
   )
 }
