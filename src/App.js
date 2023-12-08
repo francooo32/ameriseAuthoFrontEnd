@@ -2,11 +2,11 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { IoLogoWhatsapp } from "react-icons/io";
 import wassap from '../src/public/svg/icons8-whatsapp.svg';
 import LandingPage from "./pages/Landing/LandingPage"
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
 import AboutUs from './components/aboutus/aboutus.jsx'
+import ZeroKmSection from './components/zerokmsection/zerokmsection.jsx';
 import Consignaciones from './components/consignaciones/consignaciones.jsx';
 import NavBar from './components/navBar/navBar.jsx';
 import CarDetail from './components/Car/Detail/CarDetail';
@@ -59,6 +59,7 @@ function App() {
           <Route path="/nosotros" element={<AboutUs />} />
           <Route path="/consignaciones" element={<Consignaciones />} />
           <Route path="/comprar" element={<BuyCarPage />} />
+          <Route path="/zerokm" element={<ZeroKmSection />} />
           <Route path="/detalle" element={<CarDetail />} />
           <Route path="/vender" element={<SellCar />} />
           <Route path="/brandselect" element={<BrandSelect />} />

@@ -1,11 +1,10 @@
 import React from 'react'
 import { Row, Col } from "react-bootstrap";
-import "./aboutus.css"
-import 'animate.css';
-import aboutImg from "../../public/about/aboutimg.png"
+import {VEHICLES_LIST} from '../../vehicles/vehiclesList.jsx'
 import logoPhoto from "../../public/Logos/2.png"
 import FooterSellSection from '../footer/footerSellSection.jsx';
-import {VEHICLES_LIST} from '../../vehicles/vehiclesList.jsx'
+import "./aboutus.css"
+import 'animate.css';
 
 const AboutUs = () => {
 
