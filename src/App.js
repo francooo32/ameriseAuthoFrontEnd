@@ -39,17 +39,17 @@ function App() {
     window.addEventListener("scroll", handleScroll);
   }, [scrollHeight])
 
-  const openOtherRef = () => {
-    let locs = ["https://wa.me/541151109934", "https://wa.me/541130938744"];
-    for (let i = 0; i < locs.length; i++) {
-      window.open(locs[i])
-    }
-  };
+  // const openOtherRef = () => {
+  //   let locs = ["https://wa.me/541151109934", "https://wa.me/541130938744"];
+  //   for (let i = 0; i < locs.length; i++) {
+  //     window.open(locs[i])
+  //   }
+  // };
 
   return (
     <BrowserRouter>
         <div className='wassap'>
-          <a href="https://wa.me/541167040921" onClick={openOtherRef} target="_blank">
+          <a href="https://wa.me/541151109934" target="_blank">
             <img src={wassap} alt="" />
           </a>
         </div>

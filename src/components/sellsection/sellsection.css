@@ -43,7 +43,7 @@
 .sellsection-container .sellsection-text h3 {
     margin-top: 20px;
     color: rgb(200, 200, 200);
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 4px;
     font-family: Akko Regular;
     font-weight: lighter;
@@ -51,10 +51,10 @@
 }
 
 .sellsection-container .sellsection-text h4 {
-    width: 95%;
+    width: 75%;
     margin-top: 20px;
     color: rgb(200, 200, 200);
-    font-size: 15px;
+    font-size: 20px;
     line-height: 200%;
     letter-spacing: 4px;
     font-family: Akko Regular;

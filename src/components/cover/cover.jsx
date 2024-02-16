@@ -19,10 +19,9 @@ const Cover = () => {
             <div className="cover-text">
             <img id="logoCover" src={logoPhoto} alt="logoPh"></img>
                 <h3>
-                  <h2>¿Querés vender tu auto usado sin complicaciones?</h2> <br/>
+                  <h2>¡Vendé tu auto sin complicaciones!</h2> <br/>
                   <br/>
-                  En Vittoria Automobili, ofrecemos consignación de autos usados para garantizar 
-                  una venta exitosa y sin estrés. <br/>
+                  Consigna tu auto ya mismo <br/>
                   </h3>
                 <div className="button-wrapper"> 
                 <Button type={BUTTON_TYPES.SECONDARY} btnText="Vendemos tu auto"/>

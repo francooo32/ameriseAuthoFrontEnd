@@ -38,7 +38,7 @@
 
 .cover-container .cover-text > h3 > h2 {
     color: rgb(200, 200, 200);
-    font-size: 40px;
+    font-size: 25px;
     letter-spacing: 4px;
     /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
     font-family: Akko Regular;
@@ -46,9 +46,9 @@
 }
 
 .cover-container .cover-text > h3 {
-    margin-top: -20%;
+    margin-top: -10%;
     color: rgb(200, 200, 200);
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 4px;
     /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
     font-family: Akko Regular;
@@ -118,11 +118,11 @@
         object-fit: cover;
         width: 60%;
         margin-top: 1%;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .cover-container .cover-text > h3 {
-        margin-top: -15%;
+        margin-top: -10%;
         color: rgb(200, 200, 200);
         font-size: 15px;
         letter-spacing: 4px;
@@ -192,7 +192,7 @@
     .cover-container .cover-text > h3 {
         margin-top: -15%;
         color: rgb(200, 200, 200);
-        font-size: 10px;
+        font-size: 15px;
         letter-spacing: 4px;
         /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
         font-family: Akko Regular;
@@ -202,11 +202,31 @@
         color: rgb(200, 200, 200);
         margin-top: 3%;
         font-size: 20px;
-        width: 85%;
+        width: 100%;
         letter-spacing: 4px;
         /* font-family: Nexa, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
         font-family: Akko Regular;
         /* font-weight: lighter; */
+    }
+
+    .sellsection-container .sellsection-text h3 {
+        margin-top: 20px;
+        color: rgb(200, 200, 200);
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-family: Akko Regular;
+        font-weight: lighter;
+    }
+
+    .sellsection-container .sellsection-text h4 {
+        width: 75%;
+        margin-top: 20px;
+        color: rgb(200, 200, 200);
+        font-size: 15px;
+        line-height: 200%;
+        letter-spacing: 4px;
+        font-family: Akko Regular;
+        font-weight: lighter;
     }
 
     .cover-container .cover-img img {

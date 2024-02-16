@@ -19,19 +19,15 @@ const SellSection = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={12} xl={12}>
             <div className="sellsection-text">
-                <h1>Comprá con garantía</h1>
+                <h1>¡Comprá con garantía!</h1>
                 <h3>
-                  Los mejores autos seleccionados del mercado. <br/>
-                  Nuestra agencia, con amplia experiencia, te <br/>
-                  ofrece una gran variedad de marcas para <br/>
-                  elegir.
+                  Los mejores autos seleccionados del mercado <br/>
                 </h3>
                 <div className="button-wrapper"> 
                 <Button type={BUTTON_TYPES.PRIMARY} btnText="CONOCÉ NUESTRO STOCK!"/>
                 </div>
                 <hr id="sellsectionHr"/>
-                <h4>Nuestro equipo capacitado está aquí para ayudarte a encontrar <br/>
-                  el vehículo perfecto que se ajuste a tus necesidades. <br/>
+                <h4>Te ayudamos a encontrar tu auto, contactanos <br/>
                   ¡Descubrí tu auto soñado con Vittoria y conseguilo al mejor precio!</h4>
             </div>
           </Col>
