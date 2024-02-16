@@ -2,7 +2,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { IoLogoWhatsapp } from "react-icons/io";
 import wassap from '../src/public/svg/icons8-whatsapp.svg';
 import LandingPage from "./pages/Landing/LandingPage"
 import BuyCarPage from './pages/BuyCar/BuyCarPage';
@@ -26,6 +25,7 @@ import CongratzSelect from './components/sellsteps/finalizationselect/congratzse
 import ContactForm from './components/contactform/contactform.jsx';
 import ContactFormUs from './components/contactform/contactformUs.jsx';
 import ContactFormBuy from './components/contactform/contactformbuy.jsx';
+import Login from './components/login/login.jsx';
 
 function App() {
   const [scrollHeight, setScrolHeight] = useState(0) 
@@ -76,6 +76,7 @@ function App() {
           <Route path="/contactbuy" element={<ContactFormBuy />} />
           <Route path="/errorselect" element={<ErrorSelect />} />
           <Route path="/congratzselect" element={<CongratzSelect />} />
+          <Route path="/init/login" element={<Login />} />
         </Routes>
         
     </BrowserRouter>
