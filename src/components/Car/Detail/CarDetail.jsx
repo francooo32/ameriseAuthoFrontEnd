@@ -34,7 +34,7 @@ function CarDetail() {
                     <div className="cardetail-caracteristicas-title">
                       <ul>
                         <li>
-                           <p>Combustible: {carDetail.details.caracteristicas.transmision}</p>
+                           <p>Transmisión: {carDetail.details.caracteristicas.transmision}</p>
                         </li>
                         <li>
                            <p>Tipo de combustible: {carDetail.details.caracteristicas.combustible}</p>
